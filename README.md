@@ -38,3 +38,6 @@ Having trouble with Pages? Check out our [documentation](https://docs.github.com
 
 ### About
 [About page](docs/about.md)
+
+### API reference
+[Test API reference](docs/apidocs/redoc-static.html)

@@ -40,4 +40,4 @@ Having trouble with Pages? Check out our [documentation](https://docs.github.com
 [About page](docs/about.md)
 
 ### API reference
-[Test API reference](docs/apidocs/redoc-static.html)
+[Test API reference](/apidocs/redoc-static.html)

@@ -4,8 +4,6 @@ layout: default
 
 127chetan.github.io
 
-[Link to affiliates theme](https://127chetan.github.io/affiliates-theme)
-
 Text can be **bold**, _italic_, or ~~strikethrough~~.
 
 [Link to another page](./another-page.html).

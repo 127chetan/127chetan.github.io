@@ -1,17 +1,17 @@
 # Top Menu
 topmenu:
 
-- title: HOME
+- title: Home
   url: ""
 
-- title: MY WORK
+- title: My work
   url: ""
 #  url: "about/"
 
 # - title: Contact
 #   url: "contact/"
 
-- title: RESUME
+- title: Resume
   url: https://drive.google.com/file/d/1ybdDTPHFOhIv876JNhz6i44PSRoZc0nZ/view?usp=drive_link
   class: "ml-2 btn btn-dark text-white px-3"
   external: true
@@ -24,8 +24,15 @@ topmenu:
 # Footer Menu
 footermenu:
 
-- title: HOME
+- title: Home
   url: ""
+
+- title: My work
+  url: ""
+
+- title: Resume
+  url: https://drive.google.com/file/d/1ybdDTPHFOhIv876JNhz6i44PSRoZc0nZ/view?usp=drive_link
+  external: true
 
 # - title: Privacy Policy
 #   url: "privacy-policy/"

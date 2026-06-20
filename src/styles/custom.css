@@ -1,0 +1,18 @@
+/* Custom overrides for Chetan's portfolio */
+:root {
+  --sl-color-accent-low: #1a2e4a;
+  --sl-color-accent: #2d6cdf;
+  --sl-color-accent-high: #7eb3ff;
+}
+
+[data-theme='light'] {
+  --sl-color-accent-low: #ddeeff;
+  --sl-color-accent: #1a56cc;
+  --sl-color-accent-high: #0a3a8a;
+}
+
+/* Tighten hero tagline */
+.hero .tagline {
+  font-size: var(--sl-text-lg);
+  line-height: 1.6;
+}

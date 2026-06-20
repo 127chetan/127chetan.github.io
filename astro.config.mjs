@@ -19,7 +19,17 @@ export default defineConfig({
 					label: 'Case Studies',
 					items: [
 						{ label: 'Overview', slug: 'case-studies' },
-						{ label: 'BILL — Payment API Docs', slug: 'case-studies/bill-payment-api' },
+						{
+							label: 'BILL — developer.bill.com',
+							items: [
+								{ label: 'Overview', slug: 'case-studies/bill' },
+								{ label: '1. Zendesk → ReadMe (2021)', slug: 'case-studies/bill/zendesk-to-readme' },
+								{ label: '2. OpenAPI Spec (2022)', slug: 'case-studies/bill/openapi-spec' },
+								{ label: '3. Dual API Versions (2023–2024)', slug: 'case-studies/bill/dual-api-versions' },
+								{ label: '4. AI Postman Collection (2025)', slug: 'case-studies/bill/ai-postman-collection' },
+								{ label: '5. Growth (2025–2026)', slug: 'case-studies/bill/growth' },
+							],
+						},
 					],
 				},
 				{

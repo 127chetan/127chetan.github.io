@@ -8,6 +8,8 @@ export default defineConfig({
 	integrations: [
 		starlight({
 			title: 'Chetan Bhatia',
+			defaultLocale: 'en',
+			defaultTheme: 'light',
 			description: 'Technical Writer with 14 years of experience in developer documentation, API references, and content strategy.',
 			social: [
 				{ icon: 'linkedin', label: 'LinkedIn', href: 'https://www.linkedin.com/in/cbhatia/' },

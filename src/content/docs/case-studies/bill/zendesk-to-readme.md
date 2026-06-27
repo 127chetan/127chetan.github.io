@@ -19,9 +19,9 @@ The alternatives were Confluence (BILL had an Atlassian relationship) and Kong (
 
 But ReadMe faced internal resistance. Bringing in a smaller-scale vendor for a BILL-branded website triggered scrutiny across procurement and infosec. Using ReadMe was frowned upon throughout the vetting process.
 
-I didn't wait for approval. I started a personal ReadMe project and kept adding OpenAPI spec information to it — building the real docs in the background while the vendor review ran its course. The ReadMe support team extended my trial for months while the review was in progress.
+I didn't wait for approval. From November 2021 through January 2022, I ran the vendor review in parallel with active spec work — building the real docs in a personal ReadMe project while procurement ran its course. My prior relationship with the ReadMe team from my years at Clover Network meant they understood the situation. They extended my trial repeatedly across those months, keeping the project alive while approval was pending.
 
-To clear the approval, I drew on my track record with `docs.clover.com` and worked directly with the ReadMe team to produce all internal documentation required for BILL's vendor review. ReadMe participated in internal reviews. Eventually, ReadMe was approved.
+To clear the approval, I drew on my track record with `docs.clover.com` and worked directly with the ReadMe team to produce all internal documentation required for BILL's vendor review. ReadMe participated in internal reviews. In January 2022, ReadMe was approved.
 
 ## Information architecture
 

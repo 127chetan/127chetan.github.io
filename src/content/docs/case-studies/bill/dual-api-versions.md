@@ -54,7 +54,81 @@ curl --request POST \
 }'
 ```
 
-The comparison made the differences immediate: JSON body vs form-encoded data, consistent field naming, a URL structure that communicated version and intent. The guide extended this pattern across endpoint naming conventions, HTTP response codes, and response body structure — verbose and flat in v2, typed and nested in v3.
+Invoice creation showed the same contrast. The v2 request was a flat wall of string fields, all at the same level, with no nested structure. Creating an invoice required a valid customer ID — there was no way to have BILL create the customer object inline. Sending the invoice to the customer was a separate endpoint call.
+
+**v2 invoice creation**
+```bash
+curl --request POST \
+  --url https://api-stage.bill.com/api/v2/Crud/Create/Invoice.json \
+  --header 'accept: application/json' \
+  --header 'content-type: application/x-www-form-urlencoded' \
+  --data devKey=string \
+  --data sessionId=string \
+  --data 'data={"obj":{"entity":"Invoice","isActive":"string","customerId":"string","invoiceNumber":"string","invoiceDate":"string","dueDate":"string","glPostingDate":"string","exchangeRate":0,"description":"string","poNumber":"string","isToBePrinted":true,"isToBeEmailed":true,"lastSentTime":"string","itemSalesTax":"string","terms":"string","salesRep":"string","FOB":"string","shipDate":"string","shipMethod":"string","departmentId":"string","locationId":"string","actgClassId":"string","jobId":"string","payToBankAccountId":"string","payToChartOfAccountId":"string","invoiceTemplateId":"string","hasAutoPay":true,"emailDeliveryOption":"string","mailDeliveryOption":"string","recInvoiceTemplateId":"string","invoiceLineItems":[{"entity":"InvoiceLineItem","itemId":"string","quantity":0,"amount":0,"price":0,"serviceDate":"string","ratePercent":0,"chartOfAccountId":"string","departmentId":"string","locationId":"string","actgClassId":"string","jobId":"string","description":"string","taxable":true,"taxCode":"string","lineOrder":0}]}}'
+```
+
+**v3 invoice creation**
+```bash
+curl --request POST \
+  --url https://gateway.stage.bill.com/connect/v3/invoices \
+  --header 'accept: application/json' \
+  --header 'content-type: application/json' \
+  --data '{
+  "customer": {
+    "id": "{{customer_id}}"
+  },
+  "invoiceLineItems": [
+    {
+      "quantity": 2,
+      "description": "Classic extreme drum sticks",
+      "price": 14.99
+    },
+    {
+      "quantity": 1,
+      "description": "Metal guitar picks (5-pack)",
+      "price": 50
+    }
+  ],
+  "invoiceNumber": "202602",
+  "dueDate": "2026-12-31",
+  "processingOptions": {
+    "sendEmail": false
+  }
+}'
+```
+
+In v3, `invoiceNumber`, `invoiceDate`, and `dueDate` are optional — BILL auto-generates them if omitted. If the customer doesn't exist yet, setting `name` and `email` in the customer object causes BILL to create the customer inline as part of the same request. Email delivery is a `processingOptions` flag on the same call. When `enableCardPayment` is set to `true`, the customer can pay by card — and a `convenienceFee` object lets you configure the percentage the customer pays for that option.
+
+The migration guide extended these comparisons across endpoint naming conventions, HTTP response codes, and response body structure — verbose and flat in v2, typed and nested in v3.
+
+## v3-exclusive capabilities
+
+Three capabilities shipped as v3-only features, each opening up new integration patterns that were not possible with v2.
+
+**Spend & Expense API**
+
+BILL acquired Divvy in 2021 for its expense management capabilities. In 2023, those features became available via API as the Spend & Expense API. This brought an entirely new customer base — integrations built around expense management rather than AP or AR. Endpoints covered budgets, budget users, virtual cards, transactions, and reimbursements.
+
+**Partner Operations**
+
+Partner operations enabled white-label, embedded finance experiences for BILL's integration partners. Partners like NetSuite and Acumatica could programmatically onboard their users into BILL — creating a new organization, provisioning a user in that organization, and then performing full organization-level operations. The entire onboarding flow, from org creation to payment execution, was available in a single API surface.
+
+**Webhooks**
+
+Before webhooks, API customers kept BILL object state synchronized by polling — making scheduled GET calls to check for changes across vendors, bills, payments, invoices, and other entities. For example, `GET /v3/vendors` to list all vendors, `GET /v3/vendors/{vendorId}` for a specific record, repeated at fixed intervals. This created unnecessary API call volume and introduced latency between an event occurring and the integration responding to it.
+
+Webhooks replaced polling with event-driven notifications. Customers subscribed to specific events and received a payload at their endpoint the moment the event occurred. The full event set covered the BILL object model:
+
+| Category | Events |
+|---|---|
+| Vendors | `vendor.created`, `vendor.updated`, `vendor.archived`, `vendor.restored`, `autopay.failed` |
+| AP Bills | `bill.created`, `bill.updated`, `bill.archived`, `bill.restored` |
+| AP Payments | `payment.updated`, `payment.failed` |
+| AR Invoices | `invoice.created`, `invoice.updated`, `invoice.archived`, `invoice.restored` |
+| Bank Accounts | `bank-account.created`, `bank-account.updated` |
+| Card Accounts | `card-account.created`, `card-account.updated` |
+| Spend & Expense | `spend.transaction.updated`, `spend.reimbursement.created`, `spend.reimbursement.updated`, `spend.reimbursement.deleted`, `spend.three-ds-challenge.created` |
+| Risk | `risk-verification.updated` |
 
 ## Who stayed on v2 and why
 

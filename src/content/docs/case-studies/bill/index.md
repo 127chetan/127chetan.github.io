@@ -1,5 +1,5 @@
 ---
-title: BILL — developer.bill.com
+title: "BILL API Platform: A Five-Year Documentation Build"
 description: How I built BILL's developer documentation program from a neglected Zendesk help site into a modern, structured docs platform over five years.
 ---
 
@@ -13,7 +13,8 @@ BILL's developer documentation was a Zendesk help site template — unmaintained
 | 2022 | [Writing the OpenAPI Spec from Scratch](/case-studies/bill/openapi-spec/) |
 | 2023–2024 | [Publishing & Maintaining Two API Versions](/case-studies/bill/dual-api-versions/) |
 | 2025 | [AI-Powered Postman Collection](/case-studies/bill/ai-postman-collection/) |
-| 2025–2026 | [Growth — Postman & YouTube](/case-studies/bill/growth/) |
+| 2026 | [AI Tooling for the Docs Workflow](/case-studies/bill/ai-docs-tooling/) |
+| 2025–2026 | [Growth — Developer Platform](/case-studies/bill/growth/) |
 
 ## Impact
 

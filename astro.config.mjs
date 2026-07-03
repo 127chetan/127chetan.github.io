@@ -20,7 +20,7 @@ export default defineConfig({
 					items: [
 						{ label: 'Overview', slug: 'case-studies' },
 						{
-							label: 'BILL — developer.bill.com',
+							label: 'BILL API Platform: Five-Year Build',
 							items: [
 								{ label: 'Overview', slug: 'case-studies/bill' },
 								{ label: '1. Zendesk → ReadMe (2021)', slug: 'case-studies/bill/zendesk-to-readme' },

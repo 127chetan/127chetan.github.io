@@ -9,6 +9,6 @@ Each case study covers the problem I was brought in to solve, my approach, and t
 
 | Project | Company | Type |
 |---|---|---|
-| [BILL — developer.bill.com](/case-studies/bill/) | BILL | API Reference, Developer Docs, Content Strategy |
+| [BILL API Platform: A Five-Year Documentation Build](/case-studies/bill/) | BILL | API Reference, Developer Docs, Content Strategy |
 
 *More case studies coming soon.*

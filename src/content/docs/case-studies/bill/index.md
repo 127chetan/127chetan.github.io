@@ -3,7 +3,7 @@ title: "BILL API Platform: A Five-Year Documentation Build"
 description: How I built BILL's developer documentation program from a neglected Zendesk help site into a modern, structured docs platform over five years.
 ---
 
-When I joined BILL in 2021, developer.bill.com was a Zendesk help site template — unmaintained, unstructured, and built for an API that was never designed for external developers. Over five years, I rebuilt it from scratch: migrated to ReadMe, wrote a 178,000-line OpenAPI spec covering 300+ endpoints solo in three months, shipped and maintained documentation for two simultaneous API versions, built the v3 Postman Collection in three weeks with AI, published four Claude skills for the documentation workflow, wrote 16 developer tutorial video scripts, and drove API developer adoption to 2,500+ — 200% of target — with an associated 130% of the revenue OKR.
+When I joined BILL in 2021, [developer.bill.com](https://developer.bill.com) was a Zendesk help site template — unmaintained, unstructured, and built for an API that was never designed for external developers. Over five years, I rebuilt it from scratch: migrated to ReadMe, wrote a 178,000-line OpenAPI spec covering 300+ endpoints solo in three months, shipped and maintained documentation for two simultaneous API versions, built the v3 Postman Collection in three weeks with AI, published four Claude skills for the documentation workflow, wrote 16 developer tutorial video scripts, and drove API developer adoption to 2,500+ — 200% of target — with an associated 130% of the revenue OKR.
 
 ## The arc
 

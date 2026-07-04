@@ -19,18 +19,12 @@ export default defineConfig({
 					label: 'Case Studies',
 					items: [
 						{ label: 'Overview', slug: 'case-studies' },
-						{
-							label: 'BILL API Platform: Five-Year Build',
-							items: [
-								{ label: 'Overview', slug: 'case-studies/bill' },
-								{ label: '1. Zendesk → ReadMe (2021)', slug: 'case-studies/bill/zendesk-to-readme' },
-								{ label: '2. OpenAPI Spec (2022)', slug: 'case-studies/bill/openapi-spec' },
-								{ label: '3. Dual API Versions (2023–2024)', slug: 'case-studies/bill/dual-api-versions' },
-								{ label: '4. AI Postman Collection (2025)', slug: 'case-studies/bill/ai-postman-collection' },
-								{ label: '5. AI Tooling for Docs (2026)', slug: 'case-studies/bill/ai-docs-tooling' },
-								{ label: '6. Growth (2025–2026)', slug: 'case-studies/bill/growth' },
-							],
-						},
+						{ label: 'BILL — Zendesk → ReadMe Migration', slug: 'case-studies/bill/zendesk-to-readme' },
+						{ label: 'BILL — OpenAPI Spec from Scratch', slug: 'case-studies/bill/openapi-spec' },
+						{ label: 'BILL — Two API Versions', slug: 'case-studies/bill/dual-api-versions' },
+						{ label: 'BILL — AI-Powered Postman Collection', slug: 'case-studies/bill/ai-postman-collection' },
+						{ label: 'BILL — AI Tooling for Docs', slug: 'case-studies/bill/ai-docs-tooling' },
+						{ label: 'BILL — Developer Platform Growth', slug: 'case-studies/bill/growth' },
 					],
 				},
 				{

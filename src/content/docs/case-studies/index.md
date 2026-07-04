@@ -3,7 +3,7 @@ title: Case Studies
 description: A selection of technical writing projects across developer docs, API references, and content strategy.
 ---
 
-Each case study covers the problem I was brought in to solve, my approach, and the outcome — with writing samples embedded where available.
+Each case study covers the problems I was brought in to solve, my approach, and the outcomes. You will see writing examples where available.
 
 ## Featured Work
 

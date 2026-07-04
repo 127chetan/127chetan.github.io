@@ -52,3 +52,18 @@ The skills didn't replace the documentation workflow. They changed where effort 
 The deeper shift was that the documentation team's expertise — the style guide, the structural knowledge of the API, the understanding of what developers needed — was now encoded in tools that anyone on the developer platform team could use. The knowledge became shareable infrastructure.
 
 For me, it was also a direct application of what AI had taught me over the previous year: the most valuable use of these tools isn't generating finished output. It's building systems that make the right output easier for everyone to produce.
+
+## Making the docs AI-agent ready
+
+The skills addressed how AI could help produce documentation. A parallel question was whether the documentation itself was ready for AI to consume.
+
+I ran developer.bill.com through [afdocs.dev](https://afdocs.dev), an AI-friendliness audit tool for documentation sites. The results shaped a set of concrete changes:
+
+- **llms.txt** — published a `llms.txt` file for developer.bill.com, giving AI agents a structured index of the site's content and purpose, following the emerging convention for AI-readable site metadata
+- **Markdown rendering** — enabled markdown output for all pages on developer.bill.com, so AI agents requesting content could parse structured text rather than HTML
+- **Link integrity** — used the ReadMe AI audit tool to surface and fix broken links across the docset, ensuring that when an agent traversed the site it didn't hit dead ends
+- **MCP server** — enabled `developer.bill.com/mcp`, connecting the docs to an MCP server so AI agents could access the documentation programmatically rather than by scraping
+
+The Postman Collection added one more surface: the Postman AI agent can natively read the Collection and make live API calls from it. A developer using an AI agent in Postman can describe a workflow in natural language and have the agent execute the corresponding API calls against the BILL sandbox — using the same Collection structure, environment variables, and post-response automation built into the original build.
+
+Taken together, these changes extended the reach of the documentation beyond human readers. By the end of 2026, developer.bill.com was structured for developers, AI coding assistants, and AI agents equally.

@@ -16,6 +16,7 @@ In my 5 years at BILL, I rebuilt the website from scratch: migrated to ReadMe, w
 | 2021 | [Zendesk → ReadMe Migration](/case-studies/bill/zendesk-to-readme/) |
 | 2022 | [OpenAPI Spec from Scratch](/case-studies/bill/openapi-spec/) |
 | 2023–2024 | [Two API Versions](/case-studies/bill/dual-api-versions/) |
+| 2025 | [Platform Expansion & Docs Leadership](/case-studies/bill/platform-expansion/) |
 | 2025 | [AI-Powered Postman Collection](/case-studies/bill/ai-postman-collection/) |
 | 2026 | [AI Tooling for Docs](/case-studies/bill/ai-docs-tooling/) |
 | 2025–2026 | [Developer Platform Growth](/case-studies/bill/growth/) |

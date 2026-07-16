@@ -18,6 +18,10 @@
 }
 
 /* Reduce gap between hero and content below */
-.sl-markdown-content {
-  margin-block-start: 1.5rem;
+.hero {
+  padding-block-end: 2rem;
+}
+
+[data-has-hero] .content-panel {
+  padding-block-start: 1.5rem;
 }

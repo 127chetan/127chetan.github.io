@@ -7,7 +7,7 @@ In this section, each case study covers the problem I was brought in to solve, m
 
 ## BILL API Platform: A Five-Year Documentation Build
 
-When I joined BILL in 2021, [developer.bill.com](https://developer.bill.com) was a Zendesk help site template — under-maintained, unstructured, and built for an API that was never designed for external API developers. 
+When I joined BILL in 2021, [developer.bill.com](https://developer.bill.com) was a Zendesk help site template. This help site was under-maintained, unstructured, and built for an API product that was never designed for external API developers. 
 
 In my 5 years at BILL, I rebuilt the website from scratch: migrated to ReadMe, wrote a 178,000-line OpenAPI spec covering 300+ endpoints solo in three months, shipped and maintained documentation for two simultaneous API versions, built the v3 Postman Collection in three weeks with AI, published four Claude skills for the documentation workflow, wrote 16 developer tutorial video scripts, and drove API developer adoption to 2,500+ — 200% of target — with an associated 130% of the revenue OKR.
 

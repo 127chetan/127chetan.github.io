@@ -21,7 +21,7 @@ In my 5 years at BILL, I rebuilt the website from scratch: migrated to ReadMe, w
 | 2026 | [AI Tooling for Docs](/case-studies/bill/ai-docs-tooling/) |
 | 2025–2026 | [Developer Platform Growth](/case-studies/bill/growth/) |
 
-### Impact
+## Impact
 
 - Migrated developer.bill.com from Zendesk to ReadMe — the most common developer support question ("how do I log in?") disappeared within weeks of launch
 - Wrote a 178,000-line OpenAPI spec covering 300+ endpoints across 10 spec files, solo, in three months — the spec later became the engineering input for the BILL v3 API design

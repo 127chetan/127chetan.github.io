@@ -13,7 +13,7 @@ In my 5 years at BILL, I led each documentation project that led to major iterat
 
 | Year | Case Study | TL;DR |
 |---|---|---|
-| 2021 | [Zendesk → ReadMe Migration](/case-studies/bill/zendesk-to-readme/) | Migrated from a neglected Zendesk template to ReadMe — the most common developer support question disappeared within weeks of launch. |
+| 2021 | [Zendesk → ReadMe Migration](/case-studies/bill/zendesk-to-readme/) | Migrated to a modern API docs platform. The most common API developer support questions disappeared within weeks of launch. |
 | 2022 | [OpenAPI Spec from Scratch](/case-studies/bill/openapi-spec/) | Wrote a 178,000-line OpenAPI spec for 300+ endpoints, solo, in three months — it later became the engineering input for the BILL v3 API design. |
 | 2023–2024 | [Two API Versions](/case-studies/bill/dual-api-versions/) | Shipped and maintained v2 and v3 documentation simultaneously; v3 became the primary version six months after launch. |
 | 2025 | [Platform Expansion & Docs Leadership](/case-studies/bill/platform-expansion/) | Hired and led a contract TW to cover BILL Elements and the get started section; led the editorial pass that turned dense drafts into component-driven docs. |

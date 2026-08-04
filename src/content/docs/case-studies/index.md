@@ -18,7 +18,7 @@ In my 5 years at BILL, I led each documentation project that led to major iterat
 | 2023–2024 | [Two API Versions](/case-studies/bill/dual-api-versions/) | Shipped + maintained BILL v2 & v3 API docs simultaneously. Within 6 months, v3 became the primary API version. |
 | 2025 | [Platform Expansion & Docs Leadership](/case-studies/bill/platform-expansion/) | Hired & led a contract TW to document the new BILL product offerings; led the editorial pass to turn dense drafts into component-driven docs. |
 | 2025 | [AI-Powered Postman Collection](/case-studies/bill/ai-postman-collection/) | Built & published the official BILL v3 Postman Collection solo in 3 weeks with AI. GitLab CI/CD pipeline for keeping the Collection current with each API release. |
-| 2026 | [AI Tooling for Docs](/case-studies/bill/ai-docs-tooling/) | Published four Claude skills to BILL's internal GitLab and made developer.bill.com readable by AI agents via llms.txt, markdown rendering, and an MCP server. |
+| 2026 | [AI Tooling for Docs](/case-studies/bill/ai-docs-tooling/) | Published 4 Claude skills for automating doc workflows. Made developer.bill.com AI agent-ready with llms.txt, markdown rendering, & MCP server. |
 | 2025–2026 | [Developer Platform Growth](/case-studies/bill/growth/) | 16 tutorial video scripts, 11 published to YouTube — 2,500+ active API developers, 200% of OKR target, 130% of the revenue OKR. |
 
 ## Impact

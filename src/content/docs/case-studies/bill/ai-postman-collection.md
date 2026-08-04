@@ -69,6 +69,18 @@ The expected workflow for each release:
 
 With each Collection update, I posted release note summaries directly in Postman. Every subscriber and follower on the BILL Postman account received an email with the summary — the same release discipline that had built trust on developer.bill.com extended to where developers were already working.
 
+## Automating Collection updates
+
+Publishing the Collection the first time was one problem. Keeping it current with every API release was another.
+
+In August 2025 — after the Collection was live — I built the first iteration of the update workflow: a set of JavaScript scripts that performed a diff between the newly generated OpenAPI spec and the currently published Collection JSON, identifying added, changed, and removed endpoints, fields, field names, and types. I ran those scripts against a local copy of the published Collection and tested the output before applying any changes. Success had to be repeatable before it could be automated.
+
+The PUT operation that updates the published Postman Collection is a call to the Postman API. Getting the configuration right for our specific use case required working directly with the Postman team — they were responsive and helped identify the correct endpoint configuration.
+
+Once the process was reliable, I built a GitLab CI/CD pipeline with discrete stages — each one handling a specific operation in the chain from source OpenAPI spec to published Collection. The trigger is manual: a deliberate choice to control when Collection updates go out, so releases and updates stay coordinated.
+
+The AI tooling evolved alongside the project. Gemini handled the first round of JavaScript logic when it was approved for use at BILL. Kiro took over maintenance when it was approved. Claude handled the final iteration in May 2026, focusing on code efficiency and long-term maintainability.
+
 ## The reception
 
 API customer feedback was immediate and positive. The response was consistent: instead of testing in the docs or copying cURL examples and manually replacing placeholders, developers could run complete workflows from start to finish. The variables handled state. The post-response scripts handled continuity. The folder structure handled navigation.

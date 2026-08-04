@@ -73,13 +73,21 @@ With each Collection update, I posted release note summaries directly in Postman
 
 Publishing the Collection the first time was one problem. Keeping it current with every API release was another.
 
-In August 2025 — after the Collection was live — I built the first iteration of the update workflow: a set of JavaScript scripts that performed a diff between the newly generated OpenAPI spec and the currently published Collection JSON, identifying added, changed, and removed endpoints, fields, field names, and types. I ran those scripts against a local copy of the published Collection and tested the output before applying any changes. Success had to be repeatable before it could be automated.
+In August 2025 — after the Collection was live — I built the first iteration of the update workflow as a set of JavaScript scripts. Each script handled a discrete operation in the chain:
 
-The PUT operation that updates the published Postman Collection is a call to the Postman API. Getting the configuration right for our specific use case required working directly with the Postman team — they were responsive and helped identify the correct endpoint configuration.
+1. **Combine** — merge the two v3 source OpenAPI spec files into one. The v3 API spans two engineering projects: one covering AP, AR, Partner, Organization, and Network operations; one covering Webhooks. The scripts treat them as a single surface.
+2. **GET** — call the Postman API to pull the current published Collection JSON.
+3. **Diff** — compare the combined spec against the current Collection to identify added, changed, and removed endpoints, fields, field names, and types.
+4. **Update** — apply the diff: add new operations, update changed fields, remove deprecated ones.
+5. **Post-response scripts** — the diff identifies which new POST endpoints need a post-response script. Writing the script requires human intervention: the response structure of each new endpoint determines how the generated ID value is captured and saved as a Postman variable.
+6. **Examples** — add or update request examples in POST, PUT, and PATCH operations from the working examples set in the source spec.
+7. **PUT** — call the Postman API to push the updated Collection.
 
-Once the process was reliable, I built a GitLab CI/CD pipeline with discrete stages — each one handling a specific operation in the chain from source OpenAPI spec to published Collection. The trigger is manual: a deliberate choice to control when Collection updates go out, so releases and updates stay coordinated.
+Getting the PUT configuration right for our specific use case required working directly with the Postman team — they were responsive and helped identify the correct endpoint configuration.
 
-The AI tooling evolved alongside the project. Gemini handled the first round of JavaScript logic when it was approved for use at BILL. Kiro took over maintenance when it was approved. Claude handled the final iteration in May 2026, focusing on code efficiency and long-term maintainability.
+The pipeline runs twice for each update: first against a local copy of the Collection for a human eyetest, then — once confirmed — against the official published Collection. The trigger is manual: a deliberate choice to control when updates go out so releases and Collection changes stay coordinated.
+
+Once the process was reliable, I formalized it into a GitLab CI/CD pipeline with discrete stages — one per script operation. The AI tooling evolved alongside the project: Gemini when it was approved at BILL, then Kiro, then Claude in May 2026 — each iteration improving the code logic and pipeline structure.
 
 ## The reception
 

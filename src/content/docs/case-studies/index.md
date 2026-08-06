@@ -20,16 +20,3 @@ In my 5 years at BILL, I led each documentation project that led to major iterat
 | 2025 | [AI-Powered Postman Collection](/case-studies/bill/ai-postman-collection/) | Built & published the official BILL v3 Postman Collection in 3 weeks with AI. GitLab CI/CD pipeline for keeping the Collection current with each API release. |
 | 2026 | [AI Tooling for Docs](/case-studies/bill/ai-docs-tooling/) | Published 4 Claude skills for automating doc workflows. Made developer.bill.com AI agent-ready with llms.txt, markdown rendering, & MCP server. |
 | 2025–2026 | [Developer Platform Growth](/case-studies/bill/growth/) | 16 tutorial video scripts, 11 published YouTube videos. 2,500+ active API developers, 200% of OKR; 130% of revenue OKR (June 2026). |
-
-## Impact
-
-- Migrated developer.bill.com from Zendesk to ReadMe — the most common developer support question ("how do I log in?") disappeared within weeks of launch
-- Wrote a 178,000-line OpenAPI spec covering 300+ endpoints across 10 spec files, solo, in three months — the spec later became the engineering input for the BILL v3 API design
-- Built and maintained a GitLab CI/CD pipeline that published every spec change to developer.bill.com for the full five-year tenure
-- Shipped documentation for v2 and v3 simultaneously; v3 became the primary version six months after launch
-- Built the official BILL v3 Postman Collection solo in three weeks using AI — 200+ endpoints, 100+ environment variables, post-response automation for complete AP/AR workflow execution
-- Wrote 16 developer tutorial video scripts; 11 published to YouTube, 2 recorded and edited personally
-- Published four Claude skills to BILL's internal GitLab — docs review, interactive recipe drafts, tutorial video script drafts, and API developer communications drafts
-- BILL engineers adopted developer.bill.com for internal sandbox testing; infosec used it for DOS simulation against the sandbox — neither was planned
-- 2,500+ active API developers at end of tenure — approximately 200% of the OKR target of 1,300
-- 130% of the associated revenue OKR, driven by API integrations generating payment volume through BILL

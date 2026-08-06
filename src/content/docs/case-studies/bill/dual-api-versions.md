@@ -1,5 +1,5 @@
 ---
-title: "Chapter 3: Publishing & Maintaining Two API Versions"
+title: "Publishing & Maintaining Two API Versions"
 description: Running v2 and v3 documentation simultaneously on developer.bill.com — versioned references, a migration guide, and the internal advocacy that kept v3 moving forward.
 ---
 

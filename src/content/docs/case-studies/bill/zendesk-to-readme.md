@@ -1,5 +1,5 @@
 ---
-title: "Chapter 1: Zendesk → ReadMe Migration"
+title: "Zendesk → ReadMe Migration"
 description: Migrating BILL's developer docs from a neglected Zendesk help site to a modern ReadMe platform — including a months-long vendor approval battle.
 ---
 

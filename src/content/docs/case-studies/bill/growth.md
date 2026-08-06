@@ -1,5 +1,5 @@
 ---
-title: "Chapter 6: Growing the BILL API Developer Platform"
+title: "Growing the BILL API Developer Platform"
 description: How the Postman Collection and a developer tutorial video program drove BILL's API developer base to 2500+ — nearly double the OKR target — and generated 130% of the associated revenue goal.
 ---
 

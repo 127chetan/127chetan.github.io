@@ -7,7 +7,7 @@ In this section, each BILL case study covers the problem I was brought in to sol
 
 ## BILL API Platform: A Five-Year Documentation Build
 
-When I joined BILL in 2021, [developer.bill.com](https://developer.bill.com) was a Zendesk help site template. This help site was under-maintained, unstructured, and built for an API product that was never designed for external API developers. 
+When I joined BILL in 2021, [developer.bill.com](https://developer.bill.com) was a static Zendesk template with an unclear structure.
 
 In my 5 years at BILL, I led each documentation project that led to major iterative upgrades on developer.bill.com.
 

@@ -1,9 +1,9 @@
 ---
-title: Case Studies
+title: BILL Overview
 description: A selection of technical writing projects across developer docs, API references, and content strategy.
 ---
 
-In this section, each case study covers the problem I was brought in to solve, my approach, and outcomes.
+In this section, each BILL case study covers the problem I was brought in to solve, my approach, and outcomes.
 
 ## BILL API Platform: A Five-Year Documentation Build
 

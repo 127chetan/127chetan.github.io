@@ -30,3 +30,12 @@
 article.card {
   border-radius: 8px;
 }
+
+/* Card title and body match body text size */
+article.card .title {
+  font-size: var(--sl-text-body);
+}
+
+article.card .body {
+  font-size: var(--sl-text-body);
+}

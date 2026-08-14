@@ -27,6 +27,6 @@
 }
 
 /* Rounded corners on cards */
-.sl-card {
+article.card {
   border-radius: 12px;
 }

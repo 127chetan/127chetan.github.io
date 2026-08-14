@@ -25,3 +25,8 @@
 [data-has-hero] .content-panel {
   padding-block-start: 1.5rem;
 }
+
+/* Rounded corners on cards */
+.sl-card {
+  border-radius: 12px;
+}

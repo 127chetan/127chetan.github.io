@@ -7,7 +7,7 @@ In this section, each BILL case study covers the problem I was brought in to sol
 
 ## BILL API Platform: A Five-Year Documentation Build
 
-When I joined BILL in 2021, [developer.bill.com](https://developer.bill.com) was a static Zendesk template with an unclear structure and audience. In my 5 years here, I led a set of documentation projects, each delivering major iterative upgrades on developer.bill.com.
+When I joined BILL in 2021, [developer.bill.com](https://developer.bill.com) was a static Zendesk help site template with an unclear structure and audience. In my 5 years here, I led a set of documentation projects, each delivering major iterative upgrades on developer.bill.com.
 
 | Year | Case Study | TL;DR |
 |---|---|---|

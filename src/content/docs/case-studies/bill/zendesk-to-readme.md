@@ -3,11 +3,11 @@ title: "Zendesk → ReadMe Migration"
 description: Migrating BILL's developer docs from a neglected Zendesk help site to a modern ReadMe platform — including a months-long vendor approval battle.
 ---
 
-When I joined BILL in 2021, `developer.bill.com` was a Zendesk help site template. This help site was under-maintained, unstructured, and built for an API product that was never designed for external API developers.
-
 ## Context
 
-When I joined BILL in 2021, `developer.bill.com` was a Zendesk help site template. It hadn't been well maintained. Guides and API reference information lived on the same page for each endpoint, with no structural separation. Standard cases were documented; edge cases, usage examples, and realistic integration scenarios were absent.
+In 2021, `developer.bill.com` was a Zendesk help site template. This help site was under-maintained, unstructured, and built for an API product that was never designed for external API developers.
+- Guides & API reference information lived on the same page for each endpoint, with no structural separation.
+- Standard cases were documented; edge cases, usage examples, and realistic integration scenarios were absent.
 
 The underlying API compounded the problem. BILL v2 was built by BILL engineering for BILL engineering — then a decision was made to make it public. No API design strategy, no customer centricity baked in. Failure responses returned HTTP 200. Every request was a POST. Response fields were inconsistent or unhelpful, and many didn't accurately reflect what was set in the request.
 

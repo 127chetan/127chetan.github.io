@@ -29,6 +29,7 @@
 /* Rounded corners on cards */
 article.card {
   border-radius: 8px;
+  gap: 0.25rem;
 }
 
 /* Card title and body match body text size */

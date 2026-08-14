@@ -6,8 +6,8 @@ description: Migrating BILL's developer docs from a neglected Zendesk help site 
 ## Context
 
 In 2021, `developer.bill.com` was a Zendesk help site template. This help site was under-maintained, unstructured, and built for an API product that was never designed for external API developers.
-- **Organization**: Guides & API reference information lived on the same page for each endpoint, with no structural separation.
-- **Business cases**: Standard cases were documented. Usage examples, edge cases, & realistic integration scenarios were absent.
+- **Organization issues**: For each endpoint, the Guides & API reference information lived on the same page, with no structural separation.
+- **Missing business cases**: Standard cases were documented. Usage examples, edge cases, & realistic integration scenarios were absent.
 
 The underlying API compounded the problem. BILL v2 was built by BILL engineering for BILL engineering — then a decision was made to make it public. No API design strategy, no customer centricity baked in. Failure responses returned HTTP 200. Every request was a POST. Response fields were inconsistent or unhelpful, and many didn't accurately reflect what was set in the request.
 

@@ -9,10 +9,11 @@ In 2021, `developer.bill.com` was a Zendesk help site template. This help site w
 - **Docs organization issues**: For each endpoint, the Guides & API reference information lived on the same page, with no structural separation.
 - **Business cases missing**: Standard cases were documented. Detailed usage examples, edge cases, & realistic integration scenarios were absent.
 
-**The underlying API compounded the problem**. The BILL v2 API was built by BILL engineering for BILL engineering. When leadership chose to make the API public, BILL v2 would have benefited from an API design strateg around customer centricity. Failure responses returned HTTP 200. Every request was a POST. Response fields were inconsistent or unhelpful, and many didn't accurately reflect what was set in the request.
+**The underlying API compounded the problem**. The BILL v2 API was built by BILL engineering for BILL engineering. When leadership chose to make the API public, BILL v2 would have benefited from an API design strategy around customer centricity. Failure responses returned HTTP 200. Every request was a POST. Response fields were inconsistent or unhelpful, and many didn't accurately reflect what was set in the request.
 
 **My mandate from leadership**:
-- Build a documentation experience that projects BILL as a modern company. - Use modern tooling for documentation.
+- Build a documentation experience that positions BILL as a modern company that offers API products. 
+- Use modern tooling for documentation.
 - Build an API developer audience.
 - Focus on driving integration partnerships. Integrations where users generate payments is direct revenue for BILL.
 

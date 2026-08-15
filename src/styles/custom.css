@@ -30,6 +30,7 @@
 article.card {
   border-radius: 8px;
   gap: 0.25rem;
+  padding: 1rem;
 }
 
 /* Card title and body match body text size */

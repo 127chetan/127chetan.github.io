@@ -35,7 +35,7 @@ article.card {
 
 /* Card title and body match body text size */
 article.card .title {
-  font-size: var(--sl-text-body);
+  font-size: var(--sl-text-lg);
 }
 
 article.card .body {

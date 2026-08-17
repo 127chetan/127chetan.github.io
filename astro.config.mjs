@@ -8,6 +8,7 @@ export default defineConfig({
 	integrations: [
 		starlight({
 			title: 'Chetan Bhatia',
+			tableOfContents: { minHeadingLevel: 2, maxHeadingLevel: 2 },
 			defaultLocale: 'en',
 			description: 'Technical Writer with 14 years of experience in developer documentation, API references, and content strategy.',
 			social: [

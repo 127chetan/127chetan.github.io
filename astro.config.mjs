@@ -47,9 +47,9 @@ export default defineConfig({
 				{
 					tag: 'script',
 					content: `
-						if (!localStorage.getItem('starlight-theme')) {
-							localStorage.setItem('starlight-theme', 'light');
-						}
+						// if (!localStorage.getItem('starlight-theme')) {
+						// 	localStorage.setItem('starlight-theme', 'light');
+						// }
 						document.addEventListener('DOMContentLoaded', function() {
 							document.querySelectorAll('a[href*="linkedin.com"]').forEach(function(a) {
 								a.target = '_blank';

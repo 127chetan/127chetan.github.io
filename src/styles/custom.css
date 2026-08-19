@@ -39,6 +39,10 @@
     width: 220px;
     height: 220px;
   }
+
+  .hero {
+    grid-template-columns: 1fr auto;
+  }
 }
 
 /* Rounded corners on cards */

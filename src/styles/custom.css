@@ -41,7 +41,9 @@
   }
 
   .hero {
-    grid-template-columns: 1fr auto;
+    grid-template-columns: auto auto;
+    justify-content: center;
+    column-gap: 3rem;
   }
 }
 

@@ -26,6 +26,14 @@
   padding-block-start: 1.5rem;
 }
 
+/* Circular profile picture in hero */
+.hero img {
+  border-radius: 50%;
+  width: 160px;
+  height: 160px;
+  object-fit: cover;
+}
+
 /* Rounded corners on cards */
 article.card {
   border-radius: 8px;

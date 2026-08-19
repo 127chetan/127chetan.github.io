@@ -54,7 +54,7 @@ My prior relationship with the ReadMe team from my years at Clover Network meant
 
 For vendor approval, I drew on my track record with `docs.clover.com` and worked directly with the ReadMe team to produce all internal documentation required for BILL's vendor review. ReadMe participated in internal reviews. In January 2022, ReadMe was approved.
 
-## Information architecture foundation
+## Information architecture foundations
 
 In January 2022, `developer.bill.com` was published as a ReadMe project. The website included 4 core sections for documentation.
 
@@ -101,7 +101,9 @@ In January 2022, `developer.bill.com` was published as a ReadMe project. The web
   </tbody>
 </table>
 
-One security constraint shaped the entire site: every interactive element points to the BILL sandbox environment. Production URLs appear in the Guides section for reference, but there is no way to execute calls to production from the website. This was a deliberate infosec decision to prevent the docs site from becoming a surface for production attacks.
+:::tip[Security by design]
+There is no way to execute API calls to BILL production from the website. This prevents the docs from becoming a surface for production attacks.
+:::
 
 ## Outcome
 

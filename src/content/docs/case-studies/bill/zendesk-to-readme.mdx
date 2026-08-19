@@ -52,21 +52,16 @@ My prior relationship with the ReadMe team from my years at Clover Network meant
 
 For vendor approval, I drew on my track record with `docs.clover.com` and worked directly with the ReadMe team to produce all internal documentation required for BILL's vendor review. ReadMe participated in internal reviews. In January 2022, ReadMe was approved.
 
-## Information architecture
+## Information architecture foundation
 
-ReadMe's structure gave me the foundation:
+In January 2022, `developer.bill.com` was published as a ReadMe project. The website included 4 core sections for documentation.
 
-- **Guides** — conceptual introductions, working examples, and tutorials for core API operations organized by business case. Written for non-technical users and novice developers. Explained the *why* and *how* at a level that didn't require reading the spec first.
-- **API Reference** — the published OpenAPI spec. Field-level documentation, endpoint descriptions, and a live sandbox interface for running calls directly in the docs. Aimed at advanced developers and novice developers ready to move from reading to testing.
-- **Recipes** — ReadMe's newer section for code-first documentation. I used it for Python scripts demonstrating endpoint orchestration: the output of one endpoint feeding as input into the next. Each section of the script was annotated with contextual docs, making it readable as both code and documentation.
-- **Release Notes** — introduced at launch. The response from API customers was immediate. For the first time, they knew what was coming, what had changed, and what they needed to act on before it affected their live integrations.
-
-| Section | Audience | Purpose |
-|---|---|---|
-| Guides | Non-technical users, novice developers | Conceptual introductions, working examples, and tutorials by business case. Explains the *why* and *how* without requiring the spec. |
-| API Reference | Advanced developers, novice developers ready to test | Published OpenAPI spec with field-level docs, endpoint descriptions, and a live sandbox for running calls directly in the docs. |
-| Recipes | Developers | Python scripts demonstrating endpoint orchestration. Each script section annotated with contextual docs — readable as both code and documentation. |
-| Release Notes | API customers | Change communication: what was coming, what changed, and what required action before it affected live integrations. |
+| Section | Primary audience | Development stage | Purpose |
+|---|---|---|---|
+| Guides | Business decision makers; Developers | Early development & testing | Conceptual introductions, working examples, & tutorials by business case. Explains the *why* and *how* without requiring the spec. |
+| API Reference | Developers | Maturing integration; specific configuration requirements | Published OpenAPI spec with field-level docs, endpoint descriptions, & a live sandbox for making API requests directly in the docs. |
+| Recipes | Developers | Maturing integration; specific configuration requirements | Python scripts demonstrating endpoint orchestration for common integration workflows. |
+| Release Notes | Business decision makers; Developers | - | Released features, changes, & required developer actions before a change can affect live integrations. |
 
 One security constraint shaped the entire site: every interactive element points to the BILL sandbox environment. Production URLs appear in the Guides section for reference, but there is no way to execute calls to production from the website. This was a deliberate infosec decision to prevent the docs site from becoming a surface for production attacks.
 

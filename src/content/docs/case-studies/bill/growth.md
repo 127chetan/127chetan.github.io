@@ -5,7 +5,7 @@ description: How the Postman Collection and a developer tutorial video program d
 
 ## Two launches, one summer
 
-By mid-2025, the BILL v3 API had strong documentation and a mature spec pipeline. What it didn't have was a fast path for developers to go from discovery to a working integration. Two things changed that in the summer of 2025: the Postman Collection in June, and the first developer tutorial video in July.
+By mid-2025, the BILL v3 API had strong documentation and a mature spec pipeline. What it didn't have was a fast path for developers to go from discovery to a working integration. I led 2 major project launches in the summer of 2025: the Postman Collection in June, and the first developer tutorial video in July.
 
 Together, they addressed the two moments where developer adoption stalls — the point where a developer decides whether the API is worth their time, and the point where they try to figure out how to actually use it. The Postman Collection compressed the first working API call from hours to minutes. The videos walked developers through the workflows that mattered before they got to the reference docs.
 
@@ -13,7 +13,7 @@ Together, they addressed the two moments where developer adoption stalls — the
 
 The video program started with a content gap: no developer audience was going to sit through a generic product walkthrough. They needed to see the API doing something real — a specific workflow, a specific use case, with the actual endpoints and expected responses visible on screen.
 
-I wrote 16 scripts across the program. Eleven were published to the [BILL API Platform for Developers playlist](https://www.youtube.com/playlist?list=PLnyriCE50-7zPC1SiWAcC0kyL0DhgWK9Y) on YouTube. Topics spanned the full developer journey:
+I wrote 16 scripts across the program. From these scripts, 11 were published to the [BILL API Platform for Developers playlist](https://www.youtube.com/playlist?list=PLnyriCE50-7zPC1SiWAcC0kyL0DhgWK9Y) on YouTube. Topics spanned the full developer journey:
 
 - **Getting started** — sandbox account and developer key setup, BILL authentication
 - **Core AP workflows** — domestic AP payments, bill approvals
@@ -25,7 +25,7 @@ Each script followed a consistent structure: a setup section defining prerequisi
 
 Before any script was finalized, I shared it with the developer platform engineers and API solution engineers. Their review covered technical accuracy, the depth of information, and whether the content addressed the questions API customers were actually asking. That feedback loop meant the videos were solving real problems, not explaining features in the abstract.
 
-Of the eleven published videos, I recorded two — bill approvals and the AR workflow deep dive — using Zoom screenshare, recording with voice while demoing the live features, then editing in iMovie. The content team handled final publishing. The remaining nine were recorded by API solution engineers using the same scripts.
+I went even further with recording 2 tutorial videos (Bill approvals, and the AR workflow deep dive) using Zoom screenshare, recording with voice while demoing the live features, then editing in iMovie. The content team handled final publishing. The remaining 9 were recorded by API solution engineers using the same scripts.
 
 For workflows that needed visual explanation beyond what a screenshare could show, I built diagrams in Lucidchart. Gemini drafted the initial structure; I took that draft and rebuilt it for an API customer audience — sequencing, labeling, and visual hierarchy aligned to how a developer thinks about the workflow, not how BILL thinks about the product. BILL brand guidelines kept the diagrams consistent with the rest of the developer platform.
 

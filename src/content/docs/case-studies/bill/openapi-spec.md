@@ -13,7 +13,7 @@ OpenAPI spec for 300+ endpoints. Solo. In 3 months!
 
 ## The tooling challenge
 
-Writing a 178,000-line YAML file by hand is not a documentation problem — it's an engineering problem. One incorrect indentation in a 1,000-line YAML block is nearly impossible to debug by eye. I built a toolchain to catch errors in real time:
+Writing a 178,000-line YAML file by hand is not a documentation problem — it's an engineering problem. A single incorrect indentation in a 1,000-line YAML block is nearly impossible to debug by eye. I built a toolchain to catch errors in real time:
 
 - **Swagger Editor** for rendering — seeing the spec as structured output while writing it, not after
 - **Stoplight.io** for live linting — catching spec violations at the line level as I typed, so I knew immediately whether each addition would pass validation

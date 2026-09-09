@@ -7,17 +7,17 @@ description: How a one-person docs team turned a company AI sprint into four pub
 
 In the final week of May 2026, BILL officially adopted Claude as an enterprise AI tool and gave teams unstructured time to experiment — a sprint with cleared calendars and no deliverable requirements. For engineering teams, that meant exploring code generation and test automation. For me, it meant something different: turning a year of AI experience into reusable tools that could change how documentation was produced at BILL.
 
-By the end of June 2026, I had published four Claude skills to BILL's internal GitLab — each one a documented, installable tool with a `skill.md` defining its behavior and a `readme.md` covering installation, usage, and scope.
+By the end of June 2026, I had published 4 Claude skills to BILL's internal GitLab — each one a documented, installable tool with a `skill.md` defining its behavior and a `readme.md` covering installation, usage, and scope.
 
 ## The foundation: a style guide engineers could actually use
 
 Before the sprint, I had a set of style guidelines in place for the developer platform engineering team. The intent was practical: when an engineer added or updated a feature in the Java engineering project, they had the option to write a first draft of the related documentation themselves. The guidelines gave them enough of a framework to do that without needing deep documentation expertise.
 
-Those guidelines, combined with key reference docs from developer.bill.com, became the input I fed to Claude Code. The output was two things at once: the content that populated ReadMe's built-in linting and audit tools, and the `skill.md` file for the first Claude skill.
+Those guidelines, combined with key reference docs from developer.bill.com, became the input I fed to Claude Code. The output was two-fold: the content that populated ReadMe's built-in linting and audit tools, and the `skill.md` file for the first Claude skill.
 
-ReadMe provides two quality tools for documentation teams — a single-page linter and a full docset audit tool. Both evaluate content against a configured style guide, surfacing errors and warnings at the field level. The style guide I generated with Claude Code made those tools precise: they could now flag specific issues against standards built for developer documentation, not generic writing guidelines.
+ReadMe provides 2 quality tools for documentation teams — a single-page linter and a full docset audit tool. Both evaluate content against a configured style guide, surfacing errors and warnings at the field level. The style guide I generated with Claude Code made those tools precise: they could now flag specific issues against standards built for developer documentation, not generic writing guidelines.
 
-## The four skills
+## Claude skills I have built
 
 ### Docs review
 

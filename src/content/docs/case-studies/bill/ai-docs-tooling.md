@@ -1,5 +1,5 @@
 ---
-title: "Building AI Tooling for the Documentation Workflow"
+title: "AI Tooling for Docs"
 description: How a one-person docs team turned a company AI sprint into four published Claude skills — and shifted engineering teams from documentation consumers to documentation contributors.
 ---
 

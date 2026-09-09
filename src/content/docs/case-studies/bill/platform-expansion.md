@@ -5,13 +5,13 @@ description: Hiring and leading a contract technical writer to expand developer.
 
 ## Scaling the team
 
-By early 2025, developer.bill.com had mature API reference documentation, two versioned API docs running simultaneously, and a growing developer audience. The gap was coverage: BILL Elements had no documentation, and the get started experience assumed developers already knew which integration path was right for them.
+By early 2025, developer.bill.com had mature API reference documentation for 2 API versions running simultaneously, and a growing developer audience. The gap was coverage: BILL Elements had no documentation, and the get started experience assumed developers already knew which integration path was right for them.
 
-In March 2025, I hired a contract technical writer to close that gap. The hiring process involved reviewing resumes and interviewing four candidates for the role. In parallel, other teams at BILL had open contract TW needs — I interviewed four additional candidates to shortlist for their requirements as well. The process surfaced where technical writing skills were strong and where they fell short quickly: give a candidate an undocumented API endpoint and a blank page, and the gap between writers who can structure information and writers who can only transcribe it becomes obvious.
+In March 2025, I hired a contract technical writer to close that gap. The hiring process involved reviewing resumes and interviewing 4 candidates for the role. In parallel, other teams at BILL had open contract TW needs — I interviewed 4 additional candidates to shortlist for their requirements as well. The process surfaced where technical writing skills were strong and where they fell short quickly: give a candidate an undocumented API endpoint and a blank page, and the gap between writers who can structure information and writers who can only transcribe it becomes obvious.
 
 ## What the contract TW built
 
-The contract writer was primarily responsible for two areas.
+The contract writer was primarily responsible for a set of projects.
 
 **BILL Elements documentation** — Elements are pre-built, embeddable UI components that let integration partners offer BILL payment functionality without building their own UI. The documentation covered the full Elements surface: onboarding and MFA verification, funding account connection, vendor setup and BILL Network enrollment, payment scheduling, and payment history. The goal was a self-contained reference a developer could follow from initial setup through a live payment, without needing to cross-reference the v3 API docs for every step.
 
@@ -25,7 +25,7 @@ Every doc the contract writer delivered went through an editorial review. The te
 
 The raw drafts were accurate but dense. Core concepts were buried in bullet lists. Relationships between ideas were described in prose where a diagram or table would have made them scannable in seconds. ReadMe's custom component library — cards, tabs, accordions, callouts, embeddable MDX — gave me the tools to fix this without rewriting the underlying content.
 
-[BILL Core Capabilities](https://developer.bill.com/docs/bill-core-capabilities) is the clearest example of what that editorial pass looked like. The original draft presented the three integration models (API-only, Elements-only, hybrid) as a chunky bullet list. The AP, AR, and Spend & Expense capability breakdowns were similarly flat — bullet points that a developer would skim past. The flow diagrams didn't exist.
+[BILL Core Capabilities](https://developer.bill.com/docs/bill-core-capabilities) is the clearest example of what that editorial pass looked like. The original draft presented the 3 integration models (API-only, Elements-only, hybrid) as a chunky bullet list. The AP, AR, and Spend & Expense capability breakdowns were similarly flat — bullet points that a developer would skim past. The flow diagrams didn't exist.
 
 The published version opens with interactive cards for each integration model, giving developers an immediate visual comparison of effort, flexibility, and use case. The AP, AR, and S&E sections each have their own structured layout with a payment methods table, capability callouts, and workflow diagrams created in Lucidchart. A developer scanning the page now sees the shape of the platform before they've read a word.
 

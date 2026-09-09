@@ -1,5 +1,5 @@
 ---
-title: "Building the BILL v3 API Postman Collection with AI"
+title: "AI-Powered Postman Collection"
 description: How a solo technical writer used AI to build and publish the official BILL v3 API Postman Collection in three weeks — and what made it more than just an export.
 ---
 

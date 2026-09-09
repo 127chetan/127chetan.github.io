@@ -3,7 +3,7 @@ title: "OpenAPI Spec from Scratch"
 description: Writing a 178,000-line OpenAPI spec for 300+ endpoints, solo, in three months — and watching it become the input for BILL's next-generation API.
 ---
 
-## The problem with documenting an undocumented API
+## Context
 
 The BILL v2 API had no OpenAPI spec. No machine-readable description of what endpoints existed, what fields they accepted, what they returned, or how errors were structured. Documentation of any kind was sparse and inconsistent. To publish a real API reference on ReadMe, I needed to write the spec from scratch.
 

@@ -1,5 +1,5 @@
 ---
-title: "Writing the OpenAPI Spec from Scratch"
+title: "OpenAPI Spec from Scratch"
 description: Writing a 178,000-line OpenAPI spec for 300+ endpoints, solo, in three months — and watching it become the input for BILL's next-generation API.
 ---
 

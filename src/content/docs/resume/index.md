@@ -3,11 +3,7 @@ title: Resume
 description: Chetan Bhatia — Technical Writer resume and career overview.
 ---
 
-import { LinkButton } from '@astrojs/starlight/components';
-
-:::caution[Coming soon]
-Resume PDF will be available here shortly.
-:::
+[Download resume (PDF)](/resume-chetan-bhatia.pdf)
 
 ## Experience
 

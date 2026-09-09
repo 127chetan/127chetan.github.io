@@ -19,7 +19,7 @@ A detail that paid off later: in 2025, I added working request examples directly
 
 ## Setting v3 as the primary version
 
-By early 2024 — roughly six months after v3 launched — the core AP and AR workflows were in place: vendors, bills, payments, customers, invoices, AR payment tracking. Organization operations had been added, including the ability to provision a bank account via API, which was not possible in v2.
+By early 2024 — roughly 6 months after v3 launched — the core AP and AR workflows were in place: vendors, bills, payments, customers, invoices, AR payment tracking. Organization operations had been added, including the ability to provision a bank account via API, which was not possible in v2.
 
 We set v3 as the primary docs version. v2 remained fully accessible, but v3 was now what new developers saw first.
 
@@ -103,7 +103,7 @@ The migration guide extended these comparisons across endpoint naming convention
 
 ## v3-exclusive capabilities
 
-Three capabilities shipped as v3-only features, each opening up new integration patterns that were not possible with v2.
+A set of major capabilities shipped as v3-only features, each opening up new integration patterns that were not possible with v2.
 
 **Spend & Expense API**
 
@@ -140,6 +140,6 @@ As engineering shipped more features through 2024, customers who reached parity 
 
 The technical challenge of running two versioned doc sets was manageable. The harder work was internal.
 
-API customers were vocal about two things: feature parity gaps and v3 bugs. Every gap was a reason to delay migration. Every bug that stayed open for days or weeks reinforced skepticism. For customers already uncertain about the migration effort, a poor v3 experience was enough to keep them on v2 indefinitely.
+API customers were vocal about feature parity gaps and v3 bugs. Every gap was a reason to delay migration. Every bug that stayed open for days or weeks reinforced skepticism. For customers already uncertain about the migration effort, a poor v3 experience was enough to keep them on v2 indefinitely.
 
 My ongoing role was to keep both in motion — pushing bugs to resolution, making the case for parity work alongside new feature development, and keeping RTB (run the business) and tech debt visible to engineering and product leadership. The release notes and changelog weren't just developer communication. They were also internal accountability — a public record of what had shipped and what was still outstanding.

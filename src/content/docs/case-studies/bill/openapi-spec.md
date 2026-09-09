@@ -1,6 +1,6 @@
 ---
 title: "OpenAPI Spec from Scratch"
-description: Writing a 178,000-line OpenAPI spec for 300+ endpoints, solo, in three months — and watching it become the input for BILL's next-generation API.
+description: Writing a 178,000-line OpenAPI spec for 300+ endpoints, solo, in 3 months — and watching it become the input for BILL's next-generation API.
 ---
 
 ## Context
@@ -22,7 +22,7 @@ Even with live linting, it was clear that maintaining a single 178,000-line spec
 
 ## Splitting by workflow, not by alphabet
 
-The final set was 10 spec files, covering roughly 300 endpoints across four domains:
+The final set was 10 spec files, covering roughly 300 endpoints across 4 domains:
 
 - **Accounts Payable** — vendors, bills, recurring bills, payments, vendor credits
 - **Accounts Receivable** — customers, invoices, recurring invoices, charge customers, credit memos

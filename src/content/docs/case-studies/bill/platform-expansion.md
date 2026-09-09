@@ -1,5 +1,5 @@
 ---
-title: "Platform Expansion: Elements, Get Started, and Docs Leadership"
+title: "Platform Expansion & Docs Leadership"
 description: Hiring and leading a contract technical writer to expand developer.bill.com — and an editorial pass that turned walls of text into structured, component-driven documentation.
 ---
 

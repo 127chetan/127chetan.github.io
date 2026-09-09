@@ -47,6 +47,19 @@
   }
 }
 
+/* Resume link in header */
+.resume-link {
+  font-size: var(--sl-text-sm);
+  color: var(--sl-color-gray-2);
+  text-decoration: none;
+  white-space: nowrap;
+  align-self: center;
+}
+
+.resume-link:hover {
+  color: var(--sl-color-white);
+}
+
 /* Hide auto-generated "Overview" entry at the top of the right ToC */
 starlight-toc li:has(a[href="#_top"]) {
   display: none;

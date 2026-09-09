@@ -35,13 +35,10 @@ export default defineConfig({
 						{ label: 'Overview', slug: 'writing-samples' },
 					],
 				},
-				{
-					label: 'Resume',
-					items: [
-						{ label: 'Experience & Skills', slug: 'resume' },
-					],
-				},
-			],
+				],
+			components: {
+				SocialIcons: './src/components/SocialIcons.astro',
+			},
 			customCss: ['./src/styles/custom.css'],
 			head: [
 				{

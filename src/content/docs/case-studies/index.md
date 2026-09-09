@@ -5,7 +5,7 @@ description: A selection of technical writing projects across developer docs, AP
 
 In this section, each BILL case study covers the problem I was brought in to solve, my approach, and outcomes.
 
-## BILL API Platform: A Five-Year Documentation Build
+## BILL API Platform: A 5-Year Documentation Build
 
 When I joined BILL in 2021, [developer.bill.com](https://developer.bill.com) was a static Zendesk help site template with an unclear structure and audience. In my 5 years here, I led a set of documentation projects, each delivering major iterative upgrades on developer.bill.com.
 

@@ -5,7 +5,7 @@ description: Writing a 178,000-line OpenAPI spec for 300+ endpoints, solo, in 3 
 
 ## Context
 
-Back in 2021-2022, the BILL v2 API did not have an OpenAPI spec. There was no machine-readable description of each endpoint, list of fields, success responses, or error responses.
+In 2021-2022, the BILL v2 API had no OpenAPI spec. Without a spec, BILL couldn't leverage what OpenAPI enables: human and machine readability, a single source of truth, SDK generation, mock servers, and automated testing.
 
 To publish an OpenAPI spec as API reference documentation on ReadMe, the requirement was a complete OpenAPI spec. Without engineering resources for help, my action plan was to write the spec from scratch.
 

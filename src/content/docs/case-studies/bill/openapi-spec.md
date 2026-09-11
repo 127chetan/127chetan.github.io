@@ -11,7 +11,7 @@ To publish an OpenAPI spec as API reference documentation on ReadMe, the require
 
 OpenAPI spec for 300+ endpoints. Solo. In 3 months!
 
-## The tooling challenge
+## Tooling challenges in 2022
 
 Writing a 178,000-line YAML file by hand is not a documentation problem — it's an engineering problem. A single incorrect indentation in a 1000-line YAML block is nearly impossible to debug by eye. I built a toolchain to catch errors in real time:
 

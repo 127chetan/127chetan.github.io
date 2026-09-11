@@ -38,10 +38,12 @@ I made the decision early to split the spec into smaller files organized by BILL
 
 The final set was 10 spec files, covering roughly 300 endpoints across 4 domains:
 
-- **Accounts Payable** — vendors, bills, recurring bills, payments, vendor credits
-- **Accounts Receivable** — customers, invoices, recurring invoices, charge customers, credit memos
-- **Organization Operations** — users, bank accounts, card accounts
-- **Classifications** — bookkeeping resources including chart of accounts, accounting class, location, department, payment terms
+| Domain | Spec file coverage | Endpoints (approx) |
+|---|---|---|
+| Accounts Payable | Vendors, bills, recurring bills, payments, vendor credits | — |
+| Accounts Receivable | Customers, invoices, recurring invoices, charge customers, credit memos | — |
+| Organization Operations | Users, bank accounts, card accounts | — |
+| Classifications | Chart of accounts, accounting class, location, department, payment terms | — |
 
 This structure mirrored how BILL customers actually used the API — by business function, not alphabetically. Each file could be uploaded to its own section in ReadMe's API reference, so developers working on AP payments weren't navigating past AR invoicing to find what they needed.
 

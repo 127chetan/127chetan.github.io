@@ -31,7 +31,7 @@ For workflows that needed visual explanation beyond what a screenshare could sho
 
 ## The numbers
 
-In October 2025, BILL established OKRs for the developer platform. API developer adoption — new registered developers actively building with BILL — was a key result, set at 1,300. By the OKR measurement period ending June 2026, the platform had reached 2,500+ active API developers: approximately 200% of the target.
+In October 2025, BILL established OKRs for the developer platform. API developer adoption — new registered developers actively building with BILL — was a key result, set at 1300. By the OKR measurement period ending June 2026, the platform had reached 2500+ active API developers: approximately 200% of the target.
 
 The associated revenue OKR measured payment volume generated through the API — as developers shipped their integrations to production, their users making payments through BILL drove direct revenue. That OKR closed at 130% of target.
 
@@ -39,6 +39,6 @@ The Postman Collection launched first and drove the initial acceleration. The Ju
 
 ## What the growth represented
 
-2,500+ active API developers is a top-of-funnel number. It measures how many developers, teams, and partners were actively building with the BILL API Platform. It doesn't measure every integration that shipped or every payment that was processed — it measures the front of the funnel, the moment a developer chose to build.
+2500+ active API developers is a top-of-funnel number. It measures how many developers, teams, and partners were actively building with the BILL API Platform. It doesn't measure every integration that shipped or every payment that was processed — it measures the front of the funnel, the moment a developer chose to build.
 
-Every API documentation decision made between 2021 and 2026 contributed to that number in some way: the ReadMe migration that made the docs credible, the OpenAPI spec that made the reference accurate, the v3 documentation that made the upgrade path clear, the Postman Collection that removed friction at first contact, the tutorial videos that answered the workflow questions before developers had to ask them. The 2,500+ number is the output of all of it.
+Every API documentation decision made between 2021 and 2026 contributed to that number in some way: the ReadMe migration that made the docs credible, the OpenAPI spec that made the reference accurate, the v3 documentation that made the upgrade path clear, the Postman Collection that removed friction at first contact, the tutorial videos that answered the workflow questions before developers had to ask them. The 2500+ number is the output of all of it.

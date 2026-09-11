@@ -3,6 +3,8 @@ title: "OpenAPI Spec from Scratch"
 description: Writing a 178,000-line OpenAPI spec for 300+ endpoints, solo, in 3 months — and watching it become the input for BILL's next-generation API.
 ---
 
+import { Card, CardGrid } from '@astrojs/starlight/components';
+
 ## Context
 
 In 2021-2022, the BILL v2 API had no OpenAPI spec. Without a spec, BILL couldn't leverage what OpenAPI enables: human and machine readability, a single source of truth, SDK generation, mock servers, and automated testing.
@@ -13,10 +15,18 @@ OpenAPI spec for 300+ endpoints. Solo. In 3 months!
 
 ## Tooling challenges in 2022
 
-Writing a 178,000-line YAML file by hand is not a documentation problem — it's an engineering problem. A single incorrect indentation in a 1000-line YAML block is nearly impossible to debug by eye. I built a toolchain to catch errors in real time:
+My first complete draft of the BILL v2 API OpenAPI spec was ~178,000 lines.
 
-- **Swagger Editor** for rendering — seeing the spec as structured output while writing it, not after
-- **Stoplight.io** for live linting — catching spec violations at the line level as I typed, so I knew immediately whether each addition would pass validation
+Writing an YAML at that scale is not just a documentation problem. It is an engineering problem! A single incorrect indentation in a 1000-line YAML block is nearly impossible to debug by eye. At the time, I built a toolchain to catch errors in real time.
+
+<CardGrid>
+  <Card title="Render with Swagger Editor">
+    `editor.swagger.io` rendered the spec as structured output while I was writing it, not after.
+  </Card>
+  <Card title="Live lint with Stoplight.io">
+    `stoplight.io` caught spec violations at the line level with clear error messages.
+  </Card>
+</CardGrid>
 
 Even with live linting, it was clear that maintaining a single 178,000-line spec file would eventually become unmanageable. I made the decision early to split the spec into smaller files organized by BILL's core workflows.
 

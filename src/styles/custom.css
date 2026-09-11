@@ -60,13 +60,6 @@
   color: var(--sl-color-white);
 }
 
-/* Override tip callout from purple to green */
-.starlight-aside--tip {
-  --sl-color-asides-text-accent: var(--sl-color-green-high);
-  --sl-color-asides-border: var(--sl-color-green);
-  --sl-color-asides-bg: var(--sl-color-green-low);
-  background-color: var(--sl-color-green-low) !important;
-}
 
 /* Hide auto-generated "Overview" entry at the top of the right ToC */
 starlight-toc li:has(a[href="#_top"]) {

@@ -1,6 +1,6 @@
 ---
 title: "OpenAPI Spec from Scratch"
-description: Writing a 178,000-line OpenAPI spec for 300+ endpoints, solo, in 3 months — and watching it become the input for BILL's next-generation API.
+description: Writing a 178,000-line OpenAPI spec for 340+ endpoints, solo, in 3 months — and watching it become the input for BILL's next-generation API.
 ---
 
 import { Card, CardGrid } from '@astrojs/starlight/components';
@@ -11,7 +11,7 @@ In 2021-2022, the BILL v2 API had no OpenAPI spec. Without a spec, BILL couldn't
 
 To publish an OpenAPI spec as API reference documentation on ReadMe, the requirement was a complete OpenAPI spec. Without engineering resources for help, my action plan was to write the spec from scratch.
 
-OpenAPI spec for 300+ endpoints. Solo. In 3 months!
+OpenAPI spec for 340+ endpoints. Solo. In 3 months!
 
 ## Tooling challenges in 2022
 
@@ -36,14 +36,16 @@ I made the decision early to split the spec into smaller files organized by BILL
 
 ## Direction: 10 OpenAPI spec files
 
-The final OpenAPI spec was split into 10 files, covering 300+ endpoints across core BILL operations.
+The final OpenAPI spec was split into 10 files, covering 340+ endpoints across core BILL operations.
 
-| Domain | Spec file coverage | Endpoints (approx) |
+| Domain | Spec file coverage | Endpoints |
 |---|---|---|
-| Accounts Payable | Vendors, bills, recurring bills, payments, vendor credits | — |
-| Accounts Receivable | Customers, invoices, recurring invoices, charge customers, credit memos | — |
-| Organization Operations | Users, bank accounts, card accounts | — |
-| Classifications | Chart of accounts, accounting class, location, department, payment terms | — |
+| Accounts Payable | Vendors, bills, recurring bills, payments, vendor credits | 88 |
+| Accounts Receivable | Customers, invoices, recurring invoices, charge customers, credit memos | 65 |
+| Organization Operations | Users, bank accounts, card accounts | 25 |
+| Classifications | Chart of accounts, accounting class, location, department, payment terms | 144 |
+| Authentication | Login, session, MFA | 5 |
+| BILL Network Operations | Network search, vendor invites, large biller connections | 10 |
 
 This structure mirrored how BILL customers actually used the API — by business function, not alphabetically. Each file could be uploaded to its own section in ReadMe's API reference, so developers working on AP payments weren't navigating past AR invoicing to find what they needed.
 

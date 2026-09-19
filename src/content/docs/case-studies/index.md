@@ -12,7 +12,7 @@ When I joined BILL in 2021, [developer.bill.com](https://developer.bill.com) was
 | Year | Case Study | TL;DR |
 |---|---|---|
 | 2021 | [Zendesk → ReadMe Migration](/case-studies/bill/zendesk-to-readme/) | Migrated to a modern API docs platform. The most common API developer support questions disappeared within weeks of launch. |
-| 2022 | [OpenAPI Spec from Scratch](/case-studies/bill/openapi-spec/) | Built a 178,000-line OpenAPI spec for 300+ BILL v2 API endpoints in 3 months. The spec became input for BILL v3 API design & engineering. |
+| 2022 | [OpenAPI Spec from Scratch](/case-studies/bill/openapi-spec/) | Built a 178,000-line OpenAPI spec for 340+ BILL v2 API endpoints in 3 months. The spec became input for BILL v3 API design & engineering. |
 | 2023–2024 | [Two API Versions](/case-studies/bill/dual-api-versions/) | Shipped + maintained BILL v2 & v3 API docs simultaneously. Within 6 months, v3 became the primary API version. |
 | 2025 | [Platform Expansion & Docs Leadership](/case-studies/bill/platform-expansion/) | Hired & led a contract TW to document the new BILL product offerings; led the editorial pass to turn dense drafts into component-driven docs. |
 | 2025 | [AI-Powered Postman Collection](/case-studies/bill/ai-postman-collection/) | Built & published the official BILL v3 Postman Collection in 3 weeks with AI. GitLab CI/CD pipeline for keeping the Collection current with each API release. |

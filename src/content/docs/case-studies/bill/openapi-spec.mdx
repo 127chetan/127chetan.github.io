@@ -36,7 +36,7 @@ I made the decision early to split the spec into smaller files organized by BILL
 
 ## Direction: 10 OpenAPI spec files
 
-The final OpenAPI spec was split into 10 files, covering 340+ endpoints across core BILL operations.
+The final OpenAPI spec for the BILL v2 API was split into 10 files, covering 340+ endpoints across core BILL operations.
 
 | Domain | Spec file coverage | Endpoints |
 |---|---|---|
@@ -47,11 +47,13 @@ The final OpenAPI spec was split into 10 files, covering 340+ endpoints across c
 | Authentication | Login, session, MFA | 5 |
 | BILL Network Operations | Network search, vendor invites, large biller connections | 10 |
 
-This structure mirrored how BILL customers actually used the API — by business function, not alphabetically. Each file could be uploaded to its own section in ReadMe's API reference, so developers working on AP payments weren't navigating past AR invoicing to find what they needed.
+Even today, this structure mirrors how BILL customers actually use the API i.e. by business function, and not alphabetically. Each OpenAPI spec file is uploaded to its own section in the ReadMe API reference. Developers working on AP payments simply find the section they need instead of having to navigate enpoints ordered by name.
 
-For each endpoint and field, I researched usage in the BILL source repository and tested with real requests and responses in sandbox. I documented every field: its role, its constraints, and the behavior that wasn't obvious from the name alone.
+In 2022, for each endpoint and related field description, I used Postman to test with real requests and responses in sandbox. I documented the role of each field, constraints, and specific behavior when the field name was not obvious.
 
-The full published reference is at [developer.bill.com/v2/reference/api-reference-overview](https://developer.bill.com/v2/reference/api-reference-overview).
+:::tip[BILL v2 API reference]
+The BILL v2 API reference is published at [developer.bill.com/v2/reference/api-reference-overview](https://developer.bill.com/v2/reference/api-reference-overview).
+:::
 
 ## Building the CI/CD pipeline
 

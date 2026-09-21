@@ -70,16 +70,16 @@ A publishing workflow that required manual uploads now ran in about a minute. Th
 
 #### 01 Forcing function
 
-Publishing the complete v2 API reference had an unintended effect inside BILL. BILL engineers, product managers, and leadership became users of the spec and API documentation. For the first time, internal stakeholders were looking at their own API through the same lens as external developers.
+Publishing the complete v2 API reference had an unintended effect inside BILL. For the first time, BILL engineers, product managers, and leadership were looking at their own API through the same lens as external developers.
 
-What they saw was uncomfortable. Now that the spec was publicly available, BILL stakeholders were required to prioritize fixing issues that API customers had been complaining about for years (Internal fields exposed in responses, misleading field names, non-standard error structures returning HTTP 200 on failure).
+What they saw was uncomfortable: internal fields exposed in responses, misleading field names, non-standard error structures returning `HTTP 200` on failure. Issues API customers had been complaining about for years.
 
-These issues were visible in a structured spec that BILL leadership could read, review, and share. Teams moved to hide internal fields, improve error messages, and fix bugs that had been open for years. The docs weren't describing the API anymore. The docs were holding the API accountable.
+Teams moved to hide internal fields, improve error messages, and fix bugs that had been open for years. The docs weren't describing the API anymore. The docs were holding the API accountable.
 
 #### 02 Input for v3
 
 The most significant outcome of the v2 spec work wasn't the documentation itself.
 
-The developer platform engineering team used the v2 spec files as the foundation for designing, building, and testing the BILL v3 API. They generated an internal SDK from the spec to validate the v2 experience before designing and building the desired v3 API experience.
+The developer platform engineering team used the v2 spec files as the foundation for designing, building, and testing the BILL v3 API. They generated an internal SDK from the spec to validate the v3 experience before it was built.
 
-A technical writer's output i.e. an OpenAPI spec written to document a public API became the engineering input for the next-generation product. Because the spec used an open standard, it was portable, tool-agnostic, and immediately useful across product, engineering, and release workflows. Nobody had to rely on the BILL codebase to understand what the API did or should do. The spec said it plainly, in a format every tool could read.
+A technical writer's output i.e. an OpenAPI spec written to document a public API became the engineering input for the next-generation product. Portable, tool-agnostic, and immediately useful across product, engineering, and release workflows.

@@ -55,15 +55,16 @@ In 2022, for each endpoint and related field description, I used Postman to test
 The BILL v2 API reference is published at [developer.bill.com/v2/reference/api-reference-overview](https://developer.bill.com/v2/reference/api-reference-overview).
 :::
 
-## Building the CI/CD pipeline
+## OpenAPI spec publishing automation
 
-Once the spec was complete, I built a GitLab repository and CI/CD pipeline to manage all future updates. The workflow:
+Alongside writing the spec, I built a GitLab CI/CD pipeline for automation. In the pipeline, I set up a workflow for GitLab to run validations on the OpenAPI spec, and then publish the spec to the ReadMe project.
 
-1. Update the relevant spec file
-2. Open a GitLab merge request
-3. Pipeline runs on merge and publishes the updated spec directly to developer.bill.com
+1. Post an update in the OpenAPI spec
+2. Open a GitLab merge request with the update
+3. Pipeline job to validate the OpenAPI spec with the `rdme openapi validate` command
+4. When validations are complete without errors, pipeline job to publish the updated spec to developer.bill.com with the `rdme openapi` command
 
-What had previously required manual uploads and coordination now took minutes. I built this pipeline and maintained it for my entire tenure at BILL — every spec change, every API update, every version release flowed through it.
+I went from manual uploads and coordination to automation that took about a minute. This pipeline is maintained even today for every spec change, every API update, and every version release.
 
 ## The spec as a forcing function
 

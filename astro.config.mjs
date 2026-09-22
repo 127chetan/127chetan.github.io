@@ -1,10 +1,14 @@
 // @ts-check
 import { defineConfig } from 'astro/config';
 import starlight from '@astrojs/starlight';
+import rehypeMermaid from 'rehype-mermaid';
 
 // https://astro.build/config
 export default defineConfig({
 	site: 'https://127chetan.github.io',
+	markdown: {
+		rehypePlugins: [rehypeMermaid],
+	},
 	integrations: [
 		starlight({
 			title: 'Chetan Bhatia',

@@ -64,6 +64,14 @@ Alongside writing the spec, I built a GitLab CI/CD pipeline for automation. In t
 3. Pipeline job to validate the OpenAPI spec with the `rdme openapi validate` command
 4. When validations are complete without errors, pipeline job to publish the updated spec to developer.bill.com with the `rdme openapi` command
 
+```mermaid
+flowchart LR
+    A[Edit spec file] --> B[Open GitLab MR]
+    B --> C[Validate\nrdme openapi validate]
+    C --> D[Publish\nrdme openapi]
+    D --> E[Live on\ndeveloper.bill.com]
+```
+
 A publishing workflow that required manual uploads now ran in about a minute. This pipeline is maintained even today for every spec change, every API update, and every version release.
 
 ## Outcomes

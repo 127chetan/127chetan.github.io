@@ -7,6 +7,15 @@ description: Running v2 and v3 documentation simultaneously on developer.bill.co
 
 BILL v3 documentation launched publicly in the second half of 2023. The initial focus was Accounts Payable — vendors, bills, and AP payments. Every endpoint was a direct upgrade: simpler request and response bodies, fields with clear meaning, combined operations where v2 required multiple sequential calls, correct HTTP verbs, and correct HTTP status codes.
 
+```mermaid
+flowchart LR
+    A[AP\n2023 H2] --> B[AR\n2023–2024]
+    B --> C[Org Operations\n2024]
+    C --> D[Spend & Expense\n2023]
+    D --> E[Partner Operations\n2024]
+    E --> F[Webhooks\n2024]
+```
+
 On developer.bill.com, v3 appeared as a version dropdown alongside v2. v2 remained the default. API customers could switch between versions and compare — the Guides and API reference sections were fully independent for each version.
 
 ## A different publishing pipeline for v3

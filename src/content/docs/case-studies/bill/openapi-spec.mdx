@@ -67,8 +67,8 @@ Alongside writing the spec, I built a GitLab CI/CD pipeline for automation. In t
 ```mermaid
 flowchart LR
     A[Edit spec file] --> B[Open GitLab MR]
-    B --> C[Validate spec with <br><code>rdme openapi validate</code>]
-    C --> D[Publish to ReadMe: rdme openapi]
+    B --> C["Validate spec<br><small><code>rdme openapi validate</code></small>"]
+    C --> D["Publish to ReadMe<br><small><code>rdme openapi</code></small>"]
     D --> E[Live on developer.bill.com]
 ```
 

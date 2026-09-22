@@ -67,9 +67,9 @@ Alongside writing the spec, I built a GitLab CI/CD pipeline for automation. In t
 ```mermaid
 flowchart LR
     A[Edit spec file] --> B[Open GitLab MR]
-    B --> C[Validate\nrdme openapi validate]
-    C --> D[Publish\nrdme openapi]
-    D --> E[Live on\ndeveloper.bill.com]
+    B --> C["Validate<br/>rdme openapi validate"]
+    C --> D["Publish<br/>rdme openapi"]
+    D --> E["Live on<br/>developer.bill.com"]
 ```
 
 A publishing workflow that required manual uploads now ran in about a minute. This pipeline is maintained even today for every spec change, every API update, and every version release.

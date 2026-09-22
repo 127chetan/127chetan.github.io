@@ -9,11 +9,11 @@ BILL v3 documentation launched publicly in the second half of 2023. The initial 
 
 ```mermaid
 flowchart LR
-    A[AP\n2023 H2] --> B[AR\n2023–2024]
-    B --> C[Org Operations\n2024]
-    C --> D[Spend & Expense\n2023]
-    D --> E[Partner Operations\n2024]
-    E --> F[Webhooks\n2024]
+    A["AP<br/>2023 H2"] --> B["AR<br/>2023–2024"]
+    B --> C["Org Operations<br/>2024"]
+    C --> D["Spend & Expense<br/>2023"]
+    D --> E["Partner Operations<br/>2024"]
+    E --> F["Webhooks<br/>2024"]
 ```
 
 On developer.bill.com, v3 appeared as a version dropdown alongside v2. v2 remained the default. API customers could switch between versions and compare — the Guides and API reference sections were fully independent for each version.

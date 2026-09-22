@@ -59,12 +59,7 @@ The BILL v2 API reference is published at [developer.bill.com/v2/reference/api-r
 
 Alongside writing the spec, I built a GitLab CI/CD pipeline for automation. In the pipeline, I set up a workflow for GitLab to run validations on the OpenAPI spec, and then publish the spec to the ReadMe project.
 
-1. Edit a spec file
-2. Open a GitLab merge request with the update
-3. Pipeline job to validate the OpenAPI spec with the `rdme openapi validate` command
-4. When validations are complete without errors, pipeline job to publish the updated spec to developer.bill.com with the `rdme openapi` command
-
-<svg viewBox="0 0 960 600" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="p1-title p1-desc" style={{width: '100%', height: 'auto', display: 'block'}}>
+<svg viewBox="0 0 960 220" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="p1-title p1-desc" style="width:100%;height:auto;display:block">
   <title id="p1-title">OpenAPI Spec Publishing Pipeline</title>
   <desc id="p1-desc">Five-step GitLab CI/CD pipeline: edit a spec file, open a GitLab MR, validate the spec (quality gate), publish to ReadMe, go live on developer.bill.com.</desc>
 
@@ -74,51 +69,50 @@ Alongside writing the spec, I built a GitLab CI/CD pipeline for automation. In t
     </marker>
   </defs>
 
-  <rect width="960" height="600" fill="#f5f5f5"/>
+  <rect width="960" height="220" fill="#f5f5f5"/>
 
-  <text x="480" y="56" fontFamily="'Geist Mono',monospace" fontSize="9" fontWeight="500" fill="#7a8399" textAnchor="middle" letterSpacing="0.16em">GITLAB CI/CD · AUTOMATED ON MERGE</text>
+  <text x="665" y="18" font-family="'Geist Mono',monospace" font-size="9" font-weight="600" fill="#2d3142" text-anchor="middle" letter-spacing="0.14em">PIPELINE JOBS (RUN AUTOMATICALLY ON EACH MERGE)</text>
+  <path d="M400,38 V28 H930 V38" fill="none" stroke="#7a8399" stroke-width="1"/>
 
-  <text x="480" y="90" fontFamily="'Instrument Serif',Georgia,serif" fontSize="30" fill="#2d3142" textAnchor="middle">OpenAPI Spec Publishing Pipeline</text>
+  <rect x="30" y="42" width="159" height="64" rx="6" fill="#ececec" stroke="#2d3142" stroke-width="1.2"/>
+  <text x="110" y="79" font-family="'Geist',sans-serif" font-size="14" font-weight="600" fill="#2d3142" text-anchor="middle">Edit spec file</text>
 
-  <text x="480" y="116" fontFamily="'Geist Mono',monospace" fontSize="10" fontWeight="400" fill="#7a8399" textAnchor="middle">A spec edit merges and goes live in under a minute. Validation failures block publish.</text>
+  <line x1="189" y1="74" x2="215" y2="74" stroke="#4f5d75" stroke-width="1.2" marker-end="url(#p1-arr)"/>
 
-  <line x1="40" y1="136" x2="920" y2="136" stroke="rgba(45,49,66,0.10)" strokeWidth="0.8"/>
+  <rect x="215" y="42" width="159" height="64" rx="6" fill="#ececec" stroke="#2d3142" stroke-width="1.2"/>
+  <text x="295" y="79" font-family="'Geist',sans-serif" font-size="14" font-weight="600" fill="#2d3142" text-anchor="middle">Open GitLab MR</text>
 
-  <rect x="40" y="260" width="150" height="64" rx="6" fill="#ececec" stroke="#bfc0c0" strokeWidth="1"/>
-  <text x="115" y="296" fontFamily="'Geist',sans-serif" fontSize="12" fontWeight="600" fill="#2d3142" textAnchor="middle">Edit spec file</text>
+  <line x1="374" y1="74" x2="400" y2="74" stroke="#4f5d75" stroke-width="1.2" marker-end="url(#p1-arr)"/>
 
-  <line x1="190" y1="292" x2="222" y2="292" stroke="#4f5d75" strokeWidth="1.2" markerEnd="url(#p1-arr)"/>
+  <rect x="400" y="42" width="161" height="64" rx="6" fill="rgba(235,108,54,0.08)" stroke="#eb6c36" stroke-width="1.5"/>
+  <text x="480" y="68" font-family="'Geist',sans-serif" font-size="14" font-weight="600" fill="#2d3142" text-anchor="middle">Validate spec</text>
+  <text x="480" y="88" font-family="'Geist Mono',monospace" font-size="11" font-weight="500" fill="#4f5d75" text-anchor="middle">rdme openapi validate</text>
 
-  <rect x="222" y="260" width="150" height="64" rx="6" fill="#ececec" stroke="#bfc0c0" strokeWidth="1"/>
-  <text x="297" y="296" fontFamily="'Geist',sans-serif" fontSize="12" fontWeight="600" fill="#2d3142" textAnchor="middle">Open GitLab MR</text>
+  <line x1="561" y1="74" x2="587" y2="74" stroke="#4f5d75" stroke-width="1.2" marker-end="url(#p1-arr)"/>
 
-  <line x1="372" y1="292" x2="404" y2="292" stroke="#4f5d75" strokeWidth="1.2" markerEnd="url(#p1-arr)"/>
+  <rect x="587" y="42" width="161" height="64" rx="6" fill="#ececec" stroke="#2d3142" stroke-width="1.2"/>
+  <text x="667" y="68" font-family="'Geist',sans-serif" font-size="14" font-weight="600" fill="#2d3142" text-anchor="middle">Publish to ReadMe</text>
+  <text x="667" y="88" font-family="'Geist Mono',monospace" font-size="11" font-weight="500" fill="#4f5d75" text-anchor="middle">rdme openapi</text>
 
-  <rect x="404" y="260" width="152" height="64" rx="6" fill="rgba(235,108,54,0.08)" stroke="#eb6c36" strokeWidth="1.5"/>
-  <text x="480" y="283" fontFamily="'Geist',sans-serif" fontSize="12" fontWeight="600" fill="#2d3142" textAnchor="middle">Validate spec</text>
-  <text x="480" y="301" fontFamily="'Geist Mono',monospace" fontSize="9" fontWeight="400" fill="#7a8399" textAnchor="middle">rdme openapi validate</text>
+  <line x1="748" y1="74" x2="774" y2="74" stroke="#4f5d75" stroke-width="1.2" marker-end="url(#p1-arr)"/>
 
-  <line x1="556" y1="292" x2="588" y2="292" stroke="#4f5d75" strokeWidth="1.2" markerEnd="url(#p1-arr)"/>
+  <rect x="774" y="42" width="156" height="64" rx="6" fill="#ececec" stroke="#2d3142" stroke-width="1.2"/>
+  <text x="852" y="68" font-family="'Geist',sans-serif" font-size="13" font-weight="600" fill="#2d3142" text-anchor="middle">Live on</text>
+  <text x="852" y="88" font-family="'Geist Mono',monospace" font-size="11" font-weight="500" fill="#4f5d75" text-anchor="middle">developer.bill.com</text>
 
-  <rect x="588" y="260" width="152" height="64" rx="6" fill="#ececec" stroke="#bfc0c0" strokeWidth="1"/>
-  <text x="664" y="283" fontFamily="'Geist',sans-serif" fontSize="12" fontWeight="600" fill="#2d3142" textAnchor="middle">Publish to ReadMe</text>
-  <text x="664" y="301" fontFamily="'Geist Mono',monospace" fontSize="9" fontWeight="400" fill="#7a8399" textAnchor="middle">rdme openapi</text>
+  <text x="110" y="128" font-family="'Geist Mono',monospace" font-size="13" font-weight="600" fill="#7a8399" text-anchor="middle" letter-spacing="0.12em">01</text>
+  <text x="295" y="128" font-family="'Geist Mono',monospace" font-size="13" font-weight="600" fill="#7a8399" text-anchor="middle" letter-spacing="0.12em">02</text>
+  <text x="480" y="128" font-family="'Geist Mono',monospace" font-size="13" font-weight="600" fill="#eb6c36" text-anchor="middle" letter-spacing="0.12em">03</text>
+  <text x="667" y="128" font-family="'Geist Mono',monospace" font-size="13" font-weight="600" fill="#7a8399" text-anchor="middle" letter-spacing="0.12em">04</text>
+  <text x="852" y="128" font-family="'Geist Mono',monospace" font-size="13" font-weight="600" fill="#7a8399" text-anchor="middle" letter-spacing="0.12em">05</text>
 
-  <line x1="740" y1="292" x2="772" y2="292" stroke="#4f5d75" strokeWidth="1.2" markerEnd="url(#p1-arr)"/>
+  <line x1="30" y1="148" x2="930" y2="148" stroke="rgba(45,49,66,0.12)" stroke-width="0.8"/>
+  <rect x="30" y="166" width="13" height="13" rx="2" fill="rgba(235,108,54,0.08)" stroke="#eb6c36" stroke-width="1.5"/>
+  <text x="50" y="177" font-family="'Geist Mono',monospace" font-size="11" font-weight="600" fill="#2d3142" letter-spacing="0.08em">QUALITY GATE — pipeline fails here if spec has errors; publish is blocked</text>
 
-  <rect x="772" y="260" width="148" height="64" rx="6" fill="#ececec" stroke="#bfc0c0" strokeWidth="1"/>
-  <text x="846" y="283" fontFamily="'Geist',sans-serif" fontSize="11" fontWeight="600" fill="#2d3142" textAnchor="middle">Live on</text>
-  <text x="846" y="301" fontFamily="'Geist Mono',monospace" fontSize="9" fontWeight="400" fill="#4f5d75" textAnchor="middle">developer.bill.com</text>
-
-  <text x="115" y="346" fontFamily="'Geist Mono',monospace" fontSize="8" fontWeight="500" fill="#7a8399" textAnchor="middle" letterSpacing="0.18em">01</text>
-  <text x="297" y="346" fontFamily="'Geist Mono',monospace" fontSize="8" fontWeight="500" fill="#7a8399" textAnchor="middle" letterSpacing="0.18em">02</text>
-  <text x="480" y="346" fontFamily="'Geist Mono',monospace" fontSize="8" fontWeight="500" fill="#eb6c36" textAnchor="middle" letterSpacing="0.18em">03</text>
-  <text x="664" y="346" fontFamily="'Geist Mono',monospace" fontSize="8" fontWeight="500" fill="#7a8399" textAnchor="middle" letterSpacing="0.18em">04</text>
-  <text x="846" y="346" fontFamily="'Geist Mono',monospace" fontSize="8" fontWeight="500" fill="#7a8399" textAnchor="middle" letterSpacing="0.18em">05</text>
-
-  <line x1="40" y1="540" x2="920" y2="540" stroke="rgba(45,49,66,0.12)" strokeWidth="0.8"/>
-  <rect x="40" y="557" width="10" height="10" rx="2" fill="rgba(235,108,54,0.08)" stroke="#eb6c36" strokeWidth="1.5"/>
-  <text x="56" y="566" fontFamily="'Geist Mono',monospace" fontSize="8" fontWeight="500" fill="#7a8399" letterSpacing="0.18em">QUALITY GATE — pipeline fails here if spec has errors; publish is blocked</text>
+  <a href="https://github.com/cathrynlavery/diagram-design" target="_blank" rel="noopener noreferrer">
+    <text x="30" y="202" font-family="'Geist Mono',monospace" font-size="9" font-weight="400" fill="#7a8399" text-decoration="underline">Created with the diagram-design Claude skill</text>
+  </a>
 </svg>
 
 A publishing workflow that required manual uploads now ran in about a minute. This pipeline is maintained even today for every spec change, every API update, and every version release.

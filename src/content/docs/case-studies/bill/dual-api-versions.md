@@ -7,14 +7,67 @@ description: Running v2 and v3 documentation simultaneously on developer.bill.co
 
 BILL v3 documentation launched publicly in the second half of 2023. The initial focus was Accounts Payable — vendors, bills, and AP payments. Every endpoint was a direct upgrade: simpler request and response bodies, fields with clear meaning, combined operations where v2 required multiple sequential calls, correct HTTP verbs, and correct HTTP status codes.
 
-```mermaid
-flowchart LR
-    A[AP 2023 H2] --> B[AR 2023-2024]
-    B --> C[Org Operations 2024]
-    C --> D[Spend & Expense 2023]
-    D --> E[Partner Operations 2024]
-    E --> F[Webhooks 2024]
-```
+<svg viewBox="0 0 960 600" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="p2-title p2-desc" style="width: 100%; height: auto; display: block;">
+  <title id="p2-title">v3 API Rollout Sequence</title>
+  <desc id="p2-desc">BILL v3 API feature rollout from Accounts Payable in H2 2023 through Webhooks in 2024, covering six domains in sequence.</desc>
+
+  <defs>
+    <marker id="p2-arr" markerWidth="9" markerHeight="7" refX="8" refY="3.5" orient="auto">
+      <path d="M0,0.5 L8,3.5 L0,6.5 Z" fill="#4f5d75"/>
+    </marker>
+  </defs>
+
+  <rect width="960" height="600" fill="#f5f5f5"/>
+
+  <text x="480" y="56" font-family="'Geist Mono',monospace" font-size="9" font-weight="500" fill="#7a8399" text-anchor="middle" letter-spacing="0.16em">BILL V3 · 2023–2024 ROLLOUT</text>
+
+  <text x="480" y="90" font-family="'Instrument Serif',Georgia,serif" font-size="30" fill="#2d3142" text-anchor="middle">v3 API Feature Release Sequence</text>
+
+  <text x="480" y="116" font-family="'Geist Mono',monospace" font-size="10" font-weight="400" fill="#7a8399" text-anchor="middle">Six domains shipped as self-contained v3 releases. AP was first — the foundation the rest built on.</text>
+
+  <line x1="40" y1="136" x2="920" y2="136" stroke="rgba(45,49,66,0.10)" stroke-width="0.8"/>
+
+  <rect x="50" y="256" width="120" height="64" rx="6" fill="rgba(235,108,54,0.08)" stroke="#eb6c36" stroke-width="1.5"/>
+  <text x="110" y="279" font-family="'Geist',sans-serif" font-size="11" font-weight="600" fill="#2d3142" text-anchor="middle">AP</text>
+  <text x="110" y="297" font-family="'Geist Mono',monospace" font-size="9" font-weight="400" fill="#7a8399" text-anchor="middle">2023 H2</text>
+
+  <line x1="170" y1="288" x2="198" y2="288" stroke="#4f5d75" stroke-width="1.2" marker-end="url(#p2-arr)"/>
+
+  <rect x="198" y="256" width="120" height="64" rx="6" fill="#ececec" stroke="#bfc0c0" stroke-width="1"/>
+  <text x="258" y="279" font-family="'Geist',sans-serif" font-size="11" font-weight="600" fill="#2d3142" text-anchor="middle">AR</text>
+  <text x="258" y="297" font-family="'Geist Mono',monospace" font-size="9" font-weight="400" fill="#7a8399" text-anchor="middle">2023–2024</text>
+
+  <line x1="318" y1="288" x2="346" y2="288" stroke="#4f5d75" stroke-width="1.2" marker-end="url(#p2-arr)"/>
+
+  <rect x="346" y="256" width="120" height="64" rx="6" fill="#ececec" stroke="#bfc0c0" stroke-width="1"/>
+  <text x="406" y="279" font-family="'Geist',sans-serif" font-size="11" font-weight="600" fill="#2d3142" text-anchor="middle">Org Operations</text>
+  <text x="406" y="297" font-family="'Geist Mono',monospace" font-size="9" font-weight="400" fill="#7a8399" text-anchor="middle">2024</text>
+
+  <line x1="466" y1="288" x2="494" y2="288" stroke="#4f5d75" stroke-width="1.2" marker-end="url(#p2-arr)"/>
+
+  <rect x="494" y="256" width="120" height="64" rx="6" fill="#ececec" stroke="#bfc0c0" stroke-width="1"/>
+  <text x="554" y="279" font-family="'Geist',sans-serif" font-size="11" font-weight="600" fill="#2d3142" text-anchor="middle">Spend &amp; Expense</text>
+  <text x="554" y="297" font-family="'Geist Mono',monospace" font-size="9" font-weight="400" fill="#7a8399" text-anchor="middle">2023</text>
+
+  <line x1="614" y1="288" x2="642" y2="288" stroke="#4f5d75" stroke-width="1.2" marker-end="url(#p2-arr)"/>
+
+  <rect x="642" y="256" width="120" height="64" rx="6" fill="#ececec" stroke="#bfc0c0" stroke-width="1"/>
+  <text x="702" y="279" font-family="'Geist',sans-serif" font-size="11" font-weight="600" fill="#2d3142" text-anchor="middle">Partner Operations</text>
+  <text x="702" y="297" font-family="'Geist Mono',monospace" font-size="9" font-weight="400" fill="#7a8399" text-anchor="middle">2024</text>
+
+  <line x1="762" y1="288" x2="790" y2="288" stroke="#4f5d75" stroke-width="1.2" marker-end="url(#p2-arr)"/>
+
+  <rect x="790" y="256" width="120" height="64" rx="6" fill="#ececec" stroke="#bfc0c0" stroke-width="1"/>
+  <text x="850" y="279" font-family="'Geist',sans-serif" font-size="11" font-weight="600" fill="#2d3142" text-anchor="middle">Webhooks</text>
+  <text x="850" y="297" font-family="'Geist Mono',monospace" font-size="9" font-weight="400" fill="#7a8399" text-anchor="middle">2024</text>
+
+  <text x="110" y="344" font-family="'Geist Mono',monospace" font-size="8" fill="#7a8399" text-anchor="middle">Accounts Payable</text>
+  <text x="258" y="344" font-family="'Geist Mono',monospace" font-size="8" fill="#7a8399" text-anchor="middle">Accounts Receivable</text>
+
+  <line x1="40" y1="540" x2="920" y2="540" stroke="rgba(45,49,66,0.12)" stroke-width="0.8"/>
+  <rect x="40" y="557" width="10" height="10" rx="2" fill="rgba(235,108,54,0.08)" stroke="#eb6c36" stroke-width="1.5"/>
+  <text x="56" y="566" font-family="'Geist Mono',monospace" font-size="8" font-weight="500" fill="#7a8399" letter-spacing="0.18em">FIRST DOMAIN — AP (Accounts Payable) shipped first, establishing v3 design patterns</text>
+</svg>
 
 On developer.bill.com, v3 appeared as a version dropdown alongside v2. v2 remained the default. API customers could switch between versions and compare — the Guides and API reference sections were fully independent for each version.
 

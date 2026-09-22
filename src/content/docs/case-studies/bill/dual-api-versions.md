@@ -27,7 +27,19 @@ We set v3 as the primary docs version. v2 remained fully accessible, but v3 was 
 
 When v3 became the primary version, I wrote a migration guide. The reference points were the Twitter/X and ServiceNow migration guides — documents that treat migration as a developer task, not a marketing announcement.
 
-The guide led with side-by-side comparisons of what v2 and v3 actually looked like in practice. Authentication was the clearest example:
+The guide led with side-by-side comparisons of what v2 and v3 actually looked like in practice.
+
+| Feature | v2 | v3 |
+|---|---|---|
+| HTTP verbs | `POST` for all operations | Standard REST (`GET`, `POST`, `PATCH`, `DELETE`) |
+| HTTP status codes | `HTTP 200` on failure | Standard codes (`400`, `404`, `409`) |
+| Content type | `application/x-www-form-urlencoded` | `application/json` |
+| Request structure | Flat — all fields at the same level | Nested — typed objects |
+| URL convention | `/Crud/Create/Invoice.json` | `/v3/invoices` |
+| Related objects | Separate API calls required | Inline creation in the same request |
+| Authentication | Session ID + developer key per request | Bearer token |
+
+Authentication was the clearest example:
 
 **v2 login**
 ```bash

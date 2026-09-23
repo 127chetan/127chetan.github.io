@@ -5,7 +5,7 @@ description: Running v2 and v3 documentation simultaneously on developer.bill.co
 
 ## Context
 
-In the second half of 2023, the BILL v3 documentation launched publicly on `developer.bill.com`. The initial focus was Accounts Payable — vendors, bills, and AP payments.
+In the second half of 2023, the BILL v3 documentation launched publicly on `developer.bill.com`. The initial focus was the Accounts Payable workflow (set up vendor record → create a bill → pay vendor with AP payments).
 
 Each endpoint was a direct upgrade over the v2 API.
 - Simpler request and response bodies

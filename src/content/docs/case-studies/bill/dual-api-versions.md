@@ -8,9 +8,9 @@ description: Running v2 and v3 documentation simultaneously on developer.bill.co
 In the second half of 2023, the BILL v3 documentation launched publicly on `developer.bill.com`. The initial focus was the Accounts Payable workflow (set up vendor record → create a bill → pay vendor with AP payments).
 
 Each endpoint was a direct upgrade over the v2 API.
-- Simpler request & response bodies, with intuitive field names
+- Simpler request and response bodies, with intuitive field names
 - BILL operations combined where possible (v2 required multiple sequential calls)
-- Standard REST verbs(all v2 operations are POST)
+- Standard REST verbs (all v2 operations are POST)
 - Standard HTTP status codes (v2 returns `HTTP 200` on failure)
 
 <svg viewBox="0 0 960 250" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="p2-title p2-desc" style="width: 100%; height: auto; display: block;">

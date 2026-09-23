@@ -7,6 +7,47 @@ description: Running v2 and v3 documentation simultaneously on developer.bill.co
 
 BILL v3 documentation launched publicly in the second half of 2023. The initial focus was Accounts Payable — vendors, bills, and AP payments. Every endpoint was a direct upgrade: simpler request and response bodies, fields with clear meaning, combined operations where v2 required multiple sequential calls, correct HTTP verbs, and correct HTTP status codes.
 
+<svg viewBox="0 0 960 250" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="p2-title p2-desc" style="width: 100%; height: auto; display: block;">
+<title id="p2-title">v3 API Rollout Timeline</title>
+<desc id="p2-desc">Timeline of BILL v3 API domains shipping from the second half of 2023 through 2024: AP, Spend and Expense, and AR launched in 2023; Org Operations, Partner Operations, and Webhooks launched in 2024.</desc>
+<rect width="960" height="250" fill="#f5f5f5"/>
+<line x1="50" y1="100" x2="850" y2="100" stroke="#bfc0c0" stroke-width="1"/>
+<line x1="60" y1="94" x2="60" y2="106" stroke="#7a8399" stroke-width="1"/>
+<text x="60" y="124" font-family="'Geist Mono',monospace" font-size="10" font-weight="600" fill="#4f5d75" text-anchor="middle">2023</text>
+<line x1="320" y1="94" x2="320" y2="106" stroke="#7a8399" stroke-width="1"/>
+<text x="320" y="124" font-family="'Geist Mono',monospace" font-size="10" font-weight="600" fill="#4f5d75" text-anchor="middle">2024</text>
+<line x1="90" y1="94" x2="90" y2="66" stroke="#bfc0c0" stroke-width="1"/>
+<circle cx="90" cy="100" r="6" fill="#eb6c36" stroke="#eb6c36" stroke-width="1.5"/>
+<text x="90" y="48" font-family="'Geist Mono',monospace" font-size="9" font-weight="500" fill="#4f5d75" text-anchor="middle">2023 H2</text>
+<text x="90" y="62" font-family="'Geist',sans-serif" font-size="13" font-weight="700" fill="#eb6c36" text-anchor="middle">AP</text>
+<line x1="230" y1="104" x2="230" y2="134" stroke="#bfc0c0" stroke-width="1"/>
+<circle cx="230" cy="100" r="4" fill="#ececec" stroke="#2d3142" stroke-width="1.2"/>
+<text x="230" y="146" font-family="'Geist',sans-serif" font-size="12" font-weight="600" fill="#2d3142" text-anchor="middle">Spend &amp; Expense</text>
+<text x="230" y="160" font-family="'Geist Mono',monospace" font-size="9" font-weight="500" fill="#4f5d75" text-anchor="middle">2023</text>
+<line x1="340" y1="94" x2="340" y2="66" stroke="#bfc0c0" stroke-width="1"/>
+<circle cx="340" cy="100" r="4" fill="#ececec" stroke="#2d3142" stroke-width="1.2"/>
+<text x="340" y="48" font-family="'Geist Mono',monospace" font-size="9" font-weight="500" fill="#4f5d75" text-anchor="middle">2023–2024</text>
+<text x="340" y="62" font-family="'Geist',sans-serif" font-size="12" font-weight="600" fill="#2d3142" text-anchor="middle">AR</text>
+<line x1="480" y1="104" x2="480" y2="134" stroke="#bfc0c0" stroke-width="1"/>
+<circle cx="480" cy="100" r="4" fill="#ececec" stroke="#2d3142" stroke-width="1.2"/>
+<text x="480" y="146" font-family="'Geist',sans-serif" font-size="12" font-weight="600" fill="#2d3142" text-anchor="middle">Organization Operations</text>
+<text x="480" y="160" font-family="'Geist Mono',monospace" font-size="9" font-weight="500" fill="#4f5d75" text-anchor="middle">2024</text>
+<line x1="640" y1="94" x2="640" y2="66" stroke="#bfc0c0" stroke-width="1"/>
+<circle cx="640" cy="100" r="4" fill="#ececec" stroke="#2d3142" stroke-width="1.2"/>
+<text x="640" y="48" font-family="'Geist Mono',monospace" font-size="9" font-weight="500" fill="#4f5d75" text-anchor="middle">2024</text>
+<text x="640" y="62" font-family="'Geist',sans-serif" font-size="12" font-weight="600" fill="#2d3142" text-anchor="middle">Partner Operations</text>
+<line x1="800" y1="104" x2="800" y2="134" stroke="#bfc0c0" stroke-width="1"/>
+<circle cx="800" cy="100" r="4" fill="#ececec" stroke="#2d3142" stroke-width="1.2"/>
+<text x="800" y="146" font-family="'Geist',sans-serif" font-size="12" font-weight="600" fill="#2d3142" text-anchor="middle">Webhooks</text>
+<text x="800" y="160" font-family="'Geist Mono',monospace" font-size="9" font-weight="500" fill="#4f5d75" text-anchor="middle">2024</text>
+<line x1="30" y1="182" x2="930" y2="182" stroke="rgba(45,49,66,0.12)" stroke-width="0.8"/>
+<circle cx="36" cy="200" r="6" fill="#eb6c36" stroke="#eb6c36" stroke-width="1.5"/>
+<text x="50" y="204" font-family="'Geist Mono',monospace" font-size="11" font-weight="600" fill="#2d3142" letter-spacing="0.08em">AP in v3 set the design patterns for the rest of the product</text>
+<a href="https://github.com/cathrynlavery/diagram-design" target="_blank" rel="noopener noreferrer">
+<text x="30" y="228" font-family="'Geist Mono',monospace" font-size="9" font-weight="400" fill="#7a8399" text-decoration="underline">Timeline created with the diagram-design Claude skill</text>
+</a>
+</svg>
+
 On developer.bill.com, v3 appeared as a version dropdown alongside v2. v2 remained the default. API customers could switch between versions and compare — the Guides and API reference sections were fully independent for each version.
 
 ## A different publishing pipeline for v3

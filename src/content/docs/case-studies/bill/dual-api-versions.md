@@ -54,7 +54,7 @@ Each endpoint was a direct upgrade over the v2 API.
 </a>
 </svg>
 
-On `developer.bill.com`, v3 appeared as a version dropdown alongside v2. v2 remained the default. API customers could switch between versions and compare — the Guides and API reference sections were fully independent for each version.
+At launch, v3 documentation was available as a toggle alongside v2. Independent Guides and API reference sections were available for v2 and v3. In addition, a migration guide was available to better support API customers.
 
 ## A different publishing pipeline for v3
 

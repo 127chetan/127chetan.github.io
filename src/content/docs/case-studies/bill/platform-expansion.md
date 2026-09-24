@@ -5,7 +5,7 @@ description: Hiring and leading a contract technical writer to expand developer.
 
 ## Scaling the team
 
-By early 2025, developer.bill.com had mature API reference documentation for 2 API versions running simultaneously, and a growing developer audience. The gap was coverage: BILL Elements had no documentation, and the get started experience assumed developers already knew which integration path was right for them.
+By early 2025, [developer.bill.com](https://developer.bill.com) had mature API reference documentation for 2 API versions running simultaneously, and a growing developer audience. The gap was coverage: BILL Elements had no documentation, and the get started experience assumed developers already knew which integration path was right for them.
 
 In March 2025, I hired a contract technical writer to close that gap. The hiring process involved reviewing resumes and interviewing 4 candidates for the role. In parallel, other teams at BILL had open contract TW needs — I interviewed 4 additional candidates to shortlist for their requirements as well. The process surfaced where technical writing skills were strong and where they fell short quickly: give a candidate an undocumented API endpoint and a blank page, and the gap between writers who can structure information and writers who can only transcribe it becomes obvious.
 
@@ -17,7 +17,7 @@ The contract writer was primarily responsible for a set of projects.
 
 The published Elements documentation starts at [developer.bill.com/docs/elements-overview](https://developer.bill.com/docs/elements-overview).
 
-**Get started section expansion** — Before this work, a developer landing on developer.bill.com was dropped directly into the v3 API reference. There was no platform overview, no explanation of the integration options, and no guidance on which path fit their use case. The contract writer built out the get started section to address this: a platform overview explaining API-only, Elements-only, and hybrid integration models; AP payment funding methods and disbursement methods; the BILL Network; and the differences between sandbox and production environments.
+**Get started section expansion** — Before this work, a developer landing on `developer.bill.com` was dropped directly into the v3 API reference. There was no platform overview, no explanation of the integration options, and no guidance on which path fit their use case. The contract writer built out the get started section to address this: a platform overview explaining API-only, Elements-only, and hybrid integration models; AP payment funding methods and disbursement methods; the BILL Network; and the differences between sandbox and production environments.
 
 ## The editorial pass
 

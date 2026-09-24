@@ -20,7 +20,7 @@ The library had a significant limitation: it flattens every endpoint to the same
 The solution was a set of JavaScript scripts, each built iteratively with AI:
 
 **Script 1 — Restructure the Collection**  
-The first script parsed the generated Collection JSON and reorganized it into a folder structure matching the v3 API reference on developer.bill.com. The same mental model a developer used to navigate the docs carried over directly into Postman. Consistency between the two surfaces was non-negotiable — breaking the mental model across tools would create confusion, not reduce it.
+The first script parsed the generated Collection JSON and reorganized it into a folder structure matching the v3 API reference on [developer.bill.com](https://developer.bill.com). The same mental model a developer used to navigate the docs carried over directly into Postman. Consistency between the two surfaces was non-negotiable — breaking the mental model across tools would create confusion, not reduce it.
 
 **Script 2 — Build the Postman Environment**  
 The second script parsed the source OpenAPI spec and generated a Postman Environment file with 100+ variables — one for each value that would be reused across requests. `{{vendor_id}}`, `{{bill_id}}`, `{{session_id}}`, `{{organization_id}}`, and so on across the full v3 endpoint surface.
@@ -53,7 +53,7 @@ When Kiro was approved at BILL in 2026, the project moved to Kiro for ongoing ma
 
 ## Working examples in the source
 
-A prerequisite for the Collection was adding working request examples to the source Java engineering project — picked up by the `openapi-generator` library when generating the spec. These examples appeared as pre-filled request bodies in both the API reference on developer.bill.com and the Postman Collection. A developer could hit **Send** on any request and expect a valid response, without filling in a single placeholder.
+A prerequisite for the Collection was adding working request examples to the source Java engineering project — picked up by the `openapi-generator` library when generating the spec. These examples appeared as pre-filled request bodies in both the API reference on `developer.bill.com` and the Postman Collection. A developer could hit **Send** on any request and expect a valid response, without filling in a single placeholder.
 
 For endpoints with natural orchestration — create vendor → use vendor ID to create bill → use bill and vendor IDs to create payment — the examples used Postman variables as placeholders, populated automatically by the post-response scripts.
 
@@ -67,7 +67,7 @@ The expected workflow for each release:
 4. Output published to a personal Postman account for visual verification
 5. On confirmation, published to the official BILL Postman account
 
-With each Collection update, I posted release note summaries directly in Postman. Every subscriber and follower on the BILL Postman account received an email with the summary — the same release discipline that had built trust on developer.bill.com extended to where developers were already working.
+With each Collection update, I posted release note summaries directly in Postman. Every subscriber and follower on the BILL Postman account received an email with the summary — the same release discipline that had built trust on `developer.bill.com` extended to where developers were already working.
 
 ## Automating Collection updates
 

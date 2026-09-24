@@ -13,7 +13,7 @@ By the end of June 2026, I had published 4 Claude skills to BILL's internal GitL
 
 Before the sprint, I had a set of style guidelines in place for the developer platform engineering team. The intent was practical: when an engineer added or updated a feature in the Java engineering project, they had the option to write a first draft of the related documentation themselves. The guidelines gave them enough of a framework to do that without needing deep documentation expertise.
 
-Those guidelines, combined with key reference docs from developer.bill.com, became the input I fed to Claude Code. The output was two-fold: the content that populated ReadMe's built-in linting and audit tools, and the `skill.md` file for the first Claude skill.
+Those guidelines, combined with key reference docs from [developer.bill.com](https://developer.bill.com), became the input I fed to Claude Code. The output was two-fold: the content that populated ReadMe's built-in linting and audit tools, and the `skill.md` file for the first Claude skill.
 
 ReadMe provides 2 quality tools for documentation teams — a single-page linter and a full docset audit tool. Both evaluate content against a configured style guide, surfacing errors and warnings at the field level. The style guide I generated with Claude Code made those tools precise: they could now flag specific issues against standards built for developer documentation, not generic writing guidelines.
 
@@ -57,13 +57,13 @@ For me, it was also a direct application of what AI had taught me over the previ
 
 The skills addressed how AI could help produce documentation. A parallel question was whether the documentation itself was ready for AI to consume.
 
-I ran developer.bill.com through [afdocs.dev](https://afdocs.dev), an AI-friendliness audit tool for documentation sites. The results shaped a set of concrete changes:
+I ran `developer.bill.com` through [afdocs.dev](https://afdocs.dev), an AI-friendliness audit tool for documentation sites. The results shaped a set of concrete changes:
 
-- **llms.txt** — published a `llms.txt` file for developer.bill.com, giving AI agents a structured index of the site's content and purpose, following the emerging convention for AI-readable site metadata
-- **Markdown rendering** — enabled markdown output for all pages on developer.bill.com, so AI agents requesting content could parse structured text rather than HTML
+- **llms.txt** — published a `llms.txt` file for `developer.bill.com`, giving AI agents a structured index of the site's content and purpose, following the emerging convention for AI-readable site metadata
+- **Markdown rendering** — enabled markdown output for all pages on `developer.bill.com`, so AI agents requesting content could parse structured text rather than HTML
 - **Link integrity** — used the ReadMe AI audit tool to surface and fix broken links across the docset, ensuring that when an agent traversed the site it didn't hit dead ends
 - **MCP server** — enabled `developer.bill.com/mcp`, connecting the docs to an MCP server so AI agents could access the documentation programmatically rather than by scraping
 
 The Postman Collection added one more surface: the Postman AI agent can natively read the Collection and make live API calls from it. A developer using an AI agent in Postman can describe a workflow in natural language and have the agent execute the corresponding API calls against the BILL sandbox — using the same Collection structure, environment variables, and post-response automation built into the original build.
 
-Taken together, these changes extended the reach of the documentation beyond human readers. By the end of 2026, developer.bill.com was structured for developers, AI coding assistants, and AI agents equally.
+Taken together, these changes extended the reach of the documentation beyond human readers. By the end of 2026, `developer.bill.com` was structured for developers, AI coding assistants, and AI agents equally.

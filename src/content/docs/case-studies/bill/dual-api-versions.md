@@ -5,7 +5,7 @@ description: Running v2 and v3 documentation simultaneously on developer.bill.co
 
 ## Context
 
-In the second half of 2023, the BILL v3 documentation launched publicly on `developer.bill.com`. The initial focus was the Accounts Payable workflow (set up vendor record → create a bill → pay vendor with AP payments).
+In the second half of 2023, the BILL v3 documentation launched publicly on [developer.bill.com](https://developer.bill.com). The initial focus was the Accounts Payable workflow (set up vendor record → create a bill → pay vendor with AP payments).
 
 Each endpoint was a direct upgrade over the v2 API.
 - Simpler request and response bodies, with intuitive field names
@@ -54,7 +54,7 @@ Each endpoint was a direct upgrade over the v2 API.
 </a>
 </svg>
 
-On developer.bill.com, v3 appeared as a version dropdown alongside v2. v2 remained the default. API customers could switch between versions and compare — the Guides and API reference sections were fully independent for each version.
+On `developer.bill.com`, v3 appeared as a version dropdown alongside v2. v2 remained the default. API customers could switch between versions and compare — the Guides and API reference sections were fully independent for each version.
 
 ## A different publishing pipeline for v3
 

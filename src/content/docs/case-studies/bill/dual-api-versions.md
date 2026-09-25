@@ -69,32 +69,41 @@ For v3, the integration goes much deeper. OpenAPI spec contributions live direct
 
 v3 spec publishing is one stage in a multi-stage CI/CD pipeline.
 
-<svg viewBox="0 0 960 180" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="p3-title p3-desc" style="width: 100%; height: auto; display: block;">
+<svg viewBox="0 0 960 200" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="p3-title p3-desc" style="width: 100%; height: auto; display: block;">
 <title id="p3-title">v3 CI/CD Pipeline</title>
-<desc id="p3-desc">Four-stage CI/CD pipeline for v3: feature build, feature testing as a quality checkpoint, release to staging, then publish to developer.bill.com.</desc>
+<desc id="p3-desc">Five-stage CI/CD pipeline for v3: feature build, feature testing, release to staging, validate the spec (quality gate), then publish to ReadMe.</desc>
 <defs>
 <marker id="p3-arr" markerWidth="9" markerHeight="7" refX="8" refY="3.5" orient="auto">
 <path d="M0,0.5 L8,3.5 L0,6.5 Z" fill="#4f5d75"/>
 </marker>
 </defs>
-<rect width="960" height="180" fill="#f5f5f5"/>
-<rect x="72" y="24" width="180" height="64" rx="6" fill="#ececec" stroke="#2d3142" stroke-width="1.2"/>
-<text x="162" y="61" font-family="'Geist',sans-serif" font-size="14" font-weight="600" fill="#2d3142" text-anchor="middle">Feature build</text>
-<line x1="252" y1="56" x2="284" y2="56" stroke="#4f5d75" stroke-width="1.2" marker-end="url(#p3-arr)"/>
-<rect x="284" y="24" width="180" height="64" rx="6" fill="rgba(235,108,54,0.08)" stroke="#eb6c36" stroke-width="1.5"/>
-<text x="374" y="61" font-family="'Geist',sans-serif" font-size="14" font-weight="600" fill="#2d3142" text-anchor="middle">Feature testing</text>
-<line x1="464" y1="56" x2="496" y2="56" stroke="#4f5d75" stroke-width="1.2" marker-end="url(#p3-arr)"/>
-<rect x="496" y="24" width="180" height="64" rx="6" fill="#ececec" stroke="#2d3142" stroke-width="1.2"/>
-<text x="586" y="61" font-family="'Geist',sans-serif" font-size="14" font-weight="600" fill="#2d3142" text-anchor="middle">Release to staging</text>
-<line x1="676" y1="56" x2="708" y2="56" stroke="#4f5d75" stroke-width="1.2" marker-end="url(#p3-arr)"/>
-<rect x="708" y="24" width="180" height="64" rx="6" fill="#ececec" stroke="#2d3142" stroke-width="1.2"/>
-<text x="798" y="50" font-family="'Geist',sans-serif" font-size="14" font-weight="600" fill="#2d3142" text-anchor="middle">Publish to</text>
-<text x="798" y="70" font-family="'Geist Mono',monospace" font-size="10" font-weight="500" fill="#4f5d75" text-anchor="middle">developer.bill.com</text>
-<line x1="30" y1="108" x2="930" y2="108" stroke="rgba(45,49,66,0.12)" stroke-width="0.8"/>
-<rect x="30" y="126" width="13" height="13" rx="2" fill="rgba(235,108,54,0.08)" stroke="#eb6c36" stroke-width="1.5"/>
-<text x="50" y="137" font-family="'Geist Mono',monospace" font-size="11" font-weight="600" fill="#2d3142" letter-spacing="0.08em">QUALITY CHECKPOINT — failing tests block release to staging</text>
+<rect width="960" height="200" fill="#f5f5f5"/>
+<rect x="30" y="24" width="159" height="64" rx="6" fill="#ececec" stroke="#2d3142" stroke-width="1.2"/>
+<text x="110" y="61" font-family="'Geist',sans-serif" font-size="14" font-weight="600" fill="#2d3142" text-anchor="middle">Feature build</text>
+<line x1="189" y1="56" x2="215" y2="56" stroke="#4f5d75" stroke-width="1.2" marker-end="url(#p3-arr)"/>
+<rect x="215" y="24" width="159" height="64" rx="6" fill="#ececec" stroke="#2d3142" stroke-width="1.2"/>
+<text x="295" y="61" font-family="'Geist',sans-serif" font-size="14" font-weight="600" fill="#2d3142" text-anchor="middle">Feature testing</text>
+<line x1="374" y1="56" x2="400" y2="56" stroke="#4f5d75" stroke-width="1.2" marker-end="url(#p3-arr)"/>
+<rect x="400" y="24" width="161" height="64" rx="6" fill="#ececec" stroke="#2d3142" stroke-width="1.2"/>
+<text x="480" y="61" font-family="'Geist',sans-serif" font-size="14" font-weight="600" fill="#2d3142" text-anchor="middle">Release to staging</text>
+<line x1="561" y1="56" x2="587" y2="56" stroke="#4f5d75" stroke-width="1.2" marker-end="url(#p3-arr)"/>
+<rect x="587" y="24" width="161" height="64" rx="6" fill="rgba(235,108,54,0.08)" stroke="#eb6c36" stroke-width="1.5"/>
+<text x="667" y="50" font-family="'Geist',sans-serif" font-size="14" font-weight="600" fill="#2d3142" text-anchor="middle">Validate spec</text>
+<text x="667" y="70" font-family="'Geist Mono',monospace" font-size="11" font-weight="500" fill="#4f5d75" text-anchor="middle">rdme openapi validate</text>
+<line x1="748" y1="56" x2="774" y2="56" stroke="#4f5d75" stroke-width="1.2" marker-end="url(#p3-arr)"/>
+<rect x="774" y="24" width="156" height="64" rx="6" fill="#ececec" stroke="#2d3142" stroke-width="1.2"/>
+<text x="852" y="50" font-family="'Geist',sans-serif" font-size="14" font-weight="600" fill="#2d3142" text-anchor="middle">Publish to ReadMe</text>
+<text x="852" y="70" font-family="'Geist Mono',monospace" font-size="11" font-weight="500" fill="#4f5d75" text-anchor="middle">rdme openapi</text>
+<text x="110" y="108" font-family="'Geist Mono',monospace" font-size="13" font-weight="600" fill="#7a8399" text-anchor="middle" letter-spacing="0.12em">01</text>
+<text x="295" y="108" font-family="'Geist Mono',monospace" font-size="13" font-weight="600" fill="#7a8399" text-anchor="middle" letter-spacing="0.12em">02</text>
+<text x="480" y="108" font-family="'Geist Mono',monospace" font-size="13" font-weight="600" fill="#7a8399" text-anchor="middle" letter-spacing="0.12em">03</text>
+<text x="667" y="108" font-family="'Geist Mono',monospace" font-size="13" font-weight="600" fill="#eb6c36" text-anchor="middle" letter-spacing="0.12em">04</text>
+<text x="852" y="108" font-family="'Geist Mono',monospace" font-size="13" font-weight="600" fill="#7a8399" text-anchor="middle" letter-spacing="0.12em">05</text>
+<line x1="30" y1="128" x2="930" y2="128" stroke="rgba(45,49,66,0.12)" stroke-width="0.8"/>
+<rect x="30" y="146" width="13" height="13" rx="2" fill="rgba(235,108,54,0.08)" stroke="#eb6c36" stroke-width="1.5"/>
+<text x="50" y="157" font-family="'Geist Mono',monospace" font-size="11" font-weight="600" fill="#2d3142" letter-spacing="0.08em">QUALITY GATE — pipeline fails here if spec has errors; publish is blocked</text>
 <a href="https://github.com/cathrynlavery/diagram-design" target="_blank" rel="noopener noreferrer">
-<text x="30" y="162" font-family="'Geist Mono',monospace" font-size="9" font-weight="400" fill="#7a8399" text-decoration="underline">Flow diagram created with the diagram-design Claude skill</text>
+<text x="30" y="182" font-family="'Geist Mono',monospace" font-size="9" font-weight="400" fill="#7a8399" text-decoration="underline">Flow diagram created with the diagram-design Claude skill</text>
 </a>
 </svg>
 

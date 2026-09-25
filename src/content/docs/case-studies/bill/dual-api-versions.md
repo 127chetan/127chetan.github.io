@@ -56,9 +56,15 @@ Each endpoint was a direct upgrade over the v2 API.
 
 At launch, I set v3 as a list option in the documentation with v2 as the default. Independent Guides and API reference sections were available for both v2 and v3. In addition, I wrote a migration guide from v2 to v3 to improve adoption.
 
-## A different publishing pipeline for v3
+## v3 publishing integrated with product releases
 
-The v2 spec pipeline ran through a dedicated GitLab repository I owned. For v3, the integration went deeper. Spec contributions lived directly in the Java engineering project — at the controller level for endpoint descriptions, path parameters, and query parameters, and at the DTO level for request and response body documentation. Publishing was one stage in a multi-stage CI/CD pipeline: feature build, feature testing, release to staging and production, then publish to the API reference.
+The v2 spec publishing pipeline ran through a dedicated GitLab repository I owned. Each time I found an opportunity for improvement based on customer feedback, I posted an update in the spec, and the v2 pipeline validated and published the update in the v2 API reference.
+
+For v3, the integration goes much deeper. OpenAPI spec contributions live directly in the Java engineering project.
+
+At the controller level, for endpoint descriptions, path parameters, and query parameters, and at the DTO level for request and response body documentation.
+
+Publishing was one stage in a multi-stage CI/CD pipeline: feature build, feature testing, release to staging and production, then publish to the API reference.
 
 As the engineering team shipped new v3 features and endpoints through 2023 and into 2024, the v3 API reference updated automatically with each release. The docs were no longer a downstream artifact — they were part of the release pipeline itself.
 

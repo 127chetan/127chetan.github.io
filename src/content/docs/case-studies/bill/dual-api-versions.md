@@ -67,7 +67,7 @@ For v3, the integration goes much deeper. OpenAPI spec contributions live direct
 | Controller | Endpoint descriptions, path parameters, query parameters |
 | DTO | Request and response body documentation |
 
-v3 spec publishing is a stage with two jobs in the CI/CD pipeline.
+v3 spec publishing is a stage with two jobs (validate and publish) in the CI/CD pipeline.
 
 <svg viewBox="0 0 960 200" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="p3-title p3-desc" style="width: 100%; height: auto; display: block;">
 <title id="p3-title">v3 CI/CD Pipeline</title>

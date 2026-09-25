@@ -71,7 +71,7 @@ v3 spec publishing is one stage in a multi-stage CI/CD pipeline.
 
 <svg viewBox="0 0 960 180" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="p3-title p3-desc" style="width: 100%; height: auto; display: block;">
 <title id="p3-title">v3 CI/CD Pipeline</title>
-<desc id="p3-desc">Four-stage CI/CD pipeline for v3: feature build, feature testing as a quality checkpoint, release to staging and production, then publish to the API reference.</desc>
+<desc id="p3-desc">Four-stage CI/CD pipeline for v3: feature build, feature testing as a quality checkpoint, release to staging, then publish to developer.bill.com.</desc>
 <defs>
 <marker id="p3-arr" markerWidth="9" markerHeight="7" refX="8" refY="3.5" orient="auto">
 <path d="M0,0.5 L8,3.5 L0,6.5 Z" fill="#4f5d75"/>
@@ -85,15 +85,14 @@ v3 spec publishing is one stage in a multi-stage CI/CD pipeline.
 <text x="374" y="61" font-family="'Geist',sans-serif" font-size="14" font-weight="600" fill="#2d3142" text-anchor="middle">Feature testing</text>
 <line x1="464" y1="56" x2="496" y2="56" stroke="#4f5d75" stroke-width="1.2" marker-end="url(#p3-arr)"/>
 <rect x="496" y="24" width="180" height="64" rx="6" fill="#ececec" stroke="#2d3142" stroke-width="1.2"/>
-<text x="586" y="50" font-family="'Geist',sans-serif" font-size="13" font-weight="600" fill="#2d3142" text-anchor="middle">Release to staging</text>
-<text x="586" y="70" font-family="'Geist',sans-serif" font-size="11" font-weight="500" fill="#4f5d75" text-anchor="middle">&amp; production</text>
+<text x="586" y="61" font-family="'Geist',sans-serif" font-size="14" font-weight="600" fill="#2d3142" text-anchor="middle">Release to staging</text>
 <line x1="676" y1="56" x2="708" y2="56" stroke="#4f5d75" stroke-width="1.2" marker-end="url(#p3-arr)"/>
 <rect x="708" y="24" width="180" height="64" rx="6" fill="#ececec" stroke="#2d3142" stroke-width="1.2"/>
-<text x="798" y="50" font-family="'Geist',sans-serif" font-size="14" font-weight="600" fill="#2d3142" text-anchor="middle">Publish</text>
-<text x="798" y="70" font-family="'Geist',sans-serif" font-size="11" font-weight="500" fill="#4f5d75" text-anchor="middle">to API reference</text>
+<text x="798" y="50" font-family="'Geist',sans-serif" font-size="14" font-weight="600" fill="#2d3142" text-anchor="middle">Publish to</text>
+<text x="798" y="70" font-family="'Geist Mono',monospace" font-size="10" font-weight="500" fill="#4f5d75" text-anchor="middle">developer.bill.com</text>
 <line x1="30" y1="108" x2="930" y2="108" stroke="rgba(45,49,66,0.12)" stroke-width="0.8"/>
 <rect x="30" y="126" width="13" height="13" rx="2" fill="rgba(235,108,54,0.08)" stroke="#eb6c36" stroke-width="1.5"/>
-<text x="50" y="137" font-family="'Geist Mono',monospace" font-size="11" font-weight="600" fill="#2d3142" letter-spacing="0.08em">QUALITY CHECKPOINT — failing tests block release to staging and production</text>
+<text x="50" y="137" font-family="'Geist Mono',monospace" font-size="11" font-weight="600" fill="#2d3142" letter-spacing="0.08em">QUALITY CHECKPOINT — failing tests block release to staging</text>
 <a href="https://github.com/cathrynlavery/diagram-design" target="_blank" rel="noopener noreferrer">
 <text x="30" y="162" font-family="'Geist Mono',monospace" font-size="9" font-weight="400" fill="#7a8399" text-decoration="underline">Flow diagram created with the diagram-design Claude skill</text>
 </a>

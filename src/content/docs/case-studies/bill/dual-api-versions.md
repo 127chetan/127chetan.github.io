@@ -67,7 +67,7 @@ For v3, the integration goes much deeper. OpenAPI spec contributions live direct
 | Controller | Endpoint descriptions, path parameters, query parameters |
 | DTO | Request and response body documentation |
 
-v3 spec publishing is one stage in a multi-stage CI/CD pipeline.
+v3 spec publishing is a stage with two jobs in the CI/CD pipeline.
 
 <svg viewBox="0 0 960 200" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="p3-title p3-desc" style="width: 100%; height: auto; display: block;">
 <title id="p3-title">v3 CI/CD Pipeline</title>
@@ -107,9 +107,11 @@ v3 spec publishing is one stage in a multi-stage CI/CD pipeline.
 </a>
 </svg>
 
-As the engineering team shipped new v3 features and endpoints through 2023 and into 2024, the v3 API reference updated automatically with each release. The docs were no longer a downstream artifact — they were part of the release pipeline itself.
+As the engineering team ships new v3 features and endpoints with each release, the v3 API reference is updated automatically. With v3, the docs are no longer a downstream artifact. The docs are part of the release pipeline itself.
 
-A detail that paid off later: in 2025, I added working request examples directly in the request DTOs. When the v3 Postman Collection launched, those examples became the default values that populated each request automatically, dramatically reducing the time it took new API customers to run their first successful call.
+:::tip[This setup paid off again in 2025]
+In 2025, I added working request examples directly in the request DTOs. When the BILL v3 API Postman Collection launched, each example became the default value in each Postman request automatically. This dramatically reduced the time it took new API customers to make their first successful API call.
+:::
 
 ## Setting v3 as the primary version
 

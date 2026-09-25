@@ -54,7 +54,7 @@ Each endpoint was a direct upgrade over the v2 API.
 </a>
 </svg>
 
-At launch, I set v3 as a list option in the documentation with v2 set as the default. Independent Guides and API reference sections were available for both v2 and v3. In addition, I wrote a migration guide from v2 to v3 for improving adoption.
+At launch, I set v3 as a list option in the documentation with v2 as the default. Independent Guides and API reference sections were available for both v2 and v3. In addition, I wrote a migration guide from v2 to v3 to improve adoption.
 
 ## A different publishing pipeline for v3
 

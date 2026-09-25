@@ -62,12 +62,42 @@ The v2 spec publishing pipeline ran through a dedicated GitLab repository I owne
 
 For v3, the integration goes much deeper. OpenAPI spec contributions live directly in the Java engineering project.
 
-| Java engineering layer | What lives there |
+| Java engineering layer | Docs at this level |
 |---|---|
 | Controller | Endpoint descriptions, path parameters, query parameters |
 | DTO | Request and response body documentation |
 
-Publishing was one stage in a multi-stage CI/CD pipeline: feature build, feature testing, release to staging and production, then publish to the API reference.
+v3 spec publishing is one stage in a multi-stage CI/CD pipeline.
+
+<svg viewBox="0 0 960 180" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="p3-title p3-desc" style="width: 100%; height: auto; display: block;">
+<title id="p3-title">v3 CI/CD Pipeline</title>
+<desc id="p3-desc">Four-stage CI/CD pipeline for v3: feature build, feature testing as a quality checkpoint, release to staging and production, then publish to the API reference.</desc>
+<defs>
+<marker id="p3-arr" markerWidth="9" markerHeight="7" refX="8" refY="3.5" orient="auto">
+<path d="M0,0.5 L8,3.5 L0,6.5 Z" fill="#4f5d75"/>
+</marker>
+</defs>
+<rect width="960" height="180" fill="#f5f5f5"/>
+<rect x="72" y="24" width="180" height="64" rx="6" fill="#ececec" stroke="#2d3142" stroke-width="1.2"/>
+<text x="162" y="61" font-family="'Geist',sans-serif" font-size="14" font-weight="600" fill="#2d3142" text-anchor="middle">Feature build</text>
+<line x1="252" y1="56" x2="284" y2="56" stroke="#4f5d75" stroke-width="1.2" marker-end="url(#p3-arr)"/>
+<rect x="284" y="24" width="180" height="64" rx="6" fill="rgba(235,108,54,0.08)" stroke="#eb6c36" stroke-width="1.5"/>
+<text x="374" y="61" font-family="'Geist',sans-serif" font-size="14" font-weight="600" fill="#2d3142" text-anchor="middle">Feature testing</text>
+<line x1="464" y1="56" x2="496" y2="56" stroke="#4f5d75" stroke-width="1.2" marker-end="url(#p3-arr)"/>
+<rect x="496" y="24" width="180" height="64" rx="6" fill="#ececec" stroke="#2d3142" stroke-width="1.2"/>
+<text x="586" y="50" font-family="'Geist',sans-serif" font-size="13" font-weight="600" fill="#2d3142" text-anchor="middle">Release to staging</text>
+<text x="586" y="70" font-family="'Geist',sans-serif" font-size="11" font-weight="500" fill="#4f5d75" text-anchor="middle">&amp; production</text>
+<line x1="676" y1="56" x2="708" y2="56" stroke="#4f5d75" stroke-width="1.2" marker-end="url(#p3-arr)"/>
+<rect x="708" y="24" width="180" height="64" rx="6" fill="#ececec" stroke="#2d3142" stroke-width="1.2"/>
+<text x="798" y="50" font-family="'Geist',sans-serif" font-size="14" font-weight="600" fill="#2d3142" text-anchor="middle">Publish</text>
+<text x="798" y="70" font-family="'Geist',sans-serif" font-size="11" font-weight="500" fill="#4f5d75" text-anchor="middle">to API reference</text>
+<line x1="30" y1="108" x2="930" y2="108" stroke="rgba(45,49,66,0.12)" stroke-width="0.8"/>
+<rect x="30" y="126" width="13" height="13" rx="2" fill="rgba(235,108,54,0.08)" stroke="#eb6c36" stroke-width="1.5"/>
+<text x="50" y="137" font-family="'Geist Mono',monospace" font-size="11" font-weight="600" fill="#2d3142" letter-spacing="0.08em">QUALITY CHECKPOINT — failing tests block release to staging and production</text>
+<a href="https://github.com/cathrynlavery/diagram-design" target="_blank" rel="noopener noreferrer">
+<text x="30" y="162" font-family="'Geist Mono',monospace" font-size="9" font-weight="400" fill="#7a8399" text-decoration="underline">Flow diagram created with the diagram-design Claude skill</text>
+</a>
+</svg>
 
 As the engineering team shipped new v3 features and endpoints through 2023 and into 2024, the v3 API reference updated automatically with each release. The docs were no longer a downstream artifact — they were part of the release pipeline itself.
 

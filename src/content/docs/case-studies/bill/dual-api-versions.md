@@ -62,7 +62,10 @@ The v2 spec publishing pipeline ran through a dedicated GitLab repository I owne
 
 For v3, the integration goes much deeper. OpenAPI spec contributions live directly in the Java engineering project.
 
-At the controller level, for endpoint descriptions, path parameters, and query parameters, and at the DTO level for request and response body documentation.
+| Java engineering layer | What lives there |
+|---|---|
+| Controller | Endpoint descriptions, path parameters, query parameters |
+| DTO | Request and response body documentation |
 
 Publishing was one stage in a multi-stage CI/CD pipeline: feature build, feature testing, release to staging and production, then publish to the API reference.
 

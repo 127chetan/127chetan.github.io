@@ -117,7 +117,7 @@ In 2025, I added working request examples directly in the request DTOs. When the
 
 By early 2024 (roughly 6 months after the v3 launch), the core AP and AR workflows were in place. BILL leadership and I set v3 as the primary version for documentation. v2 remained fully accessible, but any new API customer saw v3 first.
 
-At this point, in addition to the standard AP workflow, customers could build with the v3 AR workflow as well (set up customer record → create a invoice → track AR payment from customer). New v3-specific operations invluded the ability to provision a bank account for AP payments with API. This was not possible in v2.
+At this point, in addition to the standard AP workflow, customers could build with the v3 AR workflow as well (set up customer record → create an invoice → track AR payment from customer). New v3-specific operations included the ability to provision a bank account for AP payments with the API. This was not possible in v2.
 
 ## The migration guide
 

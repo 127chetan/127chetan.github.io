@@ -113,11 +113,11 @@ As the engineering team ships new v3 features and endpoints with each release, t
 In 2025, I added working request examples directly in the request DTOs. When the BILL v3 API Postman Collection launched, each example became the default value in each Postman request automatically. This dramatically reduced the time it took new API customers to make their first successful API call.
 :::
 
-## Setting v3 as the primary version
+## v3 becomes the primary API version
 
-By early 2024 — roughly 6 months after v3 launched — the core AP and AR workflows were in place: vendors, bills, payments, customers, invoices, AR payment tracking. Organization operations had been added, including the ability to provision a bank account via API, which was not possible in v2.
+By early 2024 (roughly 6 months after the v3 launch), the core AP and AR workflows were in place. BILL leadership and I set v3 as the primary version for documentation. v2 remained fully accessible, but any new API customer saw v3 first.
 
-We set v3 as the primary docs version. v2 remained fully accessible, but v3 was now what new developers saw first.
+At this point, in addition to the standard AP workflow, customers could build with the v3 AR workflow as well (set up customer record → create a invoice → track AR payment from customer). New v3-specific operations invluded the ability to provision a bank account for AP payments with API. This was not possible in v2.
 
 ## The migration guide
 

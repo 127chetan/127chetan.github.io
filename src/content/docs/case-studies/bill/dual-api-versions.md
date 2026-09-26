@@ -119,7 +119,7 @@ By early 2024 (roughly 6 months after the v3 launch), the core AP and AR workflo
 
 At this point, in addition to the standard AP workflow, customers could build with the v3 AR workflow as well (set up customer record → create an invoice → track AR payment from customer). New v3-specific operations included the ability to provision a bank account for AP payments with the API. This was not possible in v2.
 
-## The migration guide
+## v2 to v3 migration guide
 
 When v3 became the primary version, I wrote a migration guide. The reference points were the Twitter/X and ServiceNow migration guides — documents that treat migration as a developer task, not a marketing announcement.
 

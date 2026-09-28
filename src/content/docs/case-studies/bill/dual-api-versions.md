@@ -62,7 +62,7 @@ The v2 spec publishing pipeline ran through a dedicated GitLab repository I owne
 
 For v3, the integration goes much deeper. OpenAPI spec contributions live directly in the Java engineering project.
 
-| Java engineering layer | Description | Docs at this level |
+| Layer | Description | Docs at this level |
 |---|---|---|
 | Controller | Entry point for handling requests | Endpoint descriptions, path parameters, query parameters |
 | DTO | Data Transfer Object; defines the request/response payload structure | Request and response body documentation |

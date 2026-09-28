@@ -64,8 +64,8 @@ For v3, the integration goes much deeper. OpenAPI spec contributions live direct
 
 | Java engineering layer | Docs at this level |
 |---|---|
-| Controller | Endpoint descriptions, path parameters, query parameters |
-| DTO | Request and response body documentation |
+| Controller (Entry point for handling requests) | Endpoint descriptions, path parameters, query parameters |
+| DTO (Data Transfer Object; defines payload structure entering or leaving the controller) | Request and response body documentation |
 
 v3 spec publishing is a stage with two jobs (validate and publish) in the CI/CD pipeline.
 
@@ -113,7 +113,7 @@ As the engineering team ships new v3 features and endpoints with each release, t
 In 2025, I added working request examples directly in the request DTOs. When the BILL v3 API Postman Collection launched, each example became the default value in each Postman request automatically. This dramatically reduced the time it took new API customers to make their first successful API call.
 :::
 
-## v3 becomes the primary API version
+## v3 becomes primary in 6 months
 
 By early 2024 (roughly 6 months after the v3 launch), the core AP and AR workflows were in place. BILL leadership and I set v3 as the primary version for documentation. v2 remained fully accessible, but any new API customer saw v3 first.
 
@@ -121,9 +121,9 @@ At this point, in addition to the standard AP workflow, customers could build wi
 
 ## v2 to v3 migration guide
 
-When v3 became the primary version, I wrote a migration guide. The reference points were the Twitter/X and ServiceNow migration guides — documents that treat migration as a developer task, not a marketing announcement.
+When v3 became the primary version, I wrote a migration guide from v2 to v3 to improve adoption. At the time, I took inspiration from the Twitter/X and ServiceNow migration guides. These documents treated migration as a developer task, and not as a marketing announcement.
 
-The guide led with side-by-side comparisons of what v2 and v3 actually looked like in practice.
+The guide led with side-by-side comparisons of v2 and v3 in practice.
 
 | Feature | v2 | v3 |
 |---|---|---|

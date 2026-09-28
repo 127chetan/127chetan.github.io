@@ -138,6 +138,9 @@ The guide led with side-by-side comparisons of v2 and v3 in practice.
 Authentication is one of the clearest examples to highlight the differences in usage between v2 and v3.
 
 **v2 login with POST /v2/Login.json**
+
+v2 required a session ID and developer key on every request, obtained by logging in with form-encoded credentials.
+
 ```bash
 curl --request POST \
   --url 'https://api-stage.bill.com/api/v2/Login.json' \
@@ -150,6 +153,9 @@ curl --request POST \
 ```
 
 **v3 login with POST /v3/login**
+
+v3 uses a bearer token issued from a single JSON login call, then passed in the Authorization header on every subsequent request.
+
 ```bash
 curl --request POST \
   --url 'https://gateway.stage.bill.com/connect/v3/login' \

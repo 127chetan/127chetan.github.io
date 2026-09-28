@@ -135,9 +135,9 @@ The guide led with side-by-side comparisons of v2 and v3 in practice.
 | Related operations | Separate API calls | Dependent actions combined into single operations |
 | Authentication | Session ID + developer key per request | Bearer token |
 
-Authentication was the clearest example:
+Authentication is one of the clearest examples to highlight the differences in usage between v2 and v3.
 
-**v2 login**
+**v2 login with POST /v2/Login.json**
 ```bash
 curl --request POST \
   --url 'https://api-stage.bill.com/api/v2/Login.json' \
@@ -149,7 +149,7 @@ curl --request POST \
   --data 'devKey={developer_key}'
 ```
 
-**v3 login**
+**v3 login with POST /v3/login**
 ```bash
 curl --request POST \
   --url 'https://gateway.stage.bill.com/connect/v3/login' \

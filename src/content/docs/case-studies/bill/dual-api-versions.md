@@ -168,10 +168,10 @@ curl --request POST \
 }'
 ```
 
-Invoice creation is another example to highlight the same contrast. The v2 request was a flat wall of string fields, all at the same level, with no nested structure. Creating an invoice required a valid customer ID — there was no way to have BILL create the customer object inline. Sending the invoice to the customer was a separate endpoint call.
+Invoice creation is another example to highlight the same contrast.
 
 **v2 invoice creation with POST /v2/Crud/Create/Invoice.json**
-
+The v2 request is a flat wall of string fields, all at the same level, with no nested structure. Creating an invoice requires a valid customer ID (another API call to create or get a customer). Sending a created invoice to the customer is another API call.
 ```bash
 curl --request POST \
   --url https://api-stage.bill.com/api/v2/Crud/Create/Invoice.json \
@@ -183,6 +183,7 @@ curl --request POST \
 ```
 
 **v3 invoice creation with POST /v3/invoices**
+In v3, `invoiceNumber`, `invoiceDate`, and `dueDate` is optional (BILL auto-generates the value if omitted). If the customer does not exist yet, set `name` and `email` in the customer object, and BILL creates the customer inline as part of the same request. Email delivery is a `processingOptions` flag in the same call. When `enableCardPayment` is set as `true`, the customer can pay the invoice by card — and a `convenienceFee` object lets you configure the percentage the customer pays for that option.
 ```bash
 curl --request POST \
   --url https://gateway.stage.bill.com/connect/v3/invoices \
@@ -190,7 +191,8 @@ curl --request POST \
   --header 'content-type: application/json' \
   --data '{
   "customer": {
-    "id": "{{customer_id}}"
+    "name": "{{customer_name}}",
+    "email": "{{customer_email_address}}"
   },
   "invoiceLineItems": [
     {
@@ -208,13 +210,13 @@ curl --request POST \
   "dueDate": "2026-12-31",
   "processingOptions": {
     "sendEmail": false
+  },
+  "enableCardPayment": true,
+  "convenienceFee": {
+    "percentage": 1
   }
 }'
 ```
-
-In v3, `invoiceNumber`, `invoiceDate`, and `dueDate` are optional — BILL auto-generates them if omitted. If the customer doesn't exist yet, setting `name` and `email` in the customer object causes BILL to create the customer inline as part of the same request. Email delivery is a `processingOptions` flag on the same call. When `enableCardPayment` is set to `true`, the customer can pay by card — and a `convenienceFee` object lets you configure the percentage the customer pays for that option.
-
-The migration guide extended these comparisons across endpoint naming conventions, HTTP response codes, and response body structure — verbose and flat in v2, typed and nested in v3.
 
 ## v3-exclusive capabilities
 

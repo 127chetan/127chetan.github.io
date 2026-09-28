@@ -185,7 +185,9 @@ curl --request POST \
 
 **v3 invoice creation with POST /v3/invoices**
 
-In v3, `invoiceNumber`, `invoiceDate`, and `dueDate` is optional (BILL auto-generates the value if omitted). If the customer does not exist yet, set `name` and `email` in the customer object, and BILL creates the customer inline as part of the same request. Email delivery is a `processingOptions` flag in the same call. When `enableCardPayment` is set as `true`, the customer can pay the invoice by card — and a `convenienceFee` object lets you configure the percentage the customer pays for that option.
+In v3, `invoiceNumber`, `invoiceDate`, and `dueDate` is optional (BILL auto-generates the value if omitted). If the customer does not exist yet, set `name` and `email` in the customer object, and BILL creates the customer inline as part of the same request. Email delivery is a `processingOptions` flag in the same call.
+
+When `enableCardPayment` is set as `true`, the customer can pay the invoice by card. An additional `convenienceFee` object enables the option to set the percentage the customer is charged for pay by card.
 ```bash
 curl --request POST \
   --url https://gateway.stage.bill.com/connect/v3/invoices \

@@ -127,13 +127,13 @@ The guide led with side-by-side comparisons of v2 and v3 in practice.
 
 | Feature | v2 | v3 |
 |---|---|---|
-| HTTP verbs | `POST` for all operations | Standard REST verbs (`GET`, `POST`, `PATCH`, `PUT`, `DELETE`) |
+| HTTP verbs | `POST` for all operations | Standard REST (`GET`, `POST`, `PATCH`, `PUT`, `DELETE`) |
 | HTTP status codes | `HTTP 200` even on failure | Standard codes (`200/201`, `4XX`, `5XX`) |
 | Content type | `application/x-www-form-urlencoded` | `application/json` |
 | Request data model | Flat with all fields at the same level | Nested object mapping |
 | URL convention | `/Crud/Create/Invoice.json` | `/v3/invoices` |
 | Related operations | Separate API calls | Dependent actions combined into single operations |
-| Authentication | Session ID & developer key per request | Bearer token |
+| Authentication | Session ID + developer key per request | Bearer token |
 
 Authentication was the clearest example:
 

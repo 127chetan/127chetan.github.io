@@ -139,7 +139,7 @@ Authentication is one of the clearest examples to highlight the differences in u
 
 **v2 login with POST /v2/Login.json**
 
-v2 required a session ID and developer key on every request, obtained by logging in with form-encoded credentials.
+v2 requires a session ID and developer key in every request, obtained by signing in with form-encoded credentials.
 
 ```bash
 curl --request POST \
@@ -154,7 +154,7 @@ curl --request POST \
 
 **v3 login with POST /v3/login**
 
-v3 uses a bearer token issued from a single JSON login call, then passed in the Authorization header on every subsequent request.
+v3 uses a bearer token issued with a single JSON login call. The token is then passed in the Authorization header in every subsequent request.
 
 ```bash
 curl --request POST \
@@ -168,9 +168,10 @@ curl --request POST \
 }'
 ```
 
-Invoice creation showed the same contrast. The v2 request was a flat wall of string fields, all at the same level, with no nested structure. Creating an invoice required a valid customer ID — there was no way to have BILL create the customer object inline. Sending the invoice to the customer was a separate endpoint call.
+Invoice creation is another example to highlight the same contrast. The v2 request was a flat wall of string fields, all at the same level, with no nested structure. Creating an invoice required a valid customer ID — there was no way to have BILL create the customer object inline. Sending the invoice to the customer was a separate endpoint call.
 
-**v2 invoice creation**
+**v2 invoice creation with POST /v2/Crud/Create/Invoice.json**
+
 ```bash
 curl --request POST \
   --url https://api-stage.bill.com/api/v2/Crud/Create/Invoice.json \
@@ -181,7 +182,7 @@ curl --request POST \
   --data 'data={"obj":{"entity":"Invoice","isActive":"string","customerId":"string","invoiceNumber":"string","invoiceDate":"string","dueDate":"string","glPostingDate":"string","exchangeRate":0,"description":"string","poNumber":"string","isToBePrinted":true,"isToBeEmailed":true,"lastSentTime":"string","itemSalesTax":"string","terms":"string","salesRep":"string","FOB":"string","shipDate":"string","shipMethod":"string","departmentId":"string","locationId":"string","actgClassId":"string","jobId":"string","payToBankAccountId":"string","payToChartOfAccountId":"string","invoiceTemplateId":"string","hasAutoPay":true,"emailDeliveryOption":"string","mailDeliveryOption":"string","recInvoiceTemplateId":"string","invoiceLineItems":[{"entity":"InvoiceLineItem","itemId":"string","quantity":0,"amount":0,"price":0,"serviceDate":"string","ratePercent":0,"chartOfAccountId":"string","departmentId":"string","locationId":"string","actgClassId":"string","jobId":"string","description":"string","taxable":true,"taxCode":"string","lineOrder":0}]}}'
 ```
 
-**v3 invoice creation**
+**v3 invoice creation with POST /v3/invoices**
 ```bash
 curl --request POST \
   --url https://gateway.stage.bill.com/connect/v3/invoices \

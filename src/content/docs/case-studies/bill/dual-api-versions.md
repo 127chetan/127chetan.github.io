@@ -135,7 +135,7 @@ The guide led with side-by-side comparisons of v2 and v3 in practice.
 | Related operations | Separate API calls | Dependent actions combined into single operations |
 | Authentication | Session ID + developer key per request | Bearer token |
 
-Authentication is one of the clearest examples to highlight the differences in usage between v2 and v3.
+Authentication is one of the clearest examples to highlight differences between v2 and v3.
 
 **v2 login with POST /v2/Login.json**
 
@@ -171,6 +171,7 @@ curl --request POST \
 Invoice creation is another example to highlight the same contrast.
 
 **v2 invoice creation with POST /v2/Crud/Create/Invoice.json**
+
 The v2 request is a flat wall of string fields, all at the same level, with no nested structure. Creating an invoice requires a valid customer ID (another API call to create or get a customer). Sending a created invoice to the customer is another API call.
 ```bash
 curl --request POST \
@@ -183,6 +184,7 @@ curl --request POST \
 ```
 
 **v3 invoice creation with POST /v3/invoices**
+
 In v3, `invoiceNumber`, `invoiceDate`, and `dueDate` is optional (BILL auto-generates the value if omitted). If the customer does not exist yet, set `name` and `email` in the customer object, and BILL creates the customer inline as part of the same request. Email delivery is a `processingOptions` flag in the same call. When `enableCardPayment` is set as `true`, the customer can pay the invoice by card — and a `convenienceFee` object lets you configure the percentage the customer pays for that option.
 ```bash
 curl --request POST \

@@ -224,34 +224,9 @@ curl --request POST \
 
 The rest of the migration guide followed the same pattern: flat and verbose in v2, typed and nested in v3.
 
-## v3-exclusive capabilities
-
-A set of major capabilities shipped as v3-only features, each opening up new integration patterns that were not possible with v2.
-
-**Spend & Expense API**
-
-BILL acquired Divvy in 2021 for its expense management capabilities. In 2023, those features became available via API as the Spend & Expense API. This brought an entirely new customer base — integrations built around expense management rather than AP or AR. Endpoints covered budgets, budget users, virtual cards, transactions, and reimbursements.
-
-**Partner Operations**
-
-Partner operations enabled white-label, embedded finance experiences for BILL's integration partners. Partners like NetSuite and Acumatica could programmatically onboard their users into BILL — creating a new organization, provisioning a user in that organization, and then performing full organization-level operations. The entire onboarding flow, from org creation to payment execution, was available in a single API surface.
-
-**Webhooks**
-
-Before webhooks, API customers kept BILL object state synchronized by polling — making scheduled GET calls to check for changes across vendors, bills, payments, invoices, and other entities. For example, `GET /v3/vendors` to list all vendors, `GET /v3/vendors/{vendorId}` for a specific record, repeated at fixed intervals. This created unnecessary API call volume and introduced latency between an event occurring and the integration responding to it.
-
-Webhooks replaced polling with event-driven notifications. Customers subscribed to specific events and received a payload at their endpoint the moment the event occurred. The full event set covered the BILL object model:
-
-| Category | Events |
-|---|---|
-| Vendors | `vendor.created`, `vendor.updated`, `vendor.archived`, `vendor.restored`, `autopay.failed` |
-| AP Bills | `bill.created`, `bill.updated`, `bill.archived`, `bill.restored` |
-| AP Payments | `payment.updated`, `payment.failed` |
-| AR Invoices | `invoice.created`, `invoice.updated`, `invoice.archived`, `invoice.restored` |
-| Bank Accounts | `bank-account.created`, `bank-account.updated` |
-| Card Accounts | `card-account.created`, `card-account.updated` |
-| Spend & Expense | `spend.transaction.updated`, `spend.reimbursement.created`, `spend.reimbursement.updated`, `spend.reimbursement.deleted`, `spend.three-ds-challenge.created` |
-| Risk | `risk-verification.updated` |
+:::note[The docs evolved]
+In place of the migration guide, the current developer.bill.com docs state [why to upgrade to v3](https://developer.bill.com/docs/why-upgrade-v3), rather than walking through a step-by-step v2-to-v3 comparison.
+:::
 
 ## Who stayed on v2 and why
 

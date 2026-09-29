@@ -225,7 +225,7 @@ curl --request POST \
 The rest of the migration guide followed the same pattern: flat and verbose in v2, typed and nested in v3.
 
 :::note[The migration docs have evolved in 2026]
-In 2026, the BILL v3 API is a mature product. The current docs state [why to upgrade to v3](https://developer.bill.com/docs/why-upgrade-v3), rather than walking API customers through a step-by-step v2-to-v3 comparison.
+In 2026, the BILL v3 API is a mature product. The current docs explain [why to upgrade to v3](https://developer.bill.com/docs/why-upgrade-v3), rather than walking API customers through a step-by-step v2-to-v3 comparison.
 :::
 
 ## Who stayed on v2 and why

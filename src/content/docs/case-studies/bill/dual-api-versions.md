@@ -222,6 +222,8 @@ curl --request POST \
 }'
 ```
 
+The rest of the migration guide followed the same pattern: flat and verbose in v2, typed and nested in v3.
+
 ## v3-exclusive capabilities
 
 A set of major capabilities shipped as v3-only features, each opening up new integration patterns that were not possible with v2.

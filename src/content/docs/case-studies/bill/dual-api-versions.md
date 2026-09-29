@@ -228,7 +228,7 @@ The rest of the migration guide followed the same pattern: flat and verbose in v
 In 2026, the BILL v3 API is a mature product. The current docs explain [why to upgrade to v3](https://developer.bill.com/docs/why-upgrade-v3), rather than walking API customers through a step-by-step v2-to-v3 comparison.
 :::
 
-## Who stayed on v2 and why
+## API changelog
 
 Large API customers — bank partners, accounting platforms, enterprise integrators — remained on v2 through 2023 and into 2024. The reason was feature parity. v3 was not yet a complete replacement for v2, and customers with deep integrations couldn't migrate until every capability they depended on was available in v3.
 

@@ -250,7 +250,7 @@ API customers were vocal about feature parity gaps and v3 bugs. Every gap was a 
 
 #### My role
 My ongoing advocacy role was two-fold.
-1. Identify bugs by testing extensively while writing the docs, and keep advocating for their resolution
-2. Keep making the case to engineering and product leadership for parity and tech debt work alongside new feature development
+1. Identify bugs by testing extensively while writing the docs, and keep advocating for their resolution.
+2. Keep making the case to engineering and product leadership for parity and tech debt work alongside new feature development.
 
 The API changelog was not just for developer communication. It was also a public record of what had shipped and what was still outstanding, which meant internal accountability.

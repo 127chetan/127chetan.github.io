@@ -240,9 +240,11 @@ The ease-of-use improvement was immediate and significant. Many API customers ci
 The direct result was an increase in subscriptions to the API changelog RSS feed.
 :::
 
-## Outcomes
+## The toughest part: internal advocacy
 
 The technical challenge of running two versions of doc sets was manageable. Internal advocacy for getting to feature parity was a challenge.
+
+2023 and 2024 were priority-constrained: new feature development pulled attention away from fixes, and advocacy was the most direct way to keep parity work visible for prioritization.
 
 API customers were vocal about feature parity gaps and v3 bugs. Every gap was a reason for them to delay migration. Every bug that stayed open for days or weeks reinforced their skepticism. For customers already uncertain about the migration effort, a poor v3 experience was enough to keep them on v2 indefinitely.
 

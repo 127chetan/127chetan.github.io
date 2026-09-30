@@ -232,11 +232,13 @@ In 2026, the BILL v3 API is a mature product. The current docs explain [why to u
 
 I introduced the [API changelog](https://developer.bill.com/changelog) as a way to showcase each feature added and updated in v3, giving customers a clear, ongoing signal of how quickly the parity gap between v2 and v3 was closing.
 
-The parity gap was felt the most by large API customers (bank partners, accounting platforms, enterprise integrators). These customers with deep integrations could note migrate until every capability they depended on was available in v3.
+The parity gap was felt the most by large API customers (bank partners, accounting platforms, enterprise integrators). These customers with deep integrations could not migrate until every capability they depended on was available in v3.
 
 The response to the API changelog was consistent both from new API customers and from existing API customers.
 
 > The ease-of-use improvement was immediate and significant. Many cited the release notes as a key part of their decision to move — they could track exactly what had been added, when, and what it meant for their integration.
+
+The direct result was an exponential growth in subscriptions to the API changelog RSS feed.
 
 ## The hardest part: internal advocacy
 

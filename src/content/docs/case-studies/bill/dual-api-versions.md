@@ -230,11 +230,13 @@ In 2026, the BILL v3 API is a mature product. The current docs explain [why to u
 
 ## API changelog
 
-Large API customers — bank partners, accounting platforms, enterprise integrators — remained on v2 through 2023 and into 2024. The reason was feature parity: v3 was not yet a complete replacement for v2, and customers with deep integrations couldn't migrate until every capability they depended on was available in v3.
+I introduced the [API changelog](https://developer.bill.com/changelog) as a way to showcase each feature added and updated in v3, giving customers a clear, ongoing signal of how quickly the parity gap between v2 and v3 was closing.
 
-I introduced the API changelog as a way to showcase everything being added and updated in v3, giving customers a clear, ongoing signal of how quickly that parity gap was closing.
+The parity gap was felt the most by large API customers (bank partners, accounting platforms, enterprise integrators). These customers with deep integrations could note migrate until every capability they depended on was available in v3.
 
-The response from new API customers, and from existing API customers who started testing v3, was consistent: the ease-of-use improvement was immediate and significant. Many cited the release notes as a key part of their decision to move — they could track exactly what had been added, when, and what it meant for their integration. Subscriptions to the [RSS changelog feed](https://developer.bill.com/changelog) grew as a direct result.
+The response to the API changelog was consistent both from new API customers and from existing API customers.
+
+> The ease-of-use improvement was immediate and significant. Many cited the release notes as a key part of their decision to move — they could track exactly what had been added, when, and what it meant for their integration.
 
 ## The hardest part: internal advocacy
 

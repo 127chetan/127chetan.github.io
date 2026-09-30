@@ -237,7 +237,7 @@ The parity gap was felt the most by large API customers (bank partners, accounti
 :::note[Consistent response from API customers]
 The ease-of-use improvement was immediate and significant. Many API customers cited the release notes as a key part of their decision to move to v3. They could track exactly what had been added, when, and what it meant for their integration.
 
-The direct result was growth in subscriptions to the API changelog RSS feed.
+The direct result was an increase in subscriptions to the API changelog RSS feed.
 :::
 
 ## The hardest part: internal advocacy

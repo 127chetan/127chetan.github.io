@@ -234,7 +234,7 @@ I introduced the [API changelog](https://developer.bill.com/changelog) as a way 
 
 The parity gap was felt the most by large API customers (bank partners, accounting platforms, enterprise integrators). These customers with deep integrations could not migrate until every capability they depended on was available in v3.
 
-:::note[Consistent response from API customers]
+:::tip[Consistent response from API customers]
 The ease-of-use improvement was immediate and significant. Many API customers cited the release notes as a key part of their decision to move to v3. They could track exactly what had been added, when, and what it meant for their integration.
 
 The direct result was an increase in subscriptions to the API changelog RSS feed.

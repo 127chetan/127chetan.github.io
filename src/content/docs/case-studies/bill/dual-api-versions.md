@@ -240,10 +240,14 @@ The ease-of-use improvement was immediate and significant. Many API customers ci
 The direct result was an increase in subscriptions to the API changelog RSS feed.
 :::
 
-## The hardest part: internal advocacy
+## Outcome: Internal advocacy for customer experience
 
-The technical challenge of running two versioned doc sets was manageable. The harder work was internal.
+The technical challenge of running two versions of doc sets was manageable. Internal advocacy for getting to feature parity was a challenge.
 
-API customers were vocal about feature parity gaps and v3 bugs. Every gap was a reason to delay migration. Every bug that stayed open for days or weeks reinforced skepticism. For customers already uncertain about the migration effort, a poor v3 experience was enough to keep them on v2 indefinitely.
+API customers were vocal about feature parity gaps and v3 bugs. Every gap was a reason for them to delay migration. Every bug that stayed open for days or weeks reinforced their skepticism. For customers already uncertain about the migration effort, a poor v3 experience was enough to keep them on v2 indefinitely.
 
-My ongoing role was to keep both in motion — pushing bugs to resolution, making the case for parity work alongside new feature development, and keeping RTB (run the business) and tech debt visible to engineering and product leadership. The release notes and changelog weren't just developer communication. They were also internal accountability — a public record of what had shipped and what was still outstanding.
+My ongoing role was two-fold.
+1. Keep advocating for pushing bugs to resolution, making the case for parity work alongside new feature development
+2. Keep RTB (run the business) and tech debt visible for engineering and product leadership.
+
+The API changelog was not just for developer communication. It was also a public record of what had shipped and what was still outstanding. The public record brought about more internal accountability.

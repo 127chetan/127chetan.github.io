@@ -244,7 +244,7 @@ The direct result was an increase in subscriptions to the API changelog RSS feed
 
 The technical challenge of running two versions of documentation was manageable. Internal advocacy for getting to feature parity was a challenge.
 
-Late 2023 and early 2024 aws priority constrained. New feature development pulled attention away from existing bug fixes, and advocacy was the most direct way to keep parity work visible for prioritization.
+Late 2023 and early 2024 was priority constrained. New feature development pulled attention away from existing bug fixes, and advocacy was the most direct way to keep parity work visible for prioritization.
 
 API customers were vocal about feature parity gaps and v3 bugs. Every gap was a reason for them to delay migration. Every bug that stayed open for days or weeks reinforced their skepticism. For customers already uncertain about the migration effort, a poor v3 experience was enough to keep them on v2 indefinitely.
 

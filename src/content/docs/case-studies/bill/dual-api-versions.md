@@ -240,17 +240,17 @@ The ease-of-use improvement was immediate and significant. Many API customers ci
 The direct result was an increase in subscriptions to the API changelog RSS feed.
 :::
 
-## The toughest part: internal advocacy
+## The toughest part: Internal advocacy
 
-The technical challenge of running two versions of doc sets was manageable. Internal advocacy for getting to feature parity was a challenge.
+The technical challenge of running two versions of documentation was manageable. Internal advocacy for getting to feature parity was a challenge.
 
-2023 and 2024 were priority-constrained: new feature development pulled attention away from fixes, and advocacy was the most direct way to keep parity work visible for prioritization.
+Late 2023 and early 2024 aws priority constrained. New feature development pulled attention away from existing bug fixes, and advocacy was the most direct way to keep parity work visible for prioritization.
 
 API customers were vocal about feature parity gaps and v3 bugs. Every gap was a reason for them to delay migration. Every bug that stayed open for days or weeks reinforced their skepticism. For customers already uncertain about the migration effort, a poor v3 experience was enough to keep them on v2 indefinitely.
 
-My ongoing role was three-fold.
+#### My role
+My ongoing advocacy role was two-fold.
 1. Identify bugs by testing extensively while writing the docs, and keep advocating for their resolution
 2. Keep making the case for parity work alongside new feature development
-3. Keep RTB (run the business) and tech debt visible for engineering and product leadership.
 
 The API changelog was not just for developer communication. It was also a public record of what had shipped and what was still outstanding, which meant internal accountability.

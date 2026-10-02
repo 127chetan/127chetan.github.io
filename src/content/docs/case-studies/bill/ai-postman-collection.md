@@ -3,7 +3,7 @@ title: "AI-Powered Postman Collection"
 description: How a solo technical writer used AI to build and publish the official BILL v3 API Postman Collection in 3 weeks — and what made it more than just an export.
 ---
 
-## The opportunity
+## Context
 
 By 2025, AI had shifted how developers discovered and evaluated APIs. Developers could describe a workflow in natural language and get working integration code back — without needing to read documentation line by line or write a single call from scratch. At the same time, the developer platform, partner support, and product marketing teams at BILL were looking for ways to make the BILL API Platform more visible and accessible. A published Postman Collection was the answer: it would signal confidence in the API, meet developers where they already worked, and give them a ready-to-run starting point.
 

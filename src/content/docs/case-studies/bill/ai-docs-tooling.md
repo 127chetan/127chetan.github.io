@@ -3,7 +3,7 @@ title: "AI Tooling for Docs"
 description: How a one-person docs team turned a company AI sprint into four published Claude skills — and shifted engineering teams from documentation consumers to documentation contributors.
 ---
 
-## The window
+## Context
 
 In the final week of May 2026, BILL officially adopted Claude as an enterprise AI tool and gave teams unstructured time to experiment — a sprint with cleared calendars and no deliverable requirements. For engineering teams, that meant exploring code generation and test automation. For me, it meant something different: turning a year of AI experience into reusable tools that could change how documentation was produced at BILL.
 

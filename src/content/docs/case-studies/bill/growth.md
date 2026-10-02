@@ -3,7 +3,7 @@ title: "Developer Platform Growth"
 description: How the Postman Collection and a developer tutorial video program drove BILL's API developer base to 2500+ — nearly double the OKR target — and generated 130% of the associated revenue goal.
 ---
 
-## Two launches, one summer
+## Context
 
 By mid-2025, the BILL v3 API had strong documentation and a mature spec pipeline. What it didn't have was a fast path for developers to go from discovery to a working integration. I led 2 major project launches in the summer of 2025: the Postman Collection in June, and the first developer tutorial video in July.
 

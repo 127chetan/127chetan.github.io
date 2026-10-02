@@ -7,7 +7,7 @@ description: Hired and led a contract technical writer to expand developer.bill.
 
 By early 2025, [developer.bill.com](https://developer.bill.com) had mature API reference documentation for both API versions (v2 and v3), and a growing developer audience.
 
-Around this time, BILL introduced the BILL Elements product: low-code UI widgets that customers can embed directly into their applications for the BILL AP workflow. Since the Elements are built on top of the v3 API, the customer development effort is minimal.
+Around this time, BILL introduced the BILL Elements product: low-code UI widgets that customers can embed directly into their applications for the BILL AP workflow. Elements handle the underlying v3 API calls and BILL's business rules internally, so customer development effort is minimal — customers embed a component rather than building out the API calls, rules, requests, and responses themselves.
 
 The early-stage BILL Elements docs assumed that customers already knew which integration path was right for them. By March 2025, I hired a contract technical writer to focus on developing the BILL Elements docs. The hiring process involved reviewing resumes and interviewing 4 candidates for the role. Other teams at BILL also had open technical writer needs, and I interviewed 4 more candidates to shortlist for their requirements as well.
 
@@ -26,14 +26,11 @@ The documentation was set up to showcase the BILL AP workflow.
 5. Schedule payments
 6. View payments history
 
-:::note[BILL Elements documentation]
-The published Elements documentation is available at [developer.bill.com/docs/elements-overview](https://developer.bill.com/docs/elements-overview).
-:::
-
 **Showcase all integration options**: At the time, a customer landing on `developer.bill.com` was directed to API guides, tutorials, and reference documentation. With BILL Elements, we now built journeys for customers based on integration options with guidance on paths based on their use case: API-only, Elements-only, and hybrid integration models.
 
 :::note[Customer integration options]
-The landing page on [developer.bill.com](https://developer.bill.com/docs/home) currently guides customers through the available integration options with the BILL API platform.
+- The landing page on [developer.bill.com](https://developer.bill.com/docs/home) currently guides customers through the available integration options with the BILL API platform.
+- The published Elements documentation is available at [developer.bill.com/docs/elements-overview](https://developer.bill.com/docs/elements-overview).
 :::
 
 ## My role as editor & content strategist

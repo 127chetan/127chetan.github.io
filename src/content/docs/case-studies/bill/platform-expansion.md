@@ -3,7 +3,7 @@ title: "Platform Expansion & Docs Leadership"
 description: Hiring and leading a contract technical writer to expand developer.bill.com — and an editorial pass that turned walls of text into structured, component-driven documentation.
 ---
 
-## Scaling the team
+## Context
 
 By early 2025, [developer.bill.com](https://developer.bill.com) had mature API reference documentation for 2 API versions running simultaneously, and a growing developer audience. The gap was coverage: BILL Elements had no documentation, and the get started experience assumed developers already knew which integration path was right for them.
 

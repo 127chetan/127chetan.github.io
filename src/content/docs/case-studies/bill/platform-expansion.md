@@ -7,7 +7,7 @@ description: Hired and led a contract technical writer to expand developer.bill.
 
 By early 2025, [developer.bill.com](https://developer.bill.com) had mature API reference documentation for both API versions (v2 and v3), and a growing developer audience.
 
-Around this time, BILL introduced the BILL Elements product: low-code UI widgets that customers can embed directly into their applications for the BILL AP workflow. Elements handle the underlying v3 API calls and BILL's business rules internally, so customer development effort is minimal — customers embed a component rather than building out the API calls, rules, requests, and responses themselves.
+Around this time, BILL introduced the BILL Elements product: low-code UI widgets that customers can embed directly into their applications for the BILL AP workflow. Elements handle the underlying v3 API calls, and customer development effort is minimal. Customers simply embed a component rather than building out the logic with API calls, rules, requests, and responses themselves.
 
 The early-stage BILL Elements docs assumed that customers already knew which integration path was right for them. By March 2025, I hired a contract technical writer to focus on developing the BILL Elements docs. The hiring process involved reviewing resumes and interviewing 4 candidates for the role. Other teams at BILL also had open technical writer needs, and I interviewed 4 more candidates to shortlist for their requirements as well.
 

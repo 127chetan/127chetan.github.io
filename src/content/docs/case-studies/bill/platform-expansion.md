@@ -45,12 +45,12 @@ My editorial checklist.
 - [x] Present information as diagrams and tables, where applicable
 - [x] Leverage custom components, such as cards, tabs, and accordions
 
-[BILL core capabilities](https://developer.bill.com/docs/bill-core-capabilities) is the clearest example of what my editorial pass looked like.
+[BILL core capabilities](https://developer.bill.com/docs/bill-core-capabilities) is the clearest example of what my editorial pass looked like. Customers scanning the page now see the shape of the platform before they read a word.
 
 | Area | Before | After |
 |---|---|---|
 | Integration models (API-only, Elements-only, hybrid) | Chunky bullet lists | Interactive cards with an immediate visual comparison of effort, flexibility, and use case |
-| AP, AR, and S&E capability breakdowns | Flat bullet points | Structured layout with a payment methods table and capabilities callouts |
+| AP, AR, and S&E capability breakdowns | Flat bullet points | Structured layout with a payment methods table and capability callouts |
 | Flow diagrams | Did not exist | Workflow diagrams created with Lucidchart |
 
 The same pattern applied across the get started section: the [platform landing page](https://developer.bill.com/docs/home) uses cards and tabs to orient developers to their integration path before they go deeper; [AP Payments](https://developer.bill.com/docs/ap-payments) uses an accordion to organize payment method details without flattening them into a wall of text; [Elements get started](https://developer.bill.com/docs/bill-elements-get-started) uses cards and tabs to guide developers through setup in a sequence that matches how they'll actually build.

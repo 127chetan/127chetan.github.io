@@ -81,3 +81,9 @@ article.card .title {
 article.card .body {
   font-size: var(--sl-text-body);
 }
+
+/* Remove bullet marker on task-list items; the checkbox is the marker */
+.task-list-item {
+  list-style: none;
+  margin-inline-start: -1.5em;
+}

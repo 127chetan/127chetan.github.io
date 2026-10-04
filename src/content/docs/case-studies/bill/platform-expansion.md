@@ -49,10 +49,13 @@ My editorial checklist.
 
 | Area | Before | After |
 |---|---|---|
-| Integration models (API-only, Elements-only, hybrid) | Chunky bullet lists | Interactive cards with an immediate visual comparison of effort, flexibility, and use case |
-| AP, AR, and S&E capability breakdowns | Flat bullet points | Structured layout with a payment methods table and capability callouts |
+| Integration models (API-only, Elements-only, hybrid) | Chunky bullet list | Interactive cards with an immediate visual comparison of effort, flexibility, and use case |
+| AP, AR, and S&E capability breakdowns | Bullet points customers would skim past | Structured layout with a payment methods table and capability callouts |
 | Flow diagrams | Did not exist | Workflow diagrams created with Lucidchart |
 
-The same pattern applied across the get started section: the [platform landing page](https://developer.bill.com/docs/home) uses cards and tabs to orient developers to their integration path before they go deeper; [AP Payments](https://developer.bill.com/docs/ap-payments) uses an accordion to organize payment method details without flattening them into a wall of text; [Elements get started](https://developer.bill.com/docs/bill-elements-get-started) uses cards and tabs to guide developers through setup in a sequence that matches how they'll actually build.
+The same pattern applied across the introduction sections.
+- The [BILL API Platform](https://developer.bill.com/docs/home) uses cards and tabs to orient customers to their integration paths.
+- [AP Payments](https://developer.bill.com/docs/ap-payments) uses an accordion to organize payment method details without flattening them into a wall of text.
+- The [BILL Elements](https://developer.bill.com/docs/bill-elements-get-started) get started section uses cards and tabs to guide customers through the standard BILL AP workflow.
 
-The content team handled accuracy. I handled the experience of reading it.
+The contract writer handled accuracy. I handled the experience of reading it.

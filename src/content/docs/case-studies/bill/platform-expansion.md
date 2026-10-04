@@ -56,6 +56,6 @@ My editorial checklist.
 The same pattern applied across the introduction sections.
 - The [BILL API Platform](https://developer.bill.com/docs/home) uses cards and tabs to orient customers to their integration paths.
 - [AP Payments](https://developer.bill.com/docs/ap-payments) uses an accordion to organize payment method details without flattening them into a wall of text.
-- The [BILL Elements](https://developer.bill.com/docs/bill-elements-get-started) get started section uses cards and tabs to guide customers through the standard BILL AP workflow.
+- The [BILL Elements](https://developer.bill.com/docs/bill-elements-get-started) get started section uses cards and tabs to guide customers through the BILL AP workflow in the sequence that matches how they will actually build.
 
 The contract writer handled accuracy. I handled the experience of reading it.

@@ -5,9 +5,11 @@ description: How a solo technical writer used AI to build and publish the offici
 
 ## Context
 
-By 2025, AI had shifted how developers discovered and evaluated APIs. Developers could describe a workflow in natural language and get working integration code back — without needing to read documentation line by line or write a single call from scratch. At the same time, the developer platform, partner support, and product marketing teams at BILL were looking for ways to make the BILL API Platform more visible and accessible. A published Postman Collection was the answer: it would signal confidence in the API, meet developers where they already worked, and give them a ready-to-run starting point.
+By mid-2025, the AI shift gave developers new powers to discover and evaluate API products. Developers could describe a workflow in natural language and get working integration code, without the need to read documentation or to write a single API call from scratch.
 
-In mid-2025, I built and published the official BILL v3 API Postman Collection. 3 weeks from first experiment to published Collection — 15 business days, solo. Without AI, that timeline would not have been possible.
+At the same time, the BILL Developer Platform, Partner Support, and Product Marketing teams were looking for new ways to make the BILL API Platform more visible and accessible. A published Postman Collection was the answer: it would signal confidence in the BILL API products, meet developers where they already worked, and give them a ready-to-run starting point.
+
+I built and published the official BILL v3 API Postman Collection. As a solo project, I went from my first experiment to published Collection in just 3 weeks (15 business days). Without AI, this timeline would be impossible.
 
 ## Starting from scratch — on a weekend
 

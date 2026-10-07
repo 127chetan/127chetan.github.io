@@ -11,11 +11,13 @@ At the same time, the BILL Developer Platform, Partner Support, and Product Mark
 
 I built and published the official BILL v3 API Postman Collection. As a solo project, I went from my first experiment to published Collection in just 3 weeks (15 business days). Without AI, this timeline would be impossible.
 
-## Starting from scratch — on a weekend
+## A weekend experiment
 
-The project started as a personal experiment with ChatGPT and a Postman account, using the petstore OpenAPI spec to understand what was possible. The core idea: use the `openapi-to-postmanv2` library to convert the v3 OpenAPI spec into a Postman Collection, then layer on tooling to make the result actually useful.
+I started the project as a personal experiment with ChatGPT and my free Postman account. I used the standard example Petstore OpenAPI spec to understand what was possible.
 
-The library had a significant limitation: it flattens every endpoint to the same level. Any folder structure defined in the OpenAPI `tag` field is ignored. The output is a flat list of 200+ endpoints — no hierarchy, no grouping, no navigation structure. That was not a publishable experience.
+My core idea was to use the Postman `openapi-to-postmanv2` library to convert the BILL v3 OpenAPI spec into a Postman Collection, and then add a layer of tooling to make the result actually useful.
+
+A big limitation of the library is that it flattens each endpoint to the same level. The library ignores any folder structure defined with the OpenAPI `tag` field. The output is a flat list of 300+ endpoints — no hierarchy, no grouping, no navigation structure. That was not a publishable experience.
 
 ## The build
 

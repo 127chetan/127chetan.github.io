@@ -13,11 +13,13 @@ I built and published the official BILL v3 API Postman Collection. As a solo pro
 
 ## A weekend experiment
 
-I started the project as a personal experiment with ChatGPT and my free Postman account. I used the standard example Petstore OpenAPI spec to understand what was possible.
+I started the project one weekend as a personal experiment with ChatGPT and my free Postman account. I used the Swagger Petstore sample spec to understand what was possible.
 
-My core idea was to use the Postman `openapi-to-postmanv2` library to convert the BILL v3 OpenAPI spec into a Postman Collection, and then add a layer of tooling to make the result actually useful.
+My core idea was to use the Postman `openapi-to-postmanv2` library to convert the BILL v3 OpenAPI spec into a Postman Collection, and then add a layer of tooling to make the result useful.
 
-A big limitation of the library is that it flattens each endpoint to the same level. The library ignores any folder structure defined with the OpenAPI `tag` field. The output is a flat list of 300+ endpoints — no hierarchy, no grouping, no navigation structure. That was not a publishable experience.
+A big limitation of the library is that it ignores the folder structure defined with the OpenAPI `tag` field. The output is a flat list of 300+ endpoints, without any hierarchy, grouping, or navigation structure.
+
+That was not an experience that I wanted to publish.
 
 ## The build
 

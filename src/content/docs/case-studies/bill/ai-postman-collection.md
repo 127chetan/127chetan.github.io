@@ -19,7 +19,7 @@ My core idea was to use the Postman `openapi-to-postmanv2` library to convert th
 
 A big limitation of the library is that it ignores the folder structure defined with the OpenAPI `tag` field. The output is a flat list of 300+ endpoints, without any hierarchy, grouping, or navigation structure.
 
-That was not an experience that I wanted to publish.
+That was not something I wanted to publish.
 
 ## The build
 

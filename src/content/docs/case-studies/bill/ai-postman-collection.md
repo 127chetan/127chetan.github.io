@@ -23,15 +23,15 @@ That was not something I wanted to publish.
 
 ## The build
 
-The solution was a set of JavaScript scripts, each built iteratively with AI:
+My solution was to build a set of JavaScript scripts with AI. These scripts transformed the Collection generated with `openapi-to-postmanv2` to a final version that I was happy with. At each stage of this build, I was iterating based on my extensive testing with each script.
 
-**Script 1 — Restructure the Collection**  
-The first script parsed the generated Collection JSON and reorganized it into a folder structure matching the v3 API reference on [developer.bill.com](https://developer.bill.com). The same mental model a developer used to navigate the docs carried over directly into Postman. Consistency between the two surfaces was non-negotiable — breaking the mental model across tools would create confusion, not reduce it.
+**Script 1: Restructure the Collection**  
+The first script parsed the generated Collection JSON and reorganized it into a folder structure that matched the [v3 API reference](https://developer.bill.com/reference/login) on `developer.bill.com`. Developers familiar with the API reference docs could pick up right where they left off in Postman. Visual and navigational consistency between the two surfaces was non-negotiable. Breaking that mental model across tools would only create confusion.
 
-**Script 2 — Build the Postman Environment**  
+**Script 2: Build the Postman Environment**  
 The second script parsed the source OpenAPI spec and generated a Postman Environment file with 100+ variables — one for each value that would be reused across requests. `{{vendor_id}}`, `{{bill_id}}`, `{{session_id}}`, `{{organization_id}}`, and so on across the full v3 endpoint surface.
 
-**Script 3 — Post-response automation**  
+**Script 3: Post-response automation**  
 The third script generated post-response scripts for each relevant endpoint. When a request succeeds, the script captures the key value from the response and saves it as the corresponding Postman variable automatically.
 
 For example, the login response:

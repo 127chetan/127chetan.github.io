@@ -26,7 +26,9 @@ That was not something I wanted to publish.
 My solution was to build a set of JavaScript scripts with AI. These scripts transformed the Collection generated with `openapi-to-postmanv2` into a publishable version. I tested each script extensively and iterated at every stage.
 
 **Script 1: Restructure the Collection**  
-The first script parsed the generated Collection JSON and reorganized it into a folder structure that matched the [v3 API reference](https://developer.bill.com/reference/login) on `developer.bill.com`. Developers familiar with the API reference docs could pick up right where they left off in Postman. Visual and navigational consistency between the two surfaces was non-negotiable. Breaking that mental model across tools would only create confusion.
+The first script parsed the generated Collection JSON and reorganized it into a folder structure that matched the [v3 API reference](https://developer.bill.com/reference/login) on `developer.bill.com`. Developers familiar with the API reference docs could pick up right where they left off in Postman.
+
+Visual and navigation consistency between the two surfaces was non-negotiable. Breaking that mental model across tools would only create confusion.
 
 **Script 2: Build the Postman Environment**  
 The second script parsed the source OpenAPI spec and generated a Postman Environment file with 100+ variables — one for each value that would be reused across requests. `{{vendor_id}}`, `{{bill_id}}`, `{{session_id}}`, `{{organization_id}}`, and so on across the full v3 endpoint surface.

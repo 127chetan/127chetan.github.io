@@ -23,7 +23,7 @@ That was not something I wanted to publish.
 
 ## The build
 
-My solution was to build a set of JavaScript scripts with AI. These scripts transformed the Collection generated with `openapi-to-postmanv2` to a final version that I was happy with. At each stage of this build, I was iterating based on my extensive testing with each script.
+My solution was to build a set of JavaScript scripts with AI. These scripts transformed the Collection generated with `openapi-to-postmanv2` into a publishable version. I tested each script extensively and iterated at every stage.
 
 **Script 1: Restructure the Collection**  
 The first script parsed the generated Collection JSON and reorganized it into a folder structure that matched the [v3 API reference](https://developer.bill.com/reference/login) on `developer.bill.com`. Developers familiar with the API reference docs could pick up right where they left off in Postman. Visual and navigational consistency between the two surfaces was non-negotiable. Breaking that mental model across tools would only create confusion.

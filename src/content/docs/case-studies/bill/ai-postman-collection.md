@@ -55,7 +55,7 @@ let value = jsonData.id;
 if (value) pm.environment.set("vendor_id", value);
 ```
 
-With these scripts in place, a developer could run complete AP workflows in sequence, with no manual state management between steps.
+With these scripts in place, a developer could run complete workflows in sequence, with no manual state management between steps.
 
 1. Log in, and the session ID is set as the `{{session_id}}` header value for every subsequent request.
 2. Create a vendor, and the vendor ID is ready for the Create a bill request.

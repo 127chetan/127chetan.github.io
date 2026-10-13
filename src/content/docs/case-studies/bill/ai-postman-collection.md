@@ -55,7 +55,11 @@ let value = jsonData.id;
 if (value) pm.environment.set("vendor_id", value);
 ```
 
-This meant a developer could run the login request, and the session ID was immediately available in the header for every subsequent call — no copying, no placeholder replacement. Create a vendor, and the vendor ID was ready for the create bill request. Create a bill, and both the bill ID and vendor ID were ready for the payment request. Complete AP workflows, executable in sequence, with no manual state management between steps.
+With these scripts in place, a developer could run complete AP workflows in sequence, with no manual state management between steps.
+
+1. Log in, and the session ID is set as the `{{session_id}}` header value for every subsequent request.
+2. Create a vendor, and the vendor ID is ready for the Create a bill request.
+3. Create a bill, and both the bill ID and vendor ID are ready for the payment request.
 
 ## What made it possible: AI as a build partner
 

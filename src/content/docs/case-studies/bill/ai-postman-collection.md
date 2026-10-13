@@ -61,13 +61,13 @@ With these scripts in place, a developer could run complete workflows in sequenc
 2. Create a vendor, and the `{{vendor_id}}` variable is ready for the Create a bill request.
 3. Create a bill, and both the `{{vendor_id}}` and `{{bill_id}}` variables are ready for the payment request.
 
-## What made it possible: AI as a build partner
+## AI as a build partner
 
-The AI tooling evolved through the project. The initial experiments used ChatGPT. When the project moved into BILL, Gemini was the approved AI tool — it generated the JavaScript logic and I iterated by reading the code, identifying logic errors, testing the output, and reporting back. JavaScript was the right choice: the logic was simple enough to follow by reading, which made the feedback loop fast and reliable.
+My AI tooling evolved through the project. I worked with ChatGPT for my initial experiments. When Gemini was approved at BILL in 2025, it became the tool for generating JavaScript logic. I iterated by reading code, identifying logic errors, testing output, and reporting back. JavaScript was the right choice: the logic was simple enough to follow, which made the feedback loop fast and reliable.
 
-When Kiro was approved at BILL in 2026, the project moved to Kiro for ongoing maintenance — ensuring that when new fields were added, fields deprecated, or endpoints updated, the Postman PUT operation for publishing Collection updates worked correctly. Claude handled the final iteration, focusing on code efficiency for long-term maintainability.
+When Kiro was approved at BILL in 2026, the project moved to Kiro for ongoing maintenance. For example, I used Kiro to make sure the Postman `PUT` operation for publishing Collection updates worked as expected when fields were added or deprecated, or when endpoints were updated. When BILL adopted Claude in May 2026, I used Claude for the final iteration, focusing on code efficiency for long-term maintainability.
 
-## Working examples in the source
+## Request examples in the source OpenAPI spec
 
 A prerequisite for the Collection was adding working request examples to the source Java engineering project — picked up by the `openapi-generator` library when generating the spec. These examples appeared as pre-filled request bodies in both the API reference on `developer.bill.com` and the Postman Collection. A developer could hit **Send** on any request and expect a valid response, without filling in a single placeholder.
 

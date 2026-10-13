@@ -28,15 +28,19 @@ My solution was to build a set of JavaScript scripts with AI. These scripts tran
 **Script 1: Restructure the Collection**  
 The first script parsed the generated Collection JSON and reorganized it into a folder structure that matched the [v3 API reference](https://developer.bill.com/reference/login) on `developer.bill.com`. Developers familiar with the API reference docs could pick up right where they left off in Postman.
 
-Visual and navigation consistency between the two surfaces was non-negotiable. Breaking that mental model across tools would only create confusion.
+Visual and navigational consistency between the two surfaces was non-negotiable. Developers shouldn't have to relearn the API reference layout when they switch tools.
 
 **Script 2: Build the Postman Environment**  
-The second script parsed the source OpenAPI spec and generated a Postman Environment file with 100+ variables — one for each value that would be reused across requests. `{{vendor_id}}`, `{{bill_id}}`, `{{session_id}}`, `{{organization_id}}`, and so on across the full v3 endpoint surface.
+The second script scanned the `example` fields in the source OpenAPI spec for Postman variables and generated a Postman Environment file with 100+ variables.
+
+A Postman variable is a key-value pair that acts as a placeholder for a value. For example, the `{{session_id}}` variable is set as a header value in each API request. When a developer completes API login with `POST /v3/login`, this variable is set as the generated session ID from the login response. Other variable examples include `{{vendor_id}}`, `{{bill_id}}`, and `{{organization_id}}`.
 
 **Script 3: Post-response automation**  
-The third script generated post-response scripts for each relevant endpoint. When a request succeeds, the script captures the key value from the response and saves it as the corresponding Postman variable automatically.
+The third script generated Post-response scripts for each relevant endpoint.
 
-For example, the login response:
+Postman Post-response scripts are blocks of JavaScript code that run automatically after an API response is received from the server. When a request succeeds, the script captures the relevant value from the response and saves it as the corresponding Postman variable.
+
+For example, the Post-response script for a successful API login response looks for the `sessionId` field and sets the value as the `{{session_id}}` variable. In addition, the `userId` field is set as the `{{login_user_id}}` variable.
 ```javascript
 let jsonData = pm.response.json();
 let value = jsonData.sessionId;
@@ -44,7 +48,7 @@ if (value) pm.environment.set("session_id", value);
 pm.environment.set("login_user_id", jsonData.userId);
 ```
 
-And vendor creation:
+Similarly, the Post-response script for a successful Create a vendor response looks for the vendor `id` field and sets the value as the `{{vendor_id}}` variable.
 ```javascript
 let jsonData = pm.response.json();
 let value = jsonData.id;

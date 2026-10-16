@@ -73,7 +73,7 @@ A prerequisite for publishing the Collection was working request examples. A dev
 
 I added examples for each `POST`, `PUT`, and `PATCH` request in the source Java engineering project. When the OpenAPI spec was generated with the `openapi-generator` library, these examples appeared as prefilled request bodies in both the API reference on `developer.bill.com` and Postman Collection.
 
-For requests that depend on an earlier response, the examples used Postman variables in place of hard-coded IDs. For example, the Create a bill example uses `{{vendor_id}}`, which is set by the Create a vendor post-response script. No placeholder for the developer to replace. The Collection simply fills in working placeholders values.
+For requests that depend on an earlier response, the examples used Postman variables in place of hard-coded IDs. For example, the Create a bill example uses `{{vendor_id}}`, which is set by the Create a vendor post-response script. No placeholder for the developer to replace. The Collection simply fills in the values for them.
 
 ## The publishing workflow
 

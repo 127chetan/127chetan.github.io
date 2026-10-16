@@ -67,11 +67,13 @@ My AI tooling evolved through the project. I worked with ChatGPT for my initial 
 
 When Kiro was approved at BILL in 2026, the project moved to Kiro for ongoing maintenance. For example, I used Kiro to make sure the Postman `PUT` operation for publishing Collection updates worked as expected when fields were added or deprecated, or when endpoints were updated. When BILL adopted Claude in May 2026, I used Claude for the final iteration, focusing on code efficiency for long-term maintainability.
 
-## Request examples in the source OpenAPI spec
+## Request examples in the Postman Collection
 
-A prerequisite for the Collection was adding working request examples to the source Java engineering project — picked up by the `openapi-generator` library when generating the spec. These examples appeared as pre-filled request bodies in both the API reference on `developer.bill.com` and the Postman Collection. A developer could hit **Send** on any request and expect a valid response, without filling in a single placeholder.
+A prerequisite for publishing the Collection was working request examples. A developer should be able to hit `Send` on any request and get a successful response, without the need to replace a single placeholder value.
 
-For endpoints with natural orchestration — create vendor → use vendor ID to create bill → use bill and vendor IDs to create payment — the examples used Postman variables as placeholders, populated automatically by the post-response scripts.
+I added examples for each `POST`, `PUT`, and `PATCH` request in the source Java engineering project. When the OpenAPI spec was generated with the `openapi-generator` library, these examples appeared as prefilled request bodies in both the API reference on `developer.bill.com` and Postman Collection.
+
+For requests that depend on an earlier response, the examples used Postman variables in place of hard-coded IDs. For example, the Create a bill example uses `{{vendor_id}}`, which is set by the Create a vendor post-response script. No placeholder for the developer to replace. The Collection simply fills in working placeholders values.
 
 ## The publishing workflow
 

@@ -159,8 +159,12 @@ When this process was reliable, I formalized it into a GitLab CI/CD pipeline wit
 
 With each Collection update, I posted release note summaries directly in Postman. Every subscriber and follower on the BILL Postman account received an email with the summary. The release discipline from the `developer.bill.com` changelog now reached developers where they already worked.
 
-## The reception
+## Outcomes
 
-API customer feedback was immediate and positive. The response was consistent: instead of testing in the docs or copying cURL examples and manually replacing placeholders, developers could run complete workflows from start to finish. The variables handled state. The post-response scripts handled continuity. The folder structure handled navigation.
+API customer feedback was immediate and consistently positive. The Collection drove the initial acceleration in API developer adoption, which reached 2500+ active API developers by June 2026 ([Developer Platform Growth](/case-studies/bill/growth/)).
 
-The regular Collection update emails signaled something important to customers: the Collection was being actively maintained. That confidence — knowing that what they were using reflected the current API — was as valuable as the Collection itself.
+Instead of copying cURL examples from the docs and manually replacing placeholders, developers could run complete workflows from start to finish in Postman. The folder structure handled navigation. The Postman variables handled state. The Post-response scripts handled continuity.
+
+:::note[Customer confidence]
+Regular Collection update emails showed customers that the Collection was actively maintained. That confidence was as valuable as the Collection itself.
+:::

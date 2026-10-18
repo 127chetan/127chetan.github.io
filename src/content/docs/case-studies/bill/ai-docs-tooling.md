@@ -21,21 +21,23 @@ I kept iterating on the `skill.md` so that the Claude skill and the ReadMe tools
 
 ReadMe provides 2 quality tools for documentation teams (a single-page linter and a full docset audit tool). Both evaluate documentation against a configured style guide, surfacing errors and warnings at the field level. The style guide I generated with Claude Code made the ReadMe tools precise. The tools could now flag specific issues against standards built for BILL developer documentation, and not generic writing guidelines.
 
-## Claude skills I have built
+## The 4 Claude skills
 
-### Docs review
+#### 01 Docs review
 
-The first skill was a direct translation of the style guide work into a Claude skill. A writer or engineer could run it against any page or section and receive a structured review: errors to fix, warnings to consider, and guidance anchored to the same standards used in the ReadMe linting tools. The feedback was specific and actionable — not "this is unclear," but "this field description is missing its constraints and default value."
+The first skill was a direct translation of the style guide work into a Claude skill. A writer or engineer could run it against any page or section and receive a structured review from Claude. The review included errors to fix, warnings to consider, and guidance based on the same standards used in the ReadMe linting tools. The feedback was specific and actionable. Instead of "this is unclear," it was "this field description is missing its constraints and default value."
 
-### Interactive recipe drafts
+#### 02 Interactive recipe drafts
 
-The second skill generated first drafts of interactive recipes — ReadMe's code-first documentation format for multi-endpoint workflows. Given a topic, the skill produced a structured draft showing endpoint orchestration: what to call first, how the output of one request feeds into the next, and where developers typically get stuck. The draft was a starting point, not a finished product, but it cut the time from "we need a recipe for X" to "here's a draft to review" from days to minutes.
+The second skill generated first drafts of interactive recipes. An interative recipe on `developer.bill.com` leverages the ReadMe ability to publish MDX custom components. For example, the [BILL AP workflow interative recipe](https://developer.bill.com/docs/recipe-bill-ap-workflow) enables developers to simply fill in their test credentials and the recipe does a workflow walkthrough by making API calls and showcasing orchestration between endpoints.
 
-### Developer tutorial video script drafts
+Given a topic, the skill produced a structured draft showing endpoint orchestration: what to call first, how the output of one request feeds into the next, and where developers typically get stuck. The draft was a starting point, not a finished product, but it cut the time from "we need a recipe for X" to "here's a draft to review" from days to minutes.
+
+#### 03 Developer tutorial video script drafts
 
 The third skill generated first-draft scripts for developer tutorial videos. Given a topic and the relevant API operations, it produced a narrated walkthrough structured for recording: introduction, context, demo steps, and a summary of what was covered. The output went directly to a shared Google Drive folder accessible to leadership — using the Google Drive MCP connector in Claude Code to write the file on completion. No copy-paste, no formatting step.
 
-### API developer communications drafts
+#### 04 API developer communications drafts
 
 The fourth skill generated first drafts of mass communications to the API developer audience — release announcements, migration notices, deprecation warnings. Given a topic and the relevant context (new endpoint, changed behavior, upcoming deadline), it produced a structured email draft written for a technical audience. Like the video script skill, the output was written automatically to a shared Google Drive folder, so leadership had immediate visibility into what was being drafted and sent.
 

@@ -143,7 +143,7 @@ In August 2025, after the Collection was live, I built the first iteration of th
 </a>
 </svg>
 
-1. **Combine OpenAPI spec**: Merge multiple v3 OpenAPI spec files into one. The v3 API spans 2 engineering projects. One project covers AP, AR, Partner, Organization, and Network operations, and the other project covers Webhooks.
+1. **Combine OpenAPI spec**: Merge both v3 OpenAPI spec files into one. The v3 API spans 2 engineering projects. One project covers AP, AR, Partner, Organization, and Network operations, and the other project covers Webhooks.
 2. **GET live Collection**: Call the Postman API (`GET https://api.postman.com/collections/{collection_id}`) to pull the live Collection JSON.
 3. **Diff**: Compare the combined OpenAPI spec (from step 1) against the live Collection to identify additions and updates in endpoints, fields, field names, types, and documentation.
 4. **Update Collection**: Apply the results of the diff. Add new operations, add or update fields, and update documentation.

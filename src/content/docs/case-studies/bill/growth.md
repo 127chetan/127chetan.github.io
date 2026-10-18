@@ -29,7 +29,7 @@ I went even further with recording 2 tutorial videos (Bill approvals, and the AR
 
 For workflows that needed visual explanation beyond what a screenshare could show, I built diagrams in Lucidchart. Gemini drafted the initial structure; I took that draft and rebuilt it for an API customer audience — sequencing, labeling, and visual hierarchy aligned to how a developer thinks about the workflow, not how BILL thinks about the product. BILL brand guidelines kept the diagrams consistent with the rest of the Developer Platform.
 
-In June 2026, I used the 16 scripts and the published YouTube tutorials as input to build a Claude skill ([AI Tooling for Docs](/case-studies/bill/ai-docs-tooling/)). Given a topic and the relevant API operations, the skill generates a first-draft script with the same setup section, on-screen action callouts, and voiceover chapters. Each time we ship endpoints that introduce or extend a BILL workflow, a first-draft script is ready as soon as the documentation goes live. The structure I refined by hand across 16 scripts is now available to anyone on the team.
+In June 2026, I used the 16 scripts and the published YouTube tutorials as input to build a Claude skill ([AI Tooling for Docs](/case-studies/bill/ai-docs-tooling/)). Given a topic and the relevant API operations, the skill generates a first-draft script with the same setup section, on-screen action callouts, and voiceover chapters. The skill was designed so that each time the team shipped endpoints that introduced or extended a BILL workflow, a first-draft script would be ready as soon as the documentation went live. The structure I refined by hand across 16 scripts became available to anyone on the team.
 
 ## The numbers
 

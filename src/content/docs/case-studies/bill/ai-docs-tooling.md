@@ -47,7 +47,7 @@ In the second half of 2025, YouTube tutorials were a core part of our platform g
 
 Given a topic and relevant API operations, this Claude skill produced a narrated walkthrough structured for recording. It included an introduction, context, demo steps, and a summary of what was covered. The Google Drive MCP connector was used to save each draft automatically to a shared folder accessible to leadership.
 
-Each time we add endpoints that introduce or extend a BILL workflow, a first-draft script is ready as soon as the documentation goes live.
+The skill was designed so that each time the team added endpoints that introduced or extended a BILL workflow, a first-draft script would be ready as soon as the documentation went live.
 
 #### 04 API developer communications drafts
 

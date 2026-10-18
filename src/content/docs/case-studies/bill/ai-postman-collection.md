@@ -28,7 +28,7 @@ My solution was to build a set of JavaScript scripts with AI. These scripts tran
 **Script 1: Restructure the Collection**  
 The first script parsed the generated Collection JSON and reorganized it into a folder structure that matched the [v3 API reference](https://developer.bill.com/reference/login) on `developer.bill.com`. Developers familiar with the API reference docs could pick up right where they left off in Postman.
 
-Visual and navigational consistency between the two surfaces was non-negotiable. Developers shouldn't have to relearn the API reference layout when they switch tools.
+Visual and navigational consistency between the 2 surfaces was non-negotiable. Developers shouldn't have to relearn the API reference layout when they switch tools.
 
 **Script 2: Build the Postman Environment**  
 The second script scanned the `example` fields in the source OpenAPI spec for Postman variables and generated a Postman Environment file with 100+ variables.
@@ -85,7 +85,7 @@ In August 2025, after the Collection was live, I built the first iteration of th
 
 <svg viewBox="0 0 960 280" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="pc-title pc-desc" style="width: 100%; height: auto; display: block;">
 <title id="pc-title">Postman Collection update pipeline</title>
-<desc id="pc-desc">Seven-stage update pipeline in two rows. Row 1, left to right: combine the v3 API and Webhooks specs, GET the live Collection, diff, update the Collection. Row 2, right to left: add post-response scripts, add request examples, then PUT the Collection. The PUT step runs twice: first to a personal Postman account for a visual check, then to the BILL Postman account for release.</desc>
+<desc id="pc-desc">7-stage update pipeline in 2 rows. Row 1, left to right: combine the v3 API and Webhooks specs, GET the live Collection, diff, update the Collection. Row 2, right to left: add post-response scripts, add request examples, then PUT the Collection. The PUT step runs twice: first to a personal Postman account for a visual check, then to the BILL Postman account for release.</desc>
 <defs>
 <marker id="pc-arr" markerWidth="9" markerHeight="7" refX="8" refY="3.5" orient="auto">
 <path d="M0,0.5 L8,3.5 L0,6.5 Z" fill="#4f5d75"/>
@@ -143,7 +143,7 @@ In August 2025, after the Collection was live, I built the first iteration of th
 </a>
 </svg>
 
-1. **Combine OpenAPI spec**: Merge the two v3 OpenAPI spec files into one. The v3 API spans two engineering projects. One project covers AP, AR, Partner, Organization, and Network operations, and the other project covers Webhooks.
+1. **Combine OpenAPI spec**: Merge multiple v3 OpenAPI spec files into one. The v3 API spans 2 engineering projects. One project covers AP, AR, Partner, Organization, and Network operations, and the other project covers Webhooks.
 2. **GET live Collection**: Call the Postman API (`GET https://api.postman.com/collections/{collection_id}`) to pull the live Collection JSON.
 3. **Diff**: Compare the combined OpenAPI spec (from step 1) against the live Collection to identify additions and updates in endpoints, fields, field names, types, and documentation.
 4. **Update Collection**: Apply the results of the diff. Add new operations, add or update fields, and update documentation.

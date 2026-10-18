@@ -25,13 +25,13 @@ ReadMe provides 2 quality tools for documentation teams (a single-page linter an
 
 #### 01 Docs review
 
-The first skill was a direct translation of the style guide work into a Claude skill. A writer or engineer could run it against any page or section and receive a structured review from Claude. The review included errors to fix, warnings to consider, and guidance based on the same standards used in the ReadMe linting tools. The feedback was specific and actionable. Instead of "this is unclear," it was "this field description is missing its constraints and default value."
+The first skill applied the style guide directly. A writer or engineer could run it against any page or section and receive a structured review from Claude. The review included errors to fix, warnings to consider, and guidance based on the same rules as the ReadMe linting tools. The feedback was specific and actionable. Instead of "this is unclear," it was "this field description is missing its constraints and default value."
 
 #### 02 Interactive recipe drafts
 
-The second skill generated first drafts of interactive recipes. An interative recipe on `developer.bill.com` leverages the ReadMe ability to publish MDX custom components. For example, the [BILL AP workflow interative recipe](https://developer.bill.com/docs/recipe-bill-ap-workflow) enables developers to simply fill in their test credentials and the recipe does a workflow walkthrough by making API calls and showcasing orchestration between endpoints.
+The second skill generated first drafts of interactive recipes. An interactive recipe on `developer.bill.com` uses ReadMe's support for MDX custom components. For example, the [BILL AP workflow interactive recipe](https://developer.bill.com/docs/recipe-bill-ap-workflow) lets developers enter their sandbox credentials, then walks them through the workflow by making live API calls and showing how the endpoints connect.
 
-Given a topic, the skill produced a structured draft showing endpoint orchestration: what to call first, how the output of one request feeds into the next, and where developers typically get stuck. The draft was a starting point, not a finished product, but it cut the time from "we need a recipe for X" to "here's a draft to review" from days to minutes.
+Given a topic, the skill produced a structured draft: what to call first, how the output of one request feeds into the next, and where developers typically get stuck. The draft was a starting point, not a finished product. But it cut the time from "we need a recipe for X" to "here's a draft to review" from days to minutes.
 
 #### 03 Developer tutorial video script drafts
 

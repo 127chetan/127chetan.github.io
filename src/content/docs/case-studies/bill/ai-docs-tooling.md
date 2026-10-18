@@ -73,19 +73,21 @@ Each skill was also instructed to ask follow-up questions whenever a detail in t
 
 #### Internal feedback
 
-Engineers on the Developer Platform team were the first external users. They tested the skills against real content, gave feedback on where the output missed, and those findings went back into the next set of iterations.
+Engineers on the Developer Platform team were the first set of users. They tested the skills against real content, gave feedback on where the output missed, and those findings went back into the next set of iterations.
 
 #### Switching between Claude models
 
 Model selection was part of the iterations as well. I worked across Claude Haiku, Sonnet, and Opus at different stages. I used lighter models for fast iteration on structure, and then switched to more capable models to review and refine the `skill.md` itself. The goal was to match the model to the task, not to default to the most capable one.
 
-## What it changed
+## Outcomes
 
-The skills didn't replace the documentation workflow. They changed where effort was spent. Engineers could now produce structured first drafts without waiting for the technical writer. The docs review skill meant those drafts could be evaluated against real standards before they were ever published. The recipe and tutorial skills compressed the gap between "we need this content" and "here is a draft."
+The skills did not replace the documentation workflow. They changed where effort was spent. Engineers could now produce structured first drafts without waiting for the technical writer.
 
-The deeper shift was that the documentation team's expertise — the style guide, the structural knowledge of the API, the understanding of what developers needed — was now encoded in tools that anyone on the Developer Platform team could use. The knowledge became shareable infrastructure.
+The docs review skill meant that those drafts could be evaluated against the style guide before they were ever published. The recipe and tutorial skills compressed the gap between "we need this content" and "here is a draft," and the comms skill turned a deprecation or release into a ready-to-review email draft. The recipe skill produced first drafts for 8 of the 9 interactive recipes published on `developer.bill.com`.
 
-For me, it was also a direct application of what AI had taught me over the previous year: the most valuable use of these tools isn't generating finished output. It's building systems that make the right output easier for everyone to produce.
+The deeper shift was that the style guide, the structural knowledge of the API, and the understanding of what developers needed were now encoded in tools that anyone on the Developer Platform team could use. The knowledge became shareable infrastructure.
+
+For me, it was also a direct application of what AI had taught me over the previous year: the most valuable use of these tools is not about generating finished output. It is about building systems that make the right output easier for everyone to produce.
 
 ## Making the docs AI-agent ready
 

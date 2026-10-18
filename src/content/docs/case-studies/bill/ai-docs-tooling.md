@@ -33,6 +33,10 @@ The second skill generated first drafts of interactive recipes. An interactive r
 
 Given a topic, the skill produced a structured draft: what to call first, how the output of one request feeds into the next, and where developers typically get stuck. The draft was a starting point, not a finished product. But it cut the time from "we need a recipe for X" to "here's a draft to review" from days to minutes.
 
+:::note[Published recipes]
+Of the 9 interactive recipes published on `developer.bill.com`, 8 started as first drafts from the Claude skill. See the full list at [BILL v3 API recipes](https://developer.bill.com/docs/bill-v3-api-recipes).
+:::
+
 #### 03 Developer tutorial video script drafts
 
 The third skill generated first-draft scripts for developer tutorial videos. Given a topic and the relevant API operations, it produced a narrated walkthrough structured for recording: introduction, context, demo steps, and a summary of what was covered. The output went directly to a shared Google Drive folder accessible to leadership — using the Google Drive MCP connector in Claude Code to write the file on completion. No copy-paste, no formatting step.

@@ -23,15 +23,15 @@ I wrote 16 scripts across the program. From these scripts, 11 were published to 
 
 Each script followed a consistent structure: a setup section defining prerequisites, on-screen action callouts for what the viewer should do, and voiceover narration organized into an introduction, a set of feature chapters, and a conclusion. The structure made the scripts usable by anyone recording — the on-screen actions were explicit enough that a non-writer could follow them without interpretation.
 
-Before any script was finalized, I shared it with the developer platform engineers and API solution engineers. Their review covered technical accuracy, the depth of information, and whether the content addressed the questions API customers were actually asking. That feedback loop meant the videos were solving real problems, not explaining features in the abstract.
+Before any script was finalized, I shared it with the Developer Platform engineers and API solution engineers. Their review covered technical accuracy, the depth of information, and whether the content addressed the questions API customers were actually asking. That feedback loop meant the videos were solving real problems, not explaining features in the abstract.
 
 I went even further with recording 2 tutorial videos (Bill approvals, and the AR workflow deep dive) using Zoom screenshare, recording with voice while demoing the live features, then editing in iMovie. The content team handled final publishing. The remaining 9 were recorded by API solution engineers using the same scripts.
 
-For workflows that needed visual explanation beyond what a screenshare could show, I built diagrams in Lucidchart. Gemini drafted the initial structure; I took that draft and rebuilt it for an API customer audience — sequencing, labeling, and visual hierarchy aligned to how a developer thinks about the workflow, not how BILL thinks about the product. BILL brand guidelines kept the diagrams consistent with the rest of the developer platform.
+For workflows that needed visual explanation beyond what a screenshare could show, I built diagrams in Lucidchart. Gemini drafted the initial structure; I took that draft and rebuilt it for an API customer audience — sequencing, labeling, and visual hierarchy aligned to how a developer thinks about the workflow, not how BILL thinks about the product. BILL brand guidelines kept the diagrams consistent with the rest of the Developer Platform.
 
 ## The numbers
 
-In October 2025, BILL established OKRs for the developer platform. API developer adoption — new registered developers actively building with BILL — was a key result, set at 1300. By the OKR measurement period ending June 2026, the platform had reached 2500+ active API developers: approximately 200% of the target.
+In October 2025, BILL established OKRs for the Developer Platform. API developer adoption — new registered developers actively building with BILL — was a key result, set at 1300. By the OKR measurement period ending June 2026, the platform had reached 2500+ active API developers: approximately 200% of the target.
 
 The associated revenue OKR measured payment volume generated through the API — as developers shipped their integrations to production, their users making payments through BILL drove direct revenue. That OKR closed at 130% of target.
 

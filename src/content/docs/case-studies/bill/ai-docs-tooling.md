@@ -57,23 +57,27 @@ Given a topic and the relevant context (new endpoint, changed behavior, or upcom
 
 ## How the skills were built
 
-The build process was intentionally iterative. For each skill, Claude generated the `skill.md` (the Claude Code skill file that defines behavior, scope, and output format) based on the source material I provided. I then ran each skill on a test topic, reviewed the output, and refined the `skill.md` with Claude based on how the skill performed.
+The build process was intentionally iterative. For each skill, Claude generated the `skill.md` from the source material I provided. I then tested the skill on sample topics and refined the `skill.md` based on output.
+
+Each published skill included 2 files.
+- A `skill.md` file for defining behavior, scope, and output format. This is the file Claude Code reads to execute the skill.
+- A `readme.md` file with installation instructions, usage examples, and scope documentation. This file is written for first-time users of Claude skills.
 
 Each skill had its own source material and test topics.
-- **Docs review** (`/docs-review`): I fed it the style guide and existing docs from `developer.bill.com`, then fine-tuned the `skill.md` based on the style choices made in those docs.
-- **Interactive recipe drafts** (`/docs-recipe`): I first built the MDX custom component for the BILL AP workflow recipe with Claude Code. Once that recipe was published, I fed its MDX to Claude as the source material, then tested the skill with small workflows (i.e. adding an organization bank account with the API).
-- **Developer tutorial video script drafts** (`/docs-script`): I fed it the 16 tutorial scripts I had written by hand and the 11 published YouTube tutorials, then tested it with the same kind of small workflows as the recipe skill.
-- **API developer communications drafts** (`/docs-comms`): I fed it past developer emails and changelog entries, then tested it with announcements (i.e. the deprecation of a field in the next 2 months).
+- **Docs review** (`/docs-review`): My input was the style guide and existing docs from `developer.bill.com`. I refined the `skill.md` based on what the skill flagged and how it phrased feedback.
+- **Interactive recipe drafts** (`/docs-recipe`): I first built the BILL AP workflow interactive recipe (MDX custom component) with Claude Code. When that recipe was published, I fed the MDX to Claude as input, and then tested the skill with small workflows (for example, adding an organization bank account with the API). I fine-tuned the skill based on generated output.
+- **Developer tutorial video script drafts** (`/docs-script`): My input was the 16 tutorial scripts I had written and the 11 published YouTube tutorials. I then worked through the same cycle of testing the skill with small workflows and iterating based on output.
+- **API developer communications drafts** (`/docs-comms`): My input was past developer emails and changelog entries. I tested the skill with sample announcements (for example, a field deprecation in the next 2 months) and refined the `skill.md` based on generated output.
 
-Every skill was also instructed to ask follow-up questions whenever a detail in the provided instructions was unclear or incomplete. Instead of guessing, the skill asked first.
+Each skill was also instructed to ask follow-up questions whenever a detail in the provided instructions was unclear or incomplete. Instead of guessing, the skill asked first.
 
-Engineers on the Developer Platform team were the first external users: they tested the skills against real content, gave feedback on where the output missed, and those findings went back into the next iteration.
+#### Internal feedback
 
-Model selection was part of the iteration. I worked across Claude Haiku, Sonnet, and Opus at different stages — using lighter models for fast iteration on structure and switching to more capable models when reviewing and refining the `skill.md` itself. The goal was the right model for each task, not the most capable model by default, and I learned to be deliberate about what each model tier was actually good for.
+Engineers on the Developer Platform team were the first external users. They tested the skills against real content, gave feedback on where the output missed, and those findings went back into the next set of iterations.
 
-Each published skill included:
-- A `skill.md` defining behavior, scope, and output format — the file Claude Code reads to execute the skill
-- A `readme.md` with installation instructions, usage examples, and scope documentation — written for engineers who had never used Claude Code before
+#### Switching between Claude models
+
+Model selection was part of the iterations as well. I worked across Claude Haiku, Sonnet, and Opus at different stages. I used lighter models for fast iteration on structure, and then switched to more capable models to review and refine the `skill.md` itself. The goal was to match the model to the task, not to default to the most capable one.
 
 ## What it changed
 

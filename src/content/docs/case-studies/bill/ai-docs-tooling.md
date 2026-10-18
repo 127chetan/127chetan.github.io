@@ -5,17 +5,21 @@ description: How a one-person docs team turned a company AI sprint into four pub
 
 ## Context
 
-In the final week of May 2026, BILL officially adopted Claude as an enterprise AI tool and gave teams unstructured time to experiment — a sprint with cleared calendars and no deliverable requirements. For engineering teams, that meant exploring code generation and test automation. For me, it meant something different: turning a year of AI experience into reusable tools that could change how documentation was produced at BILL.
+By May 2026, BILL officially adopted Claude as an enterprise AI tool and gave teams unstructured time to experiment. For engineering teams, that meant exploring code generation, process automation, and test automation. For me, it meant turning a year of my AI experience into building tools that could change how documentation was produced at BILL.
 
-By the end of June 2026, I had published 4 Claude skills to BILL's internal GitLab — each one a documented, installable tool with a `skill.md` defining its behavior and a `readme.md` covering installation, usage, and scope.
+By June 2026, I had published 4 Claude skills on GitLab. These skills were documented, installable tools for automating a set of steps in the documentation process.
 
-## The foundation: a style guide engineers could actually use
+## The foundation: A style guide that engineers could use
 
-Before the sprint, I had a set of style guidelines in place for the developer platform engineering team. The intent was practical: when an engineer added or updated a feature in the Java engineering project, they had the option to write a first draft of the related documentation themselves. The guidelines gave them enough of a framework to do that without needing deep documentation expertise.
+By this time, I had been maintaining a high-level BILL documentation style guide for 4 years. The intent was practical: when a Developer Platform engineer added or updated a feature in the Java engineering project, they had the option to write a first draft of the related documentation themselves. The guide gave them enough of a framework to write first drafts with confidence.
 
-Those guidelines, combined with key reference docs from [developer.bill.com](https://developer.bill.com), became the input I fed to Claude Code. The output was two-fold: the content that populated ReadMe's built-in linting and audit tools, and the `skill.md` file for the first Claude skill.
+The style guide and the published API reference docs from [developer.bill.com](https://developer.bill.com) became the input for Claude Code. The output was a single `skill.md` file with 2 uses.
+- Rules for the first Claude skill
+- Style guide for the ReadMe linting and audit tools
 
-ReadMe provides 2 quality tools for documentation teams — a single-page linter and a full docset audit tool. Both evaluate content against a configured style guide, surfacing errors and warnings at the field level. The style guide I generated with Claude Code made those tools precise: they could now flag specific issues against standards built for developer documentation, not generic writing guidelines.
+I kept iterating on the `skill.md` so that the Claude skill and the ReadMe tools always worked from the same input.
+
+ReadMe provides 2 quality tools for documentation teams (a single-page linter and a full docset audit tool). Both evaluate documentation against a configured style guide, surfacing errors and warnings at the field level. The style guide I generated with Claude Code made the ReadMe tools precise. The tools could now flag specific issues against standards built for BILL developer documentation, and not generic writing guidelines.
 
 ## Claude skills I have built
 
@@ -37,7 +41,7 @@ The fourth skill generated first drafts of mass communications to the API develo
 
 ## How the skills were built
 
-The build process was intentionally iterative. Each skill started as a rough `skill.md` — a Claude Code skill file defining the behavior, scope, and output format. I ran the skill, reviewed the output, improved the `skill.md`, and ran it again. Engineers on the developer platform team were the first external users: they tested the skills against real content, gave feedback on where the output missed, and those findings went back into the next iteration.
+The build process was intentionally iterative. Each skill started as a rough `skill.md` — a Claude Code skill file defining the behavior, scope, and output format. I ran the skill, reviewed the output, improved the `skill.md`, and ran it again. Engineers on the Developer Platform team were the first external users: they tested the skills against real content, gave feedback on where the output missed, and those findings went back into the next iteration.
 
 Model selection was part of the iteration. I worked across Claude Haiku, Sonnet, and Opus at different stages — using lighter models for fast iteration on structure and switching to more capable models when reviewing and refining the `skill.md` itself. The goal was the right model for each task, not the most capable model by default, and I learned to be deliberate about what each model tier was actually good for.
 
@@ -49,7 +53,7 @@ Each published skill included:
 
 The skills didn't replace the documentation workflow. They changed where effort was spent. Engineers could now produce structured first drafts without waiting for the technical writer. The docs review skill meant those drafts could be evaluated against real standards before they were ever published. The recipe and tutorial skills compressed the gap between "we need this content" and "here is a draft."
 
-The deeper shift was that the documentation team's expertise — the style guide, the structural knowledge of the API, the understanding of what developers needed — was now encoded in tools that anyone on the developer platform team could use. The knowledge became shareable infrastructure.
+The deeper shift was that the documentation team's expertise — the style guide, the structural knowledge of the API, the understanding of what developers needed — was now encoded in tools that anyone on the Developer Platform team could use. The knowledge became shareable infrastructure.
 
 For me, it was also a direct application of what AI had taught me over the previous year: the most valuable use of these tools isn't generating finished output. It's building systems that make the right output easier for everyone to produce.
 
@@ -64,6 +68,13 @@ I ran `developer.bill.com` through [afdocs.dev](https://afdocs.dev), an AI-frien
 - **Link integrity** — used the ReadMe AI audit tool to surface and fix broken links across the docset, ensuring that when an agent traversed the site it didn't hit dead ends
 - **MCP server** — enabled `developer.bill.com/mcp`, connecting the docs to an MCP server so AI agents could access the documentation programmatically rather than by scraping
 
+| Change | What it enables |
+|---|---|
+| Published `llms.txt` | AI agents get a structured index of the site's content and purpose, following the emerging convention for AI-readable site metadata |
+| Enabled Markdown output for all pages | AI agents parse structured text, not HTML |
+| Fixed broken links with the ReadMe AI audit tool | AI agents traverse the docset without hitting dead ends |
+| Enabled the MCP server at `developer.bill.com/mcp` | AI agents access the docs programmatically, not by scraping |
+
 The Postman Collection added one more surface: the Postman AI agent can natively read the Collection and make live API calls from it. A developer using an AI agent in Postman can describe a workflow in natural language and have the agent execute the corresponding API calls against the BILL sandbox — using the same Collection structure, environment variables, and post-response automation built into the original build.
 
-Taken together, these changes extended the reach of the documentation beyond human readers. By the end of 2026, `developer.bill.com` was structured for developers, AI coding assistants, and AI agents equally.
+Taken together, these changes extended the reach of the documentation beyond human readers. By June 2026, `developer.bill.com` was structured for developers, AI coding assistants, and AI agents equally.

@@ -25,11 +25,13 @@ ReadMe provides 2 quality tools for documentation teams (a single-page linter an
 
 #### 01 Docs review
 
-The `/docs-review` skill applied the style guide directly. A writer or engineer could run it against any page or section and receive a structured review from Claude. The review included errors to fix, warnings to consider, and guidance based on the same rules as the ReadMe linting tools. The feedback was specific and actionable. Instead of "this is unclear," it was "this field description is missing its constraints and default value."
+The `/docs-review` skill applied the style guide directly. A writer or engineer could run it against any page or section and receive a structured review from Claude. The review included errors to fix, warnings to consider, and guidance based on the same rules as the ReadMe linting tools.
+
+Feedback from the skill review was specific and actionable. Instead of "this is unclear," it was "this field description is missing its constraints and default value."
 
 #### 02 Interactive recipe drafts
 
-The `/docs-recipe` skill generated first drafts of interactive recipes. An interactive recipe on `developer.bill.com` uses ReadMe's support for MDX custom components. For example, the [BILL AP workflow interactive recipe](https://developer.bill.com/docs/recipe-bill-ap-workflow) lets developers enter their sandbox credentials, then walks them through the workflow by making live API calls and showing how the endpoints connect.
+The `/docs-recipe` skill generated first drafts of interactive recipes. An interactive recipe on `developer.bill.com` uses ReadMe's support for MDX custom components. For example, the [BILL AP workflow interactive recipe](https://developer.bill.com/docs/recipe-bill-ap-workflow) enables developers to enter their sandbox credentials, and then walks them through the workflow by making live API calls and showing how the endpoints connect.
 
 Given a topic, the skill produced a structured draft: what to call first, how the output of one request feeds into the next, and where developers typically get stuck. The draft was a starting point, not a finished product. But it cut the time from "we need a recipe for X" to "here's a draft to review" from days to minutes.
 
@@ -49,17 +51,19 @@ Each time we add endpoints that introduce or extend a BILL workflow, a first-dra
 
 #### 04 API developer communications drafts
 
-The `/docs-comms` skill generated first drafts of mass communications to the API developer audience — release announcements, migration notices, deprecation warnings. Given a topic and the relevant context (new endpoint, changed behavior, upcoming deadline), it produced a structured email draft written for a technical audience. Like the video script skill, the output was written automatically to a shared Google Drive folder, so leadership had immediate visibility into what was being drafted and sent.
+The `/docs-comms` skill generated first drafts for mass communications to the API developer audience (release announcements, migration notices, and deprecation warnings).
+
+Given a topic and the relevant context (new endpoint, changed behavior, or upcoming deadline), the skill produced a structured email draft written for a technical audience. Like the video script skill, the output was saved automatically to a Google Drive folder accessible to leadership. Our first drafts went from an hour to a few seconds.
 
 ## How the skills were built
 
-The build process was intentionally iterative. For each skill, Claude generated the `skill.md` (the Claude Code skill file defining behavior, scope, and output format) from the source material I provided, and I kept adding source material as the skill took shape. I then ran the skill on a test topic, reviewed the output, and refined the `skill.md` based on how the skill performed.
+The build process was intentionally iterative. For each skill, Claude generated the `skill.md` (the Claude Code skill file that defines behavior, scope, and output format) based on the source material I provided. I then ran each skill on a test topic, reviewed the output, and refined the `skill.md` with Claude based on how the skill performed.
 
-Each skill had its own source material and test topics:
-- **Docs review**: I fed it the style guide and existing docs from `developer.bill.com`, then fine-tuned the `skill.md` based on the style choices made in those docs.
-- **Interactive recipe drafts**: I first built the MDX custom component for the BILL AP workflow recipe with Claude Code. Once that recipe was published, I fed its MDX to Claude as the source material, then tested the skill with small workflows (i.e. adding an organization bank account with the API).
-- **Developer tutorial video script drafts**: I fed it the 16 tutorial scripts I had written by hand and the 11 published YouTube tutorials, then tested it with the same kind of small workflows as the recipe skill.
-- **API developer communications drafts**: I fed it past developer emails and changelog entries, then tested it with announcements (i.e. the deprecation of a field in the next 2 months).
+Each skill had its own source material and test topics.
+- **Docs review** (`/docs-review`): I fed it the style guide and existing docs from `developer.bill.com`, then fine-tuned the `skill.md` based on the style choices made in those docs.
+- **Interactive recipe drafts** (`/docs-recipe`): I first built the MDX custom component for the BILL AP workflow recipe with Claude Code. Once that recipe was published, I fed its MDX to Claude as the source material, then tested the skill with small workflows (i.e. adding an organization bank account with the API).
+- **Developer tutorial video script drafts** (`/docs-script`): I fed it the 16 tutorial scripts I had written by hand and the 11 published YouTube tutorials, then tested it with the same kind of small workflows as the recipe skill.
+- **API developer communications drafts** (`/docs-comms`): I fed it past developer emails and changelog entries, then tested it with announcements (i.e. the deprecation of a field in the next 2 months).
 
 Every skill was also instructed to ask follow-up questions whenever a detail in the provided instructions was unclear or incomplete. Instead of guessing, the skill asked first.
 

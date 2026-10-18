@@ -25,29 +25,45 @@ ReadMe provides 2 quality tools for documentation teams (a single-page linter an
 
 #### 01 Docs review
 
-The first skill applied the style guide directly. A writer or engineer could run it against any page or section and receive a structured review from Claude. The review included errors to fix, warnings to consider, and guidance based on the same rules as the ReadMe linting tools. The feedback was specific and actionable. Instead of "this is unclear," it was "this field description is missing its constraints and default value."
+The `/docs-review` skill applied the style guide directly. A writer or engineer could run it against any page or section and receive a structured review from Claude. The review included errors to fix, warnings to consider, and guidance based on the same rules as the ReadMe linting tools. The feedback was specific and actionable. Instead of "this is unclear," it was "this field description is missing its constraints and default value."
 
 #### 02 Interactive recipe drafts
 
-The second skill generated first drafts of interactive recipes. An interactive recipe on `developer.bill.com` uses ReadMe's support for MDX custom components. For example, the [BILL AP workflow interactive recipe](https://developer.bill.com/docs/recipe-bill-ap-workflow) lets developers enter their sandbox credentials, then walks them through the workflow by making live API calls and showing how the endpoints connect.
+The `/docs-recipe` skill generated first drafts of interactive recipes. An interactive recipe on `developer.bill.com` uses ReadMe's support for MDX custom components. For example, the [BILL AP workflow interactive recipe](https://developer.bill.com/docs/recipe-bill-ap-workflow) lets developers enter their sandbox credentials, then walks them through the workflow by making live API calls and showing how the endpoints connect.
 
 Given a topic, the skill produced a structured draft: what to call first, how the output of one request feeds into the next, and where developers typically get stuck. The draft was a starting point, not a finished product. But it cut the time from "we need a recipe for X" to "here's a draft to review" from days to minutes.
 
 :::note[Published recipes]
-Of the 9 interactive recipes published on `developer.bill.com`, 8 started as first drafts from the Claude skill. See the full list at [BILL v3 API recipes](https://developer.bill.com/docs/bill-v3-api-recipes).
+Of the 9 interactive recipes published on `developer.bill.com`, 8 started as first drafts from the Claude skill. See the complete list at [BILL v3 API recipes](https://developer.bill.com/docs/bill-v3-api-recipes).
 :::
 
 #### 03 Developer tutorial video script drafts
 
-The third skill generated first-draft scripts for developer tutorial videos. Given a topic and the relevant API operations, it produced a narrated walkthrough structured for recording: introduction, context, demo steps, and a summary of what was covered. The output went directly to a shared Google Drive folder accessible to leadership — using the Google Drive MCP connector in Claude Code to write the file on completion. No copy-paste, no formatting step.
+The `/docs-script` skill generated first-draft scripts for developer tutorial videos.
+
+In the second half of 2025, YouTube tutorials were a core part of our platform growth work with BILL Product Marketing. I wrote 16 tutorial scripts by hand, and 11 were published to YouTube ([Developer Platform Growth](/case-studies/bill/growth/)).
+
+Given a topic and relevant API operations, this Claude skill produced a narrated walkthrough structured for recording. It included an introduction, context, demo steps, and a summary of what was covered. The Google Drive MCP connector was used to save each draft automatically to a shared folder accessible to leadership.
+
+Each time we add endpoints that introduce or extend a BILL workflow, a first-draft script is ready as soon as the documentation goes live.
 
 #### 04 API developer communications drafts
 
-The fourth skill generated first drafts of mass communications to the API developer audience — release announcements, migration notices, deprecation warnings. Given a topic and the relevant context (new endpoint, changed behavior, upcoming deadline), it produced a structured email draft written for a technical audience. Like the video script skill, the output was written automatically to a shared Google Drive folder, so leadership had immediate visibility into what was being drafted and sent.
+The `/docs-comms` skill generated first drafts of mass communications to the API developer audience — release announcements, migration notices, deprecation warnings. Given a topic and the relevant context (new endpoint, changed behavior, upcoming deadline), it produced a structured email draft written for a technical audience. Like the video script skill, the output was written automatically to a shared Google Drive folder, so leadership had immediate visibility into what was being drafted and sent.
 
 ## How the skills were built
 
-The build process was intentionally iterative. Each skill started as a rough `skill.md` — a Claude Code skill file defining the behavior, scope, and output format. I ran the skill, reviewed the output, improved the `skill.md`, and ran it again. Engineers on the Developer Platform team were the first external users: they tested the skills against real content, gave feedback on where the output missed, and those findings went back into the next iteration.
+The build process was intentionally iterative. For each skill, Claude generated the `skill.md` (the Claude Code skill file defining behavior, scope, and output format) from the source material I provided, and I kept adding source material as the skill took shape. I then ran the skill on a test topic, reviewed the output, and refined the `skill.md` based on how the skill performed.
+
+Each skill had its own source material and test topics:
+- **Docs review**: I fed it the style guide and existing docs from `developer.bill.com`, then fine-tuned the `skill.md` based on the style choices made in those docs.
+- **Interactive recipe drafts**: I first built the MDX custom component for the BILL AP workflow recipe with Claude Code. Once that recipe was published, I fed its MDX to Claude as the source material, then tested the skill with small workflows (i.e. adding an organization bank account with the API).
+- **Developer tutorial video script drafts**: I fed it the 16 tutorial scripts I had written by hand and the 11 published YouTube tutorials, then tested it with the same kind of small workflows as the recipe skill.
+- **API developer communications drafts**: I fed it past developer emails and changelog entries, then tested it with announcements (i.e. the deprecation of a field in the next 2 months).
+
+Every skill was also instructed to ask follow-up questions whenever a detail in the provided instructions was unclear or incomplete. Instead of guessing, the skill asked first.
+
+Engineers on the Developer Platform team were the first external users: they tested the skills against real content, gave feedback on where the output missed, and those findings went back into the next iteration.
 
 Model selection was part of the iteration. I worked across Claude Haiku, Sonnet, and Opus at different stages — using lighter models for fast iteration on structure and switching to more capable models when reviewing and refining the `skill.md` itself. The goal was the right model for each task, not the most capable model by default, and I learned to be deliberate about what each model tier was actually good for.
 

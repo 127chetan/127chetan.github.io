@@ -33,7 +33,6 @@ Topics spanned the full developer journey.
 
 Each script followed a consistent structure: a setup section defining prerequisites, on-screen action callouts for what the viewer should do, and voiceover narration organized into an introduction, a set of feature chapters, and a conclusion. The structure made the scripts usable by anyone recording — the on-screen actions were explicit enough that a non-writer could follow them without interpretation.
 
-
 | Section | On-screen action | Voiceover |
 |---|---|---|
 | Setup | Prerequisites the viewer needs before the walkthrough starts | - |

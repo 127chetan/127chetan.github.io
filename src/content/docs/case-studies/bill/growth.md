@@ -1,6 +1,6 @@
 ---
 title: "Developer Platform Growth"
-description: How the Postman Collection and a developer tutorial video program drove BILL's API developer base to 2500+, which was early double the OKR target — and generated 130% of the associated revenue goal.
+description: How the Postman Collection and a developer tutorial video program drove BILL's API developer base to 2500+, which was early double the OKR target, and generated 130% of the associated revenue goal.
 ---
 
 ## Context
@@ -39,7 +39,7 @@ In June 2026, I used the 16 scripts and the published YouTube tutorials as input
 
 ## The numbers
 
-In October 2025, BILL established OKRs for the Developer Platform. API developer adoption — new registered developers actively building with BILL — was a key result, set at 1300. By the OKR measurement period ending June 2026, the platform had reached 2500+ active API developers: approximately 200% of the target.
+In October 2025, BILL established OKRs for the Developer Platform. API developer adoption — new registered developers actively building with BILL — was a key result, set at 1300. By the OKR measurement period ending June 2026, the platform had reached 2500+ active API developers: 192% of the target.
 
 The associated revenue OKR measured payment volume generated through the API — as developers shipped their integrations to production, their users making payments through BILL drove direct revenue. That OKR closed at 130% of target.
 

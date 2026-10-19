@@ -7,7 +7,7 @@ description: How the Postman Collection and a developer tutorial video program d
 
 By mid-2025, the BILL v3 API had strong documentation and a mature product release process.
 
-We worked with BILL Product Marketing to find new ways to give developers a faster path from product discovery to a working integration with BILL. I led 2 major project launches in the summer of 2025: the Postman Collection in June, and the first developer tutorial video in July.
+We worked with BILL Product Marketing to find new ways to give developers a faster path from product discovery to a working integration with BILL. I led 2 major project launches in the summer of 2025: the [Postman Collection](/case-studies/bill/ai-postman-collection/) in June, and the first developer tutorial video in July.
 
 Together, these projects addressed 2 points where developer adoption stalled.
 - **Evaluation**: Deciding whether the API was worth a developer's time. The Postman Collection compressed the first working API call from hours to minutes.

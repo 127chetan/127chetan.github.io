@@ -21,7 +21,7 @@ The direction was to record and publish tutorial videos showing the API in real 
 
 I wrote 16 scripts across the program. From these scripts, 11 were published to the [BILL API Platform for Developers playlist](https://www.youtube.com/playlist?list=PLnyriCE50-7zPC1SiWAcC0kyL0DhgWK9Y) on YouTube.
 
-Topics spanned the full developer journey.
+Topics spanned the full developer journey. This is a representative list.
 
 | Topic area | Videos |
 |---|---|
@@ -49,11 +49,13 @@ Before any script was ready for recording, I shared it with the Developer Platfo
 
 #### Videos I recorded
 
-I recorded 2 of the tutorial videos myself ([Bill approvals](https://www.youtube.com/watch?v=qQoo0Zvyg48) and the [AR workflow deep dive](https://www.youtube.com/watch?v=SLzl0MvDrv0)). I used Zoom screenshare to record voiceover during a live demo, and then edited the videos in iMovie. The content team handled final publishing. API solution engineers recorded the remaining 9 using the same scripts.
+I recorded 2 of the tutorial videos myself ([Bill approvals](https://www.youtube.com/watch?v=qQoo0Zvyg48) and [AR workflow deep dive](https://www.youtube.com/watch?v=SLzl0MvDrv0)). I used Zoom screenshare to record voiceover with a live demo, and then edited the videos in iMovie. The BILL content team handled final publishing. API solution engineers recorded the other 9 videos using the scripts I wrote.
 
 #### Diagrams
 
-For workflows that needed visual explanation beyond what a screenshare could show, I built diagrams in Lucidchart. Gemini drafted the initial structure. I rebuilt each draft for an API customer audience, aligning sequencing, labels, and visual hierarchy to how a developer thinks about the workflow, not how BILL thinks about the product. BILL brand guidelines kept the diagrams consistent with the rest of the Developer Platform.
+For workflows that needed visual explanations beyond on-screen demos, I built diagrams in Lucidchart.
+
+Gemini drew the first drafts. I rebuilt each draft for API developers, aligning sequencing, labels, and visual hierarchy to how a developer thinks about the workflow. BILL brand guidelines kept the diagrams consistent with the rest of the Developer Platform.
 
 #### Claude skill
 

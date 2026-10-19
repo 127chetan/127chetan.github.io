@@ -23,13 +23,13 @@ I wrote 16 scripts across the program. From these scripts, 11 were published to 
 
 Topics spanned the full developer journey.
 
-| Topic area | Videos | Recorded by |
-|---|---|---|
-| Getting started | Sandbox account & developer key setup; BILL authentication | API solution engineers |
-| Core AP workflows | Domestic AP payments; Bill approvals | API solution engineers (Domestic AP payments); Me (Bill approvals) |
-| Core AR workflows | AR workflow deep dive | Me |
-| v3-exclusive features | Working with Spend & Expense; Working with webhooks | API solution engineers |
-| Embedded finance | BILL Elements onboarding & use | API solution engineers |
+| Topic area | Videos |
+|---|---|
+| Getting started | Sandbox account & developer key setup; BILL authentication |
+| Core AP workflows | Domestic AP payments; Bill approvals |
+| Core AR workflows | AR workflow deep dive |
+| v3-exclusive features | Working with Spend & Expense; Working with webhooks |
+| Embedded finance | BILL Elements onboarding & use |
 
 Each script followed a consistent structure: a setup section defining prerequisites, on-screen action callouts for what the viewer should do, and voiceover narration organized into an introduction, a set of feature chapters, and a conclusion. The structure made the scripts usable by anyone recording — the on-screen actions were explicit enough that a non-writer could follow them without interpretation.
 

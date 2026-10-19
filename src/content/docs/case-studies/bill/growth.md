@@ -1,13 +1,19 @@
 ---
 title: "Developer Platform Growth"
-description: How the Postman Collection and a developer tutorial video program drove BILL's API developer base to 2500+ — nearly double the OKR target — and generated 130% of the associated revenue goal.
+description: How the Postman Collection and a developer tutorial video program drove BILL's API developer base to 2500+, which was early double the OKR target — and generated 130% of the associated revenue goal.
 ---
 
 ## Context
 
-By mid-2025, the BILL v3 API had strong documentation and a mature spec pipeline. What it didn't have was a fast path for developers to go from discovery to a working integration. I led 2 major project launches in the summer of 2025: the Postman Collection in June, and the first developer tutorial video in July.
+By mid-2025, the BILL v3 API had strong documentation and a mature product release process.
 
-Together, they addressed the two moments where developer adoption stalls — the point where a developer decides whether the API is worth their time, and the point where they try to figure out how to actually use it. The Postman Collection compressed the first working API call from hours to minutes. The videos walked developers through the workflows that mattered before they got to the reference docs.
+We worked with BILL Product Marketing to find new ways to give developers a faster path from product discovery to a working integration with BILL. I led 2 major project launches in the summer of 2025: the Postman Collection in June, and the first developer tutorial video in July.
+
+Together, these projects addressed 2 points where developer adoption stalled.
+- **Evaluation**: Deciding whether the API was worth a developer's time. The Postman Collection compressed the first working API call from hours to minutes.
+- **Implementation**: Figuring out how to use the API. The tutorial videos walked developers through core workflows before they opened the API reference docs.
+
+The Postman Collection compressed the first working API call from hours to minutes. The videos were walkthroughs for core workflows before developers read the API reference docs.
 
 ## The developer tutorial video program
 

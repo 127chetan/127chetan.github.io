@@ -33,7 +33,7 @@ Topics spanned the full developer journey.
 
 #### Script structure
 
-Each script followed a consistent structure. The structure made the scripts usable by anyone recording. The on-screen actions were explicit enough that a non-writer could follow them without interpretation.
+Each script followed a consistent structure that made the scripts usable. The on-screen actions were explicit enough that a non-writer could follow them without interpretation.
 
 | Section | On-screen action | Voiceover |
 |---|---|---|
@@ -45,7 +45,7 @@ Each script followed a consistent structure. The structure made the scripts usab
 
 #### Feedback & iterations
 
-Before any script was ready for recording, I shared it with the Developer Platform engineers and API solution engineers. Their review covered technical accuracy, the depth of information, and whether the content addressed the questions API customers were actually asking. That feedback loop meant the videos were solving real problems, not explaining features in the abstract.
+Before any script was ready for recording, I shared it with the Developer Platform engineers and API solution engineers. Their review covered technical accuracy, depth of information, and whether the information addressed the questions API customers were actually asking. The feedback loop meant the videos were solving real problems, and not just explaining features in the abstract.
 
 #### Videos I recorded
 

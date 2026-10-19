@@ -15,11 +15,11 @@ Together, these projects addressed 2 points where developer adoption stalled.
 
 ## The developer tutorial video program
 
-The video program started with a content gap: no developer audience was going to sit through a generic product walkthrough. In addition, we wanted to give developers a new medium of instructions for their commonly asked questions and for features that generated more revenue for BILL.
+The video program started with a content gap: no developer audience was going to sit through a generic product walkthrough. In addition, we wanted to give developers a new format for answers to common questions, and for features that drove revenue for BILL.
 
-The direction was to record and publish tutorial vidoes showcasing the API in real workflows, specific use cases, actual endpoints, and expected responses visible on screen.
+The direction was to record and publish tutorial videos showing the API in real workflows, with the actual endpoints and expected responses visible on screen.
 
-I wrote 16 scripts across the program. From these scripts, 11 were published to the [BILL API Platform for Developers playlist](https://www.youtube.com/playlist?list=PLnyriCE50-7zPC1SiWAcC0kyL0DhgWK9Y) on YouTube. 
+I wrote 16 scripts across the program. From these scripts, 11 were published to the [BILL API Platform for Developers playlist](https://www.youtube.com/playlist?list=PLnyriCE50-7zPC1SiWAcC0kyL0DhgWK9Y) on YouTube.
 
 Topics spanned the full developer journey.
 
@@ -31,20 +31,21 @@ Topics spanned the full developer journey.
 | v3-exclusive features | Working with Spend & Expense; Working with webhooks |
 | Embedded finance | BILL Elements onboarding & use |
 
-Each script followed a consistent structure: a setup section defining prerequisites, on-screen action callouts for what the viewer should do, and voiceover narration organized into an introduction, a set of feature chapters, and a conclusion. The structure made the scripts usable by anyone recording — the on-screen actions were explicit enough that a non-writer could follow them without interpretation.
+#### Script structure
+
+Each script followed a consistent structure. The structure made the scripts usable by anyone recording. The on-screen actions were explicit enough that a non-writer could follow them without interpretation.
 
 | Section | On-screen action | Voiceover |
 |---|---|---|
 | Setup | Prerequisites the viewer needs before the walkthrough starts | - |
-| Introduction | Show the starting screen | Introduce the workflow & what the viewer will build |
-| Feature chapter 1 | Callout: the exact action the viewer takes | Explain what the action does & why it matters |
+| Introduction | Show the core feature | Introduce the workflow & what the viewer will build |
+| Feature chapter 1 | Show action(s) the viewer takes | Explain what the action does & why it matters |
 | Chapters 2…n | One chapter per feature in the workflow | Same pairing, repeated for each feature |
-| Conclusion | Show the end result | Recap what was covered |
-
+| Conclusion | Show end result | Recap what was covered |
 
 #### Feedback & iterations
 
-Before any script was finalized, I shared it with the Developer Platform engineers and API solution engineers. Their review covered technical accuracy, the depth of information, and whether the content addressed the questions API customers were actually asking. That feedback loop meant the videos were solving real problems, not explaining features in the abstract.
+Before any script was ready for recording, I shared it with the Developer Platform engineers and API solution engineers. Their review covered technical accuracy, the depth of information, and whether the content addressed the questions API customers were actually asking. That feedback loop meant the videos were solving real problems, not explaining features in the abstract.
 
 #### Videos I recorded
 

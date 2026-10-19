@@ -33,7 +33,7 @@ Topics spanned the full developer journey.
 
 #### Script structure
 
-Each script followed a consistent structure that made the scripts usable. The on-screen actions were explicit enough that a non-writer could follow them without interpretation.
+Each script followed a consistent structure that made the scripts more usable for recording. The on-screen actions were explicit enough that a non-writer could follow them without interpretation.
 
 | Section | On-screen action | Voiceover |
 |---|---|---|
@@ -49,15 +49,15 @@ Before any script was ready for recording, I shared it with the Developer Platfo
 
 #### Videos I recorded
 
-I went even further with recording 2 tutorial videos (Bill approvals, and the AR workflow deep dive) using Zoom screenshare, recording with voice while demoing the live features, then editing in iMovie. The content team handled final publishing. The remaining 9 were recorded by API solution engineers using the same scripts.
+I recorded 2 of the tutorial videos myself (Bill approvals and the AR workflow deep dive). I used Zoom screenshare to record voiceover during a live demo, and then edited the videos in iMovie. The content team handled final publishing. API solution engineers recorded the remaining 9 using the same scripts.
 
 #### Diagrams
 
-For workflows that needed visual explanation beyond what a screenshare could show, I built diagrams in Lucidchart. Gemini drafted the initial structure; I took that draft and rebuilt it for an API customer audience — sequencing, labeling, and visual hierarchy aligned to how a developer thinks about the workflow, not how BILL thinks about the product. BILL brand guidelines kept the diagrams consistent with the rest of the Developer Platform.
+For workflows that needed visual explanation beyond what a screenshare could show, I built diagrams in Lucidchart. Gemini drafted the initial structure. I rebuilt each draft for an API customer audience, aligning sequencing, labels, and visual hierarchy to how a developer thinks about the workflow, not how BILL thinks about the product. BILL brand guidelines kept the diagrams consistent with the rest of the Developer Platform.
 
 #### Claude skill
 
-In June 2026, I used the 16 scripts and the published YouTube tutorials as input to build a Claude skill ([AI Tooling for Docs](/case-studies/bill/ai-docs-tooling/)). Given a topic and the relevant API operations, the skill generates a first-draft script with the same setup section, on-screen action callouts, and voiceover chapters. The skill was designed so that each time the team shipped endpoints that introduced or extended a BILL workflow, a first-draft script would be ready as soon as the documentation went live. The structure I refined by hand across 16 scripts became available to anyone on the team.
+In June 2026, I used the 16 scripts and the published YouTube tutorials as input to build a Claude skill ([AI Tooling for Docs](/case-studies/bill/ai-docs-tooling/)). Given a topic and the relevant API operations, the skill generated a first-draft script with the same setup section, on-screen action callouts, and voiceover chapters. The skill was designed so that each time the team shipped endpoints that introduced or extended a BILL workflow, a first-draft script would be ready as soon as the documentation went live. The structure I refined by hand across 16 scripts became available to anyone on the team.
 
 ## The numbers
 

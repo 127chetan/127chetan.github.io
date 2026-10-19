@@ -13,19 +13,23 @@ Together, these projects addressed 2 points where developer adoption stalled.
 - **Evaluation**: Deciding whether the API was worth a developer's time. The Postman Collection compressed the first working API call from hours to minutes.
 - **Implementation**: Figuring out how to use the API. The tutorial videos walked developers through core workflows before they opened the API reference docs.
 
-The Postman Collection compressed the first working API call from hours to minutes. The videos were walkthroughs for core workflows before developers read the API reference docs.
-
 ## The developer tutorial video program
 
-The video program started with a content gap: no developer audience was going to sit through a generic product walkthrough. They needed to see the API doing something real — a specific workflow, a specific use case, with the actual endpoints and expected responses visible on screen.
+The video program started with a content gap: no developer audience was going to sit through a generic product walkthrough. In addition, we wanted to give developers a new medium of instructions for their commonly asked questions and for features that generated more revenue for BILL.
 
-I wrote 16 scripts across the program. From these scripts, 11 were published to the [BILL API Platform for Developers playlist](https://www.youtube.com/playlist?list=PLnyriCE50-7zPC1SiWAcC0kyL0DhgWK9Y) on YouTube. Topics spanned the full developer journey:
+The direction was to record and publish tutorial vidoes showcasing the API in real workflows, specific use cases, actual endpoints, and expected responses visible on screen.
 
-- **Getting started** — sandbox account and developer key setup, BILL authentication
-- **Core AP workflows** — domestic AP payments, bill approvals
-- **Core AR workflows** — AR workflow deep dive
-- **v3-exclusive features** — working with Spend & Expense, working with webhooks
-- **Embedded finance** — BILL Elements onboarding and use
+I wrote 16 scripts across the program. From these scripts, 11 were published to the [BILL API Platform for Developers playlist](https://www.youtube.com/playlist?list=PLnyriCE50-7zPC1SiWAcC0kyL0DhgWK9Y) on YouTube. 
+
+Topics spanned the full developer journey.
+
+| Topic area | Videos |
+|---|---|
+| Getting started | Sandbox account & developer key setup; BILL authentication |
+| Core AP workflows | Domestic AP payments; Bill approvals |
+| Core AR workflows | AR workflow deep dive |
+| v3-exclusive features | Working with Spend & Expense; Working with webhooks |
+| Embedded finance | BILL Elements onboarding & use |
 
 Each script followed a consistent structure: a setup section defining prerequisites, on-screen action callouts for what the viewer should do, and voiceover narration organized into an introduction, a set of feature chapters, and a conclusion. The structure made the scripts usable by anyone recording — the on-screen actions were explicit enough that a non-writer could follow them without interpretation.
 

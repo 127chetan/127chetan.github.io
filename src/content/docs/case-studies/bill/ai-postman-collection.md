@@ -85,7 +85,7 @@ In August 2025, after the Collection was live, I built the first iteration of th
 
 <svg viewBox="0 0 960 280" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="pc-title pc-desc" style="width: 100%; height: auto; display: block;">
 <title id="pc-title">Postman Collection update pipeline</title>
-<desc id="pc-desc">7-stage update pipeline in 2 rows. Row 1, left to right: combine the v3 API and Webhooks specs, GET the live Collection, diff, update the Collection. Row 2, right to left: add post-response scripts, add request examples, then PUT the Collection. The PUT step runs twice: first to a personal Postman account for a visual check, then to the BILL Postman account for release.</desc>
+<desc id="pc-desc">7-stage update pipeline in 2 rows. Row 1, left to right: combine the v3 API and Webhooks specs, GET the live Collection, diff, update the Collection. Row 2, right to left: add post-response scripts, add request examples, and then PUT the Collection. The PUT step runs twice: first to a personal Postman account for a visual check, and then to the BILL Postman account for release.</desc>
 <defs>
 <marker id="pc-arr" markerWidth="9" markerHeight="7" refX="8" refY="3.5" orient="auto">
 <path d="M0,0.5 L8,3.5 L0,6.5 Z" fill="#4f5d75"/>

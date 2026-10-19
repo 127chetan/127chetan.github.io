@@ -49,7 +49,7 @@ Before any script was ready for recording, I shared it with the Developer Platfo
 
 #### Videos I recorded
 
-I recorded 2 of the tutorial videos myself (Bill approvals and the AR workflow deep dive). I used Zoom screenshare to record voiceover during a live demo, and then edited the videos in iMovie. The content team handled final publishing. API solution engineers recorded the remaining 9 using the same scripts.
+I recorded 2 of the tutorial videos myself ([Bill approvals](https://www.youtube.com/watch?v=qQoo0Zvyg48) and the [AR workflow deep dive](https://www.youtube.com/watch?v=SLzl0MvDrv0)). I used Zoom screenshare to record voiceover during a live demo, and then edited the videos in iMovie. The content team handled final publishing. API solution engineers recorded the remaining 9 using the same scripts.
 
 #### Diagrams
 

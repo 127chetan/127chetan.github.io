@@ -18,3 +18,14 @@ When I joined BILL in 2021, [developer.bill.com](https://developer.bill.com) was
 | 2025 | [AI-Powered Postman Collection](/case-studies/bill/ai-postman-collection/) | Built & published the official BILL v3 Postman Collection in 3 weeks with AI. GitLab CI/CD pipeline for keeping the Collection current with each API release. |
 | 2026 | [AI Tooling for Docs](/case-studies/bill/ai-docs-tooling/) | Published 4 Claude skills for automating doc workflows. Made `developer.bill.com` AI agent-ready with llms.txt, markdown rendering, & MCP server. |
 | 2025–2026 | [Developer Platform Growth](/case-studies/bill/growth/) | 16 tutorial video scripts, 11 published YouTube videos. 2500+ active API developers, 192% of OKR; 130% of revenue OKR (June 2026). |
+
+## How it adds up
+
+By June 2026, the BILL API Platform had 2500+ active API developers. Every API documentation project between 2021 and 2026 contributed to that number in some way.
+- The [ReadMe migration](/case-studies/bill/zendesk-to-readme/) made the docs credible.
+- The [OpenAPI spec](/case-studies/bill/openapi-spec/) made the API reference accurate.
+- The [v3 documentation](/case-studies/bill/dual-api-versions/) made the upgrade path clear.
+- The [Postman Collection](/case-studies/bill/ai-postman-collection/) removed friction at first contact.
+- The [tutorial videos](/case-studies/bill/growth/) answered workflow questions before developers had to ask them.
+
+The 2500+ number is the output of all of it.

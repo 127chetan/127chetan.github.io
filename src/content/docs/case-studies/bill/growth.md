@@ -33,11 +33,29 @@ Topics spanned the full developer journey.
 
 Each script followed a consistent structure: a setup section defining prerequisites, on-screen action callouts for what the viewer should do, and voiceover narration organized into an introduction, a set of feature chapters, and a conclusion. The structure made the scripts usable by anyone recording — the on-screen actions were explicit enough that a non-writer could follow them without interpretation.
 
+
+| Section | On-screen action | Voiceover |
+|---|---|---|
+| Setup | Prerequisites the viewer needs before the walkthrough starts | - |
+| Introduction | Show the starting screen | Introduce the workflow & what the viewer will build |
+| Feature chapter 1 | Callout: the exact action the viewer takes | Explain what the action does & why it matters |
+| Chapters 2…n | One chapter per feature in the workflow | Same pairing, repeated for each feature |
+| Conclusion | Show the end result | Recap what was covered |
+
+
+#### Feedback & iterations
+
 Before any script was finalized, I shared it with the Developer Platform engineers and API solution engineers. Their review covered technical accuracy, the depth of information, and whether the content addressed the questions API customers were actually asking. That feedback loop meant the videos were solving real problems, not explaining features in the abstract.
+
+#### Videos I recorded
 
 I went even further with recording 2 tutorial videos (Bill approvals, and the AR workflow deep dive) using Zoom screenshare, recording with voice while demoing the live features, then editing in iMovie. The content team handled final publishing. The remaining 9 were recorded by API solution engineers using the same scripts.
 
+#### Diagrams
+
 For workflows that needed visual explanation beyond what a screenshare could show, I built diagrams in Lucidchart. Gemini drafted the initial structure; I took that draft and rebuilt it for an API customer audience — sequencing, labeling, and visual hierarchy aligned to how a developer thinks about the workflow, not how BILL thinks about the product. BILL brand guidelines kept the diagrams consistent with the rest of the Developer Platform.
+
+#### Claude skill
 
 In June 2026, I used the 16 scripts and the published YouTube tutorials as input to build a Claude skill ([AI Tooling for Docs](/case-studies/bill/ai-docs-tooling/)). Given a topic and the relevant API operations, the skill generates a first-draft script with the same setup section, on-screen action callouts, and voiceover chapters. The skill was designed so that each time the team shipped endpoints that introduced or extended a BILL workflow, a first-draft script would be ready as soon as the documentation went live. The structure I refined by hand across 16 scripts became available to anyone on the team.
 

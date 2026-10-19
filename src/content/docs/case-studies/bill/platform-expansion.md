@@ -5,7 +5,7 @@ description: Hired and led a contract technical writer to expand developer.bill.
 
 ## Context
 
-By early 2025, [developer.bill.com](https://developer.bill.com) had mature API reference documentation for both API versions (v2 and v3), and a growing developer audience.
+By early 2025, [developer.bill.com](https://developer.bill.com) had mature API reference documentation for both BILL v2 and v3 API, and a growing developer audience.
 
 #### BILL Elements
 

@@ -63,12 +63,18 @@ In June 2026, I used the 16 scripts and the published YouTube tutorials to build
 
 ## Outcomes
 
+#### OKR success
+
 In October 2025, BILL established OKRs for the Developer Platform. API developer adoption (new registered developers actively building with BILL) was a key result set at 1300. By the OKR measurement period ending June 2026, the platform had reached 2500+ active API developers: 192% of the target.
 
+:::note[Top-of-funnel number]
+2500+ active API developers was a top-of-funnel number. It measured how many developers, teams, and partners were actively building with the BILL API Platform.
+:::
+
 The associated revenue OKR measured payment volume generated through the API. As developers shipped their integrations to production, their users making payments through BILL drove direct revenue. That OKR closed at 130% of the target.
+
+#### Reasons for OKR success
 
 The Postman Collection launched first and drove the initial acceleration. The July 2025 tutorial video gave developers a reference point before they started reading the API reference docs. They could watch a tutorial for the AP payments workflow, understand the sequence of calls, and then run API calls directly in Postman with a clear mental model of what they were building.
 
 The combination of the tutorial videos and Postman Collection compressed the time-to-first-integration for new developers and lowered the support burden for API solution engineers who were otherwise answering the same onboarding questions repeatedly.
-
-2500+ active API developers is a top-of-funnel number. It measures how many developers, teams, and partners were actively building with the BILL API Platform. It doesn't measure every integration that shipped or every payment that was processed. It measures the front of the funnel: the moment a developer chose to build.

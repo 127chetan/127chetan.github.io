@@ -59,7 +59,7 @@ Gemini drew the first drafts. I rebuilt each draft for API developers, aligning 
 
 #### Claude skill
 
-In June 2026, I used the 16 scripts and the published YouTube tutorials as input to build a Claude skill ([AI Tooling for Docs](/case-studies/bill/ai-docs-tooling/)). Given a topic and the relevant API operations, the skill generated a first-draft script with the same setup section, on-screen action callouts, and voiceover chapters. The skill was designed so that each time the team shipped endpoints that introduced or extended a BILL workflow, a first-draft script would be ready as soon as the documentation went live. The structure I refined by hand across 16 scripts became available to anyone on the team.
+In June 2026, I used the 16 scripts and the published YouTube tutorials to build a Claude skill that generated first-draft scripts in the same structure ([AI Tooling for Docs](/case-studies/bill/ai-docs-tooling/)).
 
 ## The numbers
 

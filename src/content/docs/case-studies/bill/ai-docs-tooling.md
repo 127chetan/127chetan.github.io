@@ -1,6 +1,6 @@
 ---
 title: "AI Tooling for Docs"
-description: How a one-person docs team turned a company AI sprint into 4 published Claude skills, and shifted engineering teams from documentation consumers to documentation contributors.
+description: How I turned a company AI sprint into 4 published Claude skills, and shifted engineering teams from documentation consumers to documentation contributors.
 ---
 
 ## Context
@@ -19,7 +19,7 @@ The style guide and the published API reference docs from [developer.bill.com](h
 
 I kept iterating on the `skill.md` so that the Claude skill and the ReadMe tools always worked from the same input.
 
-ReadMe provides 2 quality tools for documentation teams (a single-page linter and a full docset audit tool). Both evaluate documentation against a configured style guide, surfacing errors and warnings at the field level. The style guide I generated with Claude Code made the ReadMe tools precise. The tools could now flag specific issues against standards built for BILL developer documentation, and not generic writing guidelines.
+ReadMe provides 2 quality tools for documentation teams (a single-page linter and a full docset audit tool). Both evaluate documentation against a configured style guide, surfacing errors and warnings at the field level. The rules I generated with Claude Code made the ReadMe tools precise. The tools could now flag specific issues against standards built for BILL developer documentation, and not generic writing guidelines.
 
 ## The 4 Claude skills
 
@@ -89,7 +89,7 @@ The deeper shift was that the style guide, the structural knowledge of the API, 
 
 For me, it was also a direct application of what AI had taught me over the previous year: the most valuable use of these tools is not about generating finished output. It is about building systems that make the right output easier for everyone to produce.
 
-## Making the docs AI-agent ready
+## Making the docs AI agent-ready
 
 The skills addressed how AI could help produce documentation. A parallel question was whether the documentation itself was ready for AI agents to consume.
 

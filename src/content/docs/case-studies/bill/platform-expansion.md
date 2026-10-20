@@ -37,7 +37,7 @@ The documentation was set up to showcase the BILL AP workflow.
 
 ## My role as editor & content strategist
 
-I realized early that every doc delivered by the contract writer will require an editorial review before publishing. While the information was technically accurate (reviewed by SMEs and iterated upon), the presentation was lacking.
+I realized early that every doc delivered by the contract writer would require an editorial review before publishing. While the information was technically accurate (reviewed by SMEs and iterated upon), the presentation was lacking.
 
 My editorial checklist.
 - [x] Move core concepts out of lengthy bullet lists

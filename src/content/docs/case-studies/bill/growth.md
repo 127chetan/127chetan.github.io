@@ -65,9 +65,9 @@ In June 2026, I used the 16 scripts and the published YouTube tutorials to build
 
 #### OKR results
 
-In October 2025, BILL established OKRs for the Developer Platform. API developer adoption (new registered developers actively building with BILL) was a key result set at 1300. By the OKR measurement period ending June 2026, the platform had reached 2500+ active API developers: 192% of the target.
+In October 2025, BILL established OKRs for the Developer Platform. API developer adoption (new registered developers actively building with BILL) was a key result set at 1300. By the OKR measurement period ending June 2026, the platform had reached 2500+ active API developers: 192% of the target!
 
-The associated revenue OKR measured payment volume generated through the API. As developers shipped their integrations to production, their users making payments through BILL drove direct revenue. That OKR closed at 130% of the target.
+The associated revenue OKR measured payment volume generated through the API. As developers shipped their integrations to production, their users making payments through BILL drove direct revenue. That OKR closed at 130% of the target!
 
 #### Why it worked
 

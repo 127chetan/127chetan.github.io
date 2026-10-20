@@ -10,7 +10,7 @@ In the second half of 2023, the BILL v3 documentation launched publicly on [deve
 Each endpoint was a direct upgrade over the v2 API.
 - Simpler request and response bodies, with intuitive field names
 - BILL operations combined where possible (v2 required multiple sequential calls)
-- Standard REST verbs (all v2 operations are POST)
+- Standard REST verbs (all v2 operations are `POST`)
 - Standard HTTP status codes (v2 returns `HTTP 200` on failure)
 
 <svg viewBox="0 0 960 250" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="p2-title p2-desc" style="width: 100%; height: auto; display: block;">
@@ -137,7 +137,7 @@ The guide led with side-by-side comparisons of v2 and v3 in practice.
 
 Authentication is one of the clearest examples to highlight differences between v2 and v3.
 
-**v2 login with POST /v2/Login.json**
+**v2 login with `POST /v2/Login.json`**
 
 v2 requires a session ID and developer key in every request, obtained by signing in with form-encoded credentials.
 
@@ -152,7 +152,7 @@ curl --request POST \
   --data 'devKey={developer_key}'
 ```
 
-**v3 login with POST /v3/login**
+**v3 login with `POST /v3/login`**
 
 v3 uses a bearer token issued with a single JSON login call. The token is then passed in the Authorization header in every subsequent request.
 
@@ -170,7 +170,7 @@ curl --request POST \
 
 Invoice creation is another example to highlight the same contrast.
 
-**v2 invoice creation with POST /v2/Crud/Create/Invoice.json**
+**v2 invoice creation with `POST /v2/Crud/Create/Invoice.json`**
 
 The v2 request is a flat wall of string fields, all at the same level, with no nested structure. Creating an invoice requires a valid customer ID (another API call to create or get a customer). Sending a created invoice to the customer is another API call.
 ```bash
@@ -183,7 +183,7 @@ curl --request POST \
   --data 'data={"obj":{"entity":"Invoice","isActive":"string","customerId":"string","invoiceNumber":"string","invoiceDate":"string","dueDate":"string","glPostingDate":"string","exchangeRate":0,"description":"string","poNumber":"string","isToBePrinted":true,"isToBeEmailed":true,"lastSentTime":"string","itemSalesTax":"string","terms":"string","salesRep":"string","FOB":"string","shipDate":"string","shipMethod":"string","departmentId":"string","locationId":"string","actgClassId":"string","jobId":"string","payToBankAccountId":"string","payToChartOfAccountId":"string","invoiceTemplateId":"string","hasAutoPay":true,"emailDeliveryOption":"string","mailDeliveryOption":"string","recInvoiceTemplateId":"string","invoiceLineItems":[{"entity":"InvoiceLineItem","itemId":"string","quantity":0,"amount":0,"price":0,"serviceDate":"string","ratePercent":0,"chartOfAccountId":"string","departmentId":"string","locationId":"string","actgClassId":"string","jobId":"string","description":"string","taxable":true,"taxCode":"string","lineOrder":0}]}}'
 ```
 
-**v3 invoice creation with POST /v3/invoices**
+**v3 invoice creation with `POST /v3/invoices`**
 
 In v3, `invoiceNumber`, `invoiceDate`, and `dueDate` are optional (BILL auto-generates the values if omitted). If the customer does not exist yet, set `name` and `email` in the customer object, and BILL creates the customer inline as part of the same request. Email delivery is a `processingOptions` flag in the same call.
 

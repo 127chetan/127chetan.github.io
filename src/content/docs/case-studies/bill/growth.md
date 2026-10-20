@@ -1,6 +1,6 @@
 ---
 title: "Developer Platform Growth"
-description: How the Postman Collection and a developer tutorial video program drove BILL's API developer base to 2500+, which was early double the OKR target, and generated 130% of the associated revenue goal.
+description: How the Postman Collection and a developer tutorial video program drove BILL's API developer base to 2500+, which was nearly double the OKR target, and generated 130% of the associated revenue goal.
 ---
 
 ## Context
@@ -15,7 +15,7 @@ Together, these projects addressed 2 points where developer adoption stalled.
 
 ## The developer tutorial video program
 
-The video program started with a content gap: no developer audience was going to sit through a generic product walkthrough. In addition, we wanted to give developers a new format for answers to common questions, and for features that drove revenue for BILL.
+The video program started with a content gap: no developer audience was going to sit through a generic product walkthrough. In addition, we wanted to give developers a new format for answering common questions and promoting features that drove revenue for BILL.
 
 The direction was to record and publish tutorial videos showing the API in real workflows, with the actual endpoints and expected responses visible on screen.
 

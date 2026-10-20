@@ -5,11 +5,11 @@ description: How I used AI to build and publish the official BILL v3 API Postman
 
 ## Context
 
-By mid-2025, the AI shift gave developers new powers to discover and evaluate API products. Developers could describe a workflow in natural language and get working integration code, without the need to read documentation or to write a single API call from scratch.
+By mid-2025, AI had changed how developers discovered and evaluated API products. Developers could describe a workflow in natural language and get working integration code, without the need to read documentation or to write a single API call from scratch.
 
 At the same time, the BILL Developer Platform, Partner Support, and Product Marketing teams were looking for new ways to make the BILL API Platform more visible and accessible. A published Postman Collection was the answer: it would signal confidence in the BILL API products, meet developers where they already worked, and give them a ready-to-run starting point.
 
-I built and published the official BILL v3 API Postman Collection. As a solo project, I went from my first experiment to published Collection in just 3 weeks (15 business days). Without AI, this timeline would be impossible.
+I built and published the official BILL v3 API Postman Collection. As a solo project, I went from my first experiment to published Collection in just 3 weeks (15 business days). Without AI, this timeline would have taken months.
 
 ## A weekend experiment
 
@@ -73,15 +73,15 @@ A prerequisite for publishing the Collection was working request examples. A dev
 
 I added examples for each `POST`, `PUT`, and `PATCH` request in the source Java engineering project. When the OpenAPI spec was generated with the `openapi-generator` library, these examples appeared as prefilled request bodies in both the API reference on `developer.bill.com` and Postman Collection.
 
-For requests that depend on an earlier response, the examples used Postman variables in place of hard-coded IDs. For example, the Create a bill example uses `{{vendor_id}}`, which is set by the Create a vendor post-response script. No placeholder for the developer to replace. The Collection simply fills in the values for them.
+For requests that depend on an earlier response, the examples used Postman variables in place of hard-coded IDs. For example, the Create a bill example uses `{{vendor_id}}`, which is set by the Create a vendor Post-response script. No placeholder for the developer to replace. The Collection simply fills in the values for them.
 
 ## Keeping the Collection current
 
 Publishing the Collection the first time was one problem. Keeping it current with every API release was another.
 
-Each Agile sprint, the engineering team designed and built new endpoints, features, and also updates in the Java engineering project. When we were ready for a release, the project CI/CD pipeline generated the updated v3 OpenAPI spec for the list of additions and updates. The Postman Collection had to follow each release.
+Each Agile sprint, the engineering team designed and built new endpoints, features, and updates in the Java engineering project. When we were ready for a release, the project CI/CD pipeline generated the updated v3 OpenAPI spec. The Postman Collection had to follow each release.
 
-In August 2025, after the Collection was live, I built the first iteration of the Collection update workflow with a set of new JavaScript scripts. Each script handled a key operation in the Collection publishing chain.
+In August 2025, after the Collection was live, I built the first iteration of the Collection update workflow with a set of JavaScript scripts. Each script handled a key operation in the Collection publishing chain.
 
 <svg viewBox="0 0 960 280" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="pc-title pc-desc" style="width: 100%; height: auto; display: block;">
 <title id="pc-title">Postman Collection update pipeline</title>

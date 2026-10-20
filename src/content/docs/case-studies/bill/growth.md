@@ -76,5 +76,5 @@ The Postman Collection launched first and drove the initial acceleration. The Ju
 Together, the tutorial videos and the Postman Collection compressed time-to-first-integration for new developers and lowered the support burden for API solution engineers who were otherwise answering the same onboarding questions repeatedly.
 
 :::note[Top-of-funnel number]
-2500+ active API developers was a top-of-funnel number. It measured new registered developers who chose to build with the BILL API Platform, and not every integration that shipped or every payment that was processed.
+The 2500+ figure was a top-of-funnel number. It measured new registered developers who chose to build with the BILL API Platform, and not every integration that shipped or every payment that was processed.
 :::

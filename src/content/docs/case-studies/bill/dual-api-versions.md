@@ -1,6 +1,6 @@
 ---
 title: "Two API Versions"
-description: Running v2 and v3 documentation simultaneously on developer.bill.com: Versioned references, a migration guide, and the internal advocacy that kept v3 moving forward.
+description: Running v2 and v3 documentation simultaneously on developer.bill.com: versioned references, a migration guide, and the internal advocacy that kept v3 moving forward.
 ---
 
 ## Context
@@ -71,7 +71,7 @@ v3 spec publishing was a stage with 2 jobs (validate and publish) in the CI/CD p
 
 <svg viewBox="0 0 960 200" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="p3-title p3-desc" style="width: 100%; height: auto; display: block;">
 <title id="p3-title">v3 CI/CD Pipeline</title>
-<desc id="p3-desc">Five-stage CI/CD pipeline for v3: feature build, feature testing, release to staging, validate the spec (quality gate), and then publish to ReadMe.</desc>
+<desc id="p3-desc">5-stage CI/CD pipeline for v3: feature build, feature testing, release to staging, validate the spec (quality gate), and then publish to ReadMe.</desc>
 <defs>
 <marker id="p3-arr" markerWidth="9" markerHeight="7" refX="8" refY="3.5" orient="auto">
 <path d="M0,0.5 L8,3.5 L0,6.5 Z" fill="#4f5d75"/>
@@ -242,7 +242,7 @@ The direct result was an increase in subscriptions to the API changelog RSS feed
 
 ## The toughest part: Internal advocacy
 
-The technical challenge of running two versions of documentation was manageable. Internal advocacy for getting to feature parity was a challenge.
+The technical challenge of running 2 versions of documentation was manageable. Internal advocacy for getting to feature parity was a challenge.
 
 Late 2023 and early 2024 were priority constrained. New feature development pulled attention away from existing bug fixes, and advocacy was the most direct way to keep parity work visible for prioritization.
 

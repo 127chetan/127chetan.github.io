@@ -110,7 +110,7 @@ v3 spec publishing was a stage with 2 jobs (validate and publish) in the CI/CD p
 As the engineering team shipped new v3 features and endpoints with each release, the v3 API reference was updated automatically. With v3, the docs were no longer a downstream artifact. The docs were part of the release pipeline itself.
 
 :::tip[This setup paid off again in 2025]
-In 2025, I added working request examples directly in the request DTOs. When the BILL v3 API Postman Collection launched, each example became the default value in each Postman request automatically. This dramatically reduced the time it took new API customers to make their first successful API call.
+In 2025, I added working request examples directly in the request DTOs. When the BILL v3 API Postman Collection launched, each example became the default value in each Postman request automatically. This cut the time to a first successful API call from hours to minutes.
 :::
 
 ## v3 becomes primary in 6 months
@@ -235,7 +235,7 @@ I introduced the [API changelog](https://developer.bill.com/changelog) as a way 
 The parity gap was felt the most by large API customers (bank partners, accounting platforms, enterprise integrators). These customers with deep integrations could not migrate until every capability they depended on was available in v3.
 
 :::tip[Consistent response from API customers]
-The ease-of-use improvement was immediate and significant. Many API customers cited the release notes as a key part of their decision to move to v3. They could track exactly what had been added, when, and what it meant for their integration.
+Many API customers cited the release notes as a key part of their decision to move to v3. They could track exactly what had been added, when, and what it meant for their integration.
 
 The direct result was an increase in subscriptions to the API changelog RSS feed.
 :::
@@ -244,7 +244,7 @@ The direct result was an increase in subscriptions to the API changelog RSS feed
 
 The technical challenge of running 2 versions of documentation was manageable. Internal advocacy for getting to feature parity was a challenge.
 
-Late 2023 and early 2024 were priority constrained. New feature development pulled attention away from existing bug fixes, and advocacy was the most direct way to keep parity work visible for prioritization.
+Late 2023 and early 2024 were priority-constrained. New feature development pulled attention away from existing bug fixes, and advocacy was the most direct way to keep parity work visible for prioritization.
 
 API customers were vocal about feature parity gaps and v3 bugs. Every gap was a reason for them to delay migration. Every bug that stayed open for days or weeks reinforced their skepticism. For customers already uncertain about the migration effort, a poor v3 experience was enough to keep them on v2 indefinitely.
 

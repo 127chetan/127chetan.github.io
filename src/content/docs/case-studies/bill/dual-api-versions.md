@@ -1,6 +1,6 @@
 ---
 title: "Two API Versions"
-description: Running v2 and v3 documentation simultaneously on developer.bill.com — versioned references, a migration guide, and the internal advocacy that kept v3 moving forward.
+description: Running v2 and v3 documentation simultaneously on developer.bill.com. Versioned references, a migration guide, and the internal advocacy that kept v3 moving forward.
 ---
 
 ## Context
@@ -101,7 +101,7 @@ v3 spec publishing was a stage with 2 jobs (validate and publish) in the CI/CD p
 <text x="852" y="108" font-family="'Geist Mono',monospace" font-size="13" font-weight="600" fill="#7a8399" text-anchor="middle" letter-spacing="0.12em">05</text>
 <line x1="30" y1="128" x2="930" y2="128" stroke="rgba(45,49,66,0.12)" stroke-width="0.8"/>
 <rect x="30" y="146" width="13" height="13" rx="2" fill="rgba(235,108,54,0.08)" stroke="#eb6c36" stroke-width="1.5"/>
-<text x="50" y="157" font-family="'Geist Mono',monospace" font-size="11" font-weight="600" fill="#2d3142" letter-spacing="0.08em">QUALITY GATE — pipeline fails here if spec has errors; publish is blocked</text>
+<text x="50" y="157" font-family="'Geist Mono',monospace" font-size="11" font-weight="600" fill="#2d3142" letter-spacing="0.08em">QUALITY GATE: Pipeline fails here if spec has errors; publish is blocked</text>
 <a href="https://github.com/cathrynlavery/diagram-design" target="_blank" rel="noopener noreferrer">
 <text x="30" y="182" font-family="'Geist Mono',monospace" font-size="9" font-weight="400" fill="#7a8399" text-decoration="underline">Flow diagram created with the diagram-design Claude skill</text>
 </a>

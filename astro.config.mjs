@@ -33,12 +33,6 @@ export default defineConfig({
 						{ label: 'Developer Platform Growth', slug: 'case-studies/bill/growth' },
 					],
 				},
-				{
-					label: 'Writing Samples',
-					items: [
-						{ label: 'Overview', slug: 'writing-samples' },
-					],
-				},
 				],
 			components: {
 				SocialIcons: './src/components/SocialIcons.astro',

@@ -5,7 +5,7 @@ description: How I turned a company AI sprint into 4 published Claude skills, an
 
 ## Context
 
-By May 2026, BILL officially adopted Claude as an enterprise AI tool and gave teams unstructured time to experiment. For engineering teams, that meant exploring code generation, process automation, and test automation. For me, it meant turning a year of my AI experience into building tools that could change how documentation was produced at BILL.
+In May 2026, BILL officially adopted Claude as an enterprise AI tool and gave teams unstructured time to experiment. For engineering teams, that meant exploring code generation, process automation, and test automation. For me, it meant turning a year of AI experience into tools that changed how documentation was produced at BILL.
 
 By June 2026, I had published 4 Claude skills on GitLab. These skills were documented, installable tools for automating a set of steps in the documentation process.
 

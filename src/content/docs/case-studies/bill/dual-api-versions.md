@@ -60,14 +60,14 @@ At launch, I set v3 as a list option in the documentation with v2 as the default
 
 The v2 spec publishing pipeline ran through a dedicated GitLab repository I owned. Each time I found an opportunity for improvement based on customer feedback, I posted an update in the spec, and the v2 pipeline validated and published the update in the v2 API reference.
 
-For v3, the integration goes much deeper. OpenAPI spec contributions live directly in the Java engineering project.
+For v3, the integration went much deeper. OpenAPI spec contributions lived directly in the Java engineering project.
 
 | Layer | Description | Docs at this level |
 |---|---|---|
 | Controller | Entry point for handling requests | Endpoint descriptions, path parameters, query parameters |
 | DTO | Data Transfer Object; defines the request/response payload structure | Request and response body documentation |
 
-v3 spec publishing is a stage with two jobs (validate and publish) in the CI/CD pipeline.
+v3 spec publishing was a stage with 2 jobs (validate and publish) in the CI/CD pipeline.
 
 <svg viewBox="0 0 960 200" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="p3-title p3-desc" style="width: 100%; height: auto; display: block;">
 <title id="p3-title">v3 CI/CD Pipeline</title>
@@ -107,7 +107,7 @@ v3 spec publishing is a stage with two jobs (validate and publish) in the CI/CD 
 </a>
 </svg>
 
-As the engineering team ships new v3 features and endpoints with each release, the v3 API reference is updated automatically. With v3, the docs are no longer a downstream artifact. The docs are part of the release pipeline itself.
+As the engineering team shipped new v3 features and endpoints with each release, the v3 API reference was updated automatically. With v3, the docs were no longer a downstream artifact. The docs were part of the release pipeline itself.
 
 :::tip[This setup paid off again in 2025]
 In 2025, I added working request examples directly in the request DTOs. When the BILL v3 API Postman Collection launched, each example became the default value in each Postman request automatically. This dramatically reduced the time it took new API customers to make their first successful API call.
@@ -225,7 +225,7 @@ curl --request POST \
 The rest of the migration guide followed the same pattern: flat and verbose in v2, typed and nested in v3.
 
 :::note[The migration docs have evolved in 2026]
-In 2026, the BILL v3 API is a mature product. The current docs explain [why to upgrade to v3](https://developer.bill.com/docs/why-upgrade-v3), rather than walking API customers through a step-by-step v2-to-v3 comparison.
+In 2026, the BILL v3 API is a mature product. The current docs explain [why to upgrade to v3](https://developer.bill.com/docs/why-upgrade-v3), rather than walking API customers through a step-by-step v2 to v3 comparison.
 :::
 
 ## API changelog

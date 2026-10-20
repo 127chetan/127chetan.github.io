@@ -47,7 +47,7 @@ The final OpenAPI spec for the BILL v2 API was split into 10 files, covering 270
 | Authentication | Login, session, MFA | 6 |
 | BILL Network Operations | Network search, vendor invites, large biller connections | 10 |
 
-Even today, this structure mirrors how BILL customers actually use the API i.e. by business function, not alphabetically. Each OpenAPI spec file is uploaded to its own section in the ReadMe API reference. Developers working on AP payments simply find the section they need instead of having to navigate endpoints ordered by name.
+This structure mirrors how BILL customers actually use the API i.e. by business function, and not alphabetically. Each OpenAPI spec file has its own section in the ReadMe API reference. Developers working on AP payments simply find the section they need instead of having to navigate endpoints ordered by name.
 
 In 2022, for each endpoint and related field description, I used Postman to test with real requests and responses in the sandbox environment. I documented the role of each field, constraints, and specific behavior when the field name was not obvious.
 
@@ -108,7 +108,7 @@ Alongside writing the spec, I built a GitLab CI/CD pipeline for automation. In t
   </a>
 </svg>
 
-A publishing workflow that required manual uploads now ran in about a minute. This pipeline is maintained even today for every spec change, every API update, and every version release.
+A publishing workflow that required manual uploads now ran in about a minute.
 
 ## Outcomes
 

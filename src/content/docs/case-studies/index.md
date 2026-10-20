@@ -23,9 +23,9 @@ When I joined BILL in 2021, [developer.bill.com](https://developer.bill.com) was
 
 By June 2026, the BILL API Platform had 2500+ active API developers. Every API documentation project between 2021 and 2026 contributed to that number in some way.
 - The [ReadMe migration](/case-studies/bill/zendesk-to-readme/) made the docs credible.
-- The [OpenAPI spec](/case-studies/bill/openapi-spec/) made the API reference accurate.
-- The [v3 documentation](/case-studies/bill/dual-api-versions/) made the upgrade path clear.
+- The [BILL v2 OpenAPI spec](/case-studies/bill/openapi-spec/) made the API reference accurate.
+- The [BILL v3 documentation](/case-studies/bill/dual-api-versions/) made the upgrade path clear.
 - The [Postman Collection](/case-studies/bill/ai-postman-collection/) removed friction at first contact.
-- The [tutorial videos](/case-studies/bill/growth/) answered workflow questions before developers had to ask them.
+- The [Developer tutorial videos](/case-studies/bill/growth/) answered workflow questions before developers had to ask them.
 
 The 2500+ number is the output of all of it.

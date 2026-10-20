@@ -31,7 +31,7 @@ Feedback from the skill review was specific and actionable. Instead of "this is 
 
 #### 02 Interactive recipe drafts
 
-The `/docs-recipe` skill generated first drafts of interactive recipes. An interactive recipe on `developer.bill.com` uses ReadMe's support for MDX custom components. For example, the [BILL AP workflow interactive recipe](https://developer.bill.com/docs/recipe-bill-ap-workflow) enables developers to enter their sandbox credentials, and then walks them through the workflow by making live API calls and showing how the endpoints connect.
+The `/docs-recipe` skill generated first drafts of interactive recipes. In 2025, I overhauled recipes on `developer.bill.com` from Python scripts in the ReadMe recipes feature to custom MDX components. These interactive recipes run API calls in the docs, show each response, and automatically use the response as input for the next API call (live orchestration). For example, the [BILL AP workflow interactive recipe](https://developer.bill.com/docs/recipe-bill-ap-workflow) enables developers to enter their sandbox credentials, and then walks them through the workflow by making live API calls and showing how the endpoints connect.
 
 Given a topic, the skill produced a structured draft: what to call first, how the output of one request feeds into the next, and where developers typically get stuck. The draft was a starting point, not a finished product. But it cut the time from "we need a recipe for X" to "here's a draft to review" from days to minutes.
 

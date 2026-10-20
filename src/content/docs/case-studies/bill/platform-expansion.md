@@ -15,7 +15,7 @@ The early-stage BILL Elements docs assumed that customers already knew which int
 
 ## BILL Elements docs strategy & direction
 
-Now that we were a team of 2, we built a project plan and direction for the BILL Elements docs. This was effort in addition to the v2 and v3 API docs management based on engineering releases.
+Now that we were a team of 2, we built a project plan and direction for the BILL Elements docs. This was in addition to managing the v2 and v3 API docs for each engineering release.
 
 **BILL Elements documentation**: The goal of the docs was to build a self-contained reference a developer could follow from initial setup through to a live payment, without the need to reference the v3 API docs for every step.
 
@@ -28,7 +28,7 @@ The documentation was set up to showcase the BILL AP workflow.
 5. Schedule payments
 6. View payments history
 
-**Showcase all integration options**: At the time, a customer landing on `developer.bill.com` was directed to API guides, tutorials, and reference documentation. With BILL Elements, we now built journeys for customers based on integration options with guidance on paths based on their use case: API-only, Elements-only, and hybrid integration models.
+**Showcase all integration options**: At the time, a customer landing on `developer.bill.com` was directed to API guides, tutorials, and reference documentation. With BILL Elements, we built customer journeys for each integration option, with guidance on which path fits each use case: API-only, Elements-only, and hybrid integration models.
 
 :::note[Customer integration options]
 - The landing page on [developer.bill.com](https://developer.bill.com/docs/home) currently guides customers through the available integration options with the BILL API platform.

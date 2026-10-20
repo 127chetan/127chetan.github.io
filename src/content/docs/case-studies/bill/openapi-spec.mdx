@@ -7,7 +7,7 @@ import { Card, CardGrid } from '@astrojs/starlight/components';
 
 ## Context
 
-In 2021-2022, the BILL v2 API had no OpenAPI spec. Without a spec, BILL couldn't leverage what OpenAPI enables: human and machine readability, a single source of truth, SDK generation, mock servers, and automated testing.
+In 2021–2022, the BILL v2 API had no OpenAPI spec. Without a spec, BILL couldn't leverage what OpenAPI enables: human and machine readability, a single source of truth, SDK generation, mock servers, and automated testing.
 
 Publishing the API reference on ReadMe required a complete OpenAPI spec. Without engineering resources for help, my action plan was to write the spec from scratch.
 
@@ -15,7 +15,7 @@ OpenAPI spec for 270+ endpoints. Solo. In 3 months!
 
 ## Tooling challenges in 2022
 
-My first complete draft of the BILL v2 API OpenAPI spec was ~178,000 lines. Writing a YAML file at that scale is not just a documentation problem. It is an engineering problem! A single incorrect indentation in a 1000-line YAML block is nearly impossible to debug by eye.
+My first complete draft of the BILL v2 API OpenAPI spec was 178,000 lines. Writing a YAML file at that scale is not just a documentation problem. It is an engineering problem! A single incorrect indentation in a 1000-line YAML block is nearly impossible to debug by eye.
 
 At the time, I built a toolchain to catch errors in real time.
 
@@ -36,7 +36,7 @@ That was when I decided to split the spec into smaller files organized by BILL's
 
 ## Direction: 10 OpenAPI spec files
 
-The final OpenAPI spec for the BILL v2 API was split into 10 files, covering 270+ endpoints across core BILL operations.
+The final OpenAPI spec for the BILL v2 API was split into 10 files across 6 domains, covering 270+ endpoints.
 
 | Domain | Spec file coverage | Endpoints |
 |---|---|---|
@@ -127,5 +127,5 @@ The most significant outcome of the v2 spec work wasn't the documentation itself
 The Developer Platform engineering team used the v2 spec files as the foundation for designing, building, and testing the BILL v3 API. They generated an internal SDK from the spec to validate the v3 experience before it was built.
 
 :::note[From docs to engineering source]
-A technical writer's output i.e. an OpenAPI spec written to document a public API became the engineering input for the next-generation product. Portable, tool-agnostic, and immediately useful across product, engineering, and release workflows.
+A technical writer's output (an OpenAPI spec written to document a public API) became the engineering input for the next-generation product. Portable, tool-agnostic, and immediately useful across product, engineering, and release workflows.
 :::

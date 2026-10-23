@@ -14,7 +14,7 @@ export default defineConfig({
 			title: 'Chetan Bhatia',
 			tableOfContents: { minHeadingLevel: 2, maxHeadingLevel: 2 },
 			defaultLocale: 'en',
-			description: 'Technical Writer with 14 years of experience in developer documentation, API references, and content strategy.',
+			description: 'Sr Staff Technical Writer with 14 years of experience in developer documentation, API references, and content strategy.',
 			social: [
 				{ icon: 'linkedin', label: 'LinkedIn', href: 'https://www.linkedin.com/in/cbhatia/' },
 				{ icon: 'github', label: 'GitHub', href: 'https://github.com/127chetan' },

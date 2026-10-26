@@ -28,7 +28,7 @@ My solution was to build a set of JavaScript scripts with AI. These scripts tran
 **Script 1: Restructure the Collection**  
 The first script parsed the generated Collection JSON and reorganized it into a folder structure that matched the [v3 API reference](https://developer.bill.com/reference/login) on `developer.bill.com`. Developers familiar with the API reference docs could pick up right where they left off in Postman.
 
-Visual and navigational consistency between the 2 surfaces was non-negotiable. Developers shouldn't have to relearn the API reference layout when they switch tools.
+Visual and navigational consistency between the 2 surfaces was non-negotiable. Developers should not have to relearn the API reference layout when they switch tools.
 
 **Script 2: Build the Postman Environment**  
 The second script scanned the `example` fields in the source OpenAPI spec for Postman variables and generated a Postman Environment file with 100+ variables.

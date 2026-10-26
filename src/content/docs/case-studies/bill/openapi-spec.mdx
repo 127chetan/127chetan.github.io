@@ -7,7 +7,7 @@ import { Card, CardGrid } from '@astrojs/starlight/components';
 
 ## Context
 
-In 2021–2022, the BILL v2 API had no OpenAPI spec. Without a spec, BILL couldn't leverage what OpenAPI enables: human and machine readability, a single source of truth, SDK generation, mock servers, and automated testing.
+In 2021–2022, the BILL v2 API had no OpenAPI spec. Without a spec, BILL could not leverage what OpenAPI enables: human and machine readability, a single source of truth, SDK generation, mock servers, and automated testing.
 
 Publishing the API reference on ReadMe required a complete OpenAPI spec. Without engineering resources for help, my action plan was to write the spec from scratch.
 
@@ -118,11 +118,11 @@ Publishing the complete v2 API reference had an unintended effect inside BILL. F
 
 What they saw was uncomfortable: internal fields exposed in responses, misleading field names, non-standard error structures returning `HTTP 200` on failure. Issues API customers had been complaining about for years.
 
-Teams moved to hide internal fields, improve error messages, and fix bugs. The docs weren't describing the API anymore. The docs were holding the API accountable.
+Teams moved to hide internal fields, improve error messages, and fix bugs. The docs were not describing the API anymore. The docs were holding the API accountable.
 
 #### 02 Input for v3
 
-The most significant outcome of the v2 spec work wasn't the documentation itself.
+The most significant outcome of the v2 spec work was not the documentation itself.
 
 The Developer Platform engineering team used the v2 spec files as the foundation for designing, building, and testing the BILL v3 API. They generated an internal SDK from the spec to validate the v3 experience before it was built.
 

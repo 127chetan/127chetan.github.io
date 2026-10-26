@@ -26,6 +26,11 @@
   padding-block-start: 1.5rem;
 }
 
+/* Hero name matches the accent color of the header site title */
+.hero h1 {
+  color: var(--sl-color-text-accent);
+}
+
 /* Circular profile picture in hero */
 .hero img {
   border-radius: 50%;
